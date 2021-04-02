@@ -10,8 +10,77 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            var uniqueSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            var uniqueFeatureIndexList = new List<int>();
+
+            using (var file = new StreamReader(Path.Combine("Data", "Train", "thrombin_unique_features_indexes.data")))
+            {
+                while (!file.EndOfStream)
+                {
+                    uniqueFeatureIndexList.Add(Convert.ToInt32(file.ReadLine()));
+                }
+            }
+
+            var uniqueObjectIndexList = new List<int>();
+            using (var file = new StreamReader(Path.Combine("Data", "Train", "thrombin_unique_set_True.data.indexes")))
+            {
+                while (!file.EndOfStream)
+                {
+                    uniqueObjectIndexList.Add(Convert.ToInt32(file.ReadLine()));
+                }
+            }
+
+            // var uniqueSet = new Data.Train.ThrombinUniqueSet().GetSet();
+
+            var uniqueObjects = new List<Models.ObjectInfo>();
+            int objIndex = 0, lineIndex = -1;
+            using (var file = new StreamReader(Path.Combine("Data", "Train", "thrombin.data")))
+            {
+                while (!file.EndOfStream)
+                {
+                    var line = file.ReadLine();
+                    lineIndex++;
+                    if (!uniqueObjectIndexList.Contains(lineIndex))
+                        continue;
+                    var cl = line[0];
+                    line = line.Substring(2);
+                    var data = new decimal[uniqueFeatureIndexList.Count];
+                    int i = 0;
+                    foreach (var ft in uniqueFeatureIndexList)
+                    {
+                        data[i++] = (line[(ft - 1) * 2] == '0') ? 0 : 1;
+                    }
+                    uniqueObjects.Add(new Models.ObjectInfo()
+                    {
+                        Data = data,
+                        ClassValue = cl == 'I' ? 0 : 1,
+                        Index = objIndex++
+                    });
+                }
+            }
+            var uniqueSet = new Models.ObjectSet("Thrombin unique set", uniqueObjects.ToArray(), uniqueFeatureIndexList.Select(s => new Models.Feature { IsContinuous = false, Name = $"Ft {s:0000000}" }).ToArray());
+
             System.Console.WriteLine(uniqueSet);
+
+            var testObjects = new List<Models.ObjectInfo>();
+            using (var testFile = new StreamReader(Path.Combine("Data", "Test", "Thrombin.testset")))
+            {
+                while (!testFile.EndOfStream)
+                {
+                    var line = testFile.ReadLine().Substring(2);
+                    var data = new decimal[uniqueFeatureIndexList.Count];
+                    int i = 0;
+                    foreach (var ft in uniqueFeatureIndexList)
+                    {
+                        data[i++] = (line[(ft - 1) * 2] == '0') ? 0 : 1;
+                    }
+                    testObjects.Add(new Models.ObjectInfo()
+                    {
+                        Data = data
+                    });
+                }
+            }
+            System.Console.WriteLine($"Test objects count is {testObjects.Count}");
+
 
             var uniqueFeatureWeights = new Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
             for (int i = 0; i < uniqueSet.Features.Length; i++)
@@ -26,10 +95,18 @@ namespace thrombin
             System.Console.WriteLine($"Unique features count is {uniqueFeatureWeights.Count}");
 
             var standartObjects = new List<Models.ObjectInfo>();
-            var standartObjectIndexes = new int[] { 508, 1034 };
-            var informativeFeatures = new int[] { 634, 635, 642, 901, 905, 906, 907, 908, 909 };
+            var standartObjectIndexes = new int[] { 96, 308, 413, 495, 584, 908 };
+
+            var informativeFeatures = new int[] { 45, 63, 64, 90 };
+
+            // var informativeFeatures = new int[909];
+            // for (int i = 1; i <= 909; i++)
+            // {
+            //     informativeFeatures[i - 1] = i;
+            // }
+
             int objectIndex = -1;
-            var pageSize = 100;
+            var pageSize = 1000;
             using (var file = new StreamReader(Path.Combine("Data", "RS", $"thrombin_rs_set_{pageSize}.txt")))
             {
                 while (!file.EndOfStream)
@@ -53,26 +130,6 @@ namespace thrombin
             }
             System.Console.WriteLine($"Standart objects count is {standartObjects.Count}");
 
-            var uniqueFeatureIndexList = uniqueFeatureWeights.Keys.OrderBy(o => o).ToList();
-            var testObjects = new List<Models.ObjectInfo>();
-            using (var testFile = new StreamReader(Path.Combine("Data", "Test", "Thrombin.testset")))
-            {
-                while (!testFile.EndOfStream)
-                {
-                    var line = testFile.ReadLine().Substring(2);
-                    var data = new decimal[uniqueFeatureIndexList.Count];
-                    int i = 0;
-                    foreach (var ft in uniqueFeatureIndexList)
-                    {
-                        data[i++] = (line[(ft) * 2] == '0') ? 0 : 1;
-                    }
-                    testObjects.Add(new Models.ObjectInfo()
-                    {
-                        Data = data
-                    });
-                }
-            }
-            System.Console.WriteLine($"Test objects count is {testObjects.Count}");
 
             var featureRs = new Models.Feature[informativeFeatures.Length];
             var activeFeatures = new int[informativeFeatures.Length];

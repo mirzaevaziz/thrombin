@@ -550,3 +550,4 @@ obj/
 # End of https://www.toptal.com/developers/gitignore/api/code,visualstudio,visualstudiocode,csharp,dotnetcore
 Data/Test/Thrombin.testset
 Data/Train/thrombin_unique_set_True.data
+Data/Train/thrombin.data
