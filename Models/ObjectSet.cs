@@ -41,6 +41,7 @@ namespace thrombin.Models
         {
             return $@"ObjectSet = ""{Name}""
                , Objects count = {Objects.Length} 
+               , Features count = {Features.Length} 
                , Class value = {ClassValue}
                , Class objects = {ClassObjectCount}
                , Non Class objects = {NonClassObjectCount}

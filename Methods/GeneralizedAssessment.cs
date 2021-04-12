@@ -19,7 +19,6 @@ namespace thrombin.Methods
         }
         public static Dictionary<int, decimal> FindNonContiniousFeature(ObjectSet set, IEnumerable<int> activeFeatures)
         {
-            var result = new Dictionary<int, decimal>();
             var ftWeight = new Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
             foreach (var i in activeFeatures)
             {
@@ -34,24 +33,20 @@ namespace thrombin.Methods
                 }), set.ClassValue);
             }
 
+            return FindNonContiniousFeature(set, ftWeight, activeFeatures);
+        }
+
+        public static Dictionary<int, decimal> FindNonContiniousFeature(ObjectSet set, Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult> featureWeights, IEnumerable<int> activeFeatures)
+        {
+            var result = new Dictionary<int, decimal>();
             for (int objInd = 0; objInd < set.Objects.Length; objInd++)
                 result[objInd] = 0;
-            foreach (var key in ftWeight.Keys)
+            foreach (var key in activeFeatures)
             {
-                System.Console.WriteLine($"Ft{key}: v={ftWeight[key].Value}");
-                foreach (var item in ftWeight[key].FeatureContribute)
-                {
-                    System.Console.WriteLine($"\tm({item.Key}) = {item.Value}");
-                }
                 for (int objInd = 0; objInd < set.Objects.Length; objInd++)
                 {
-                    result[objInd] += ftWeight[key].FeatureContribute[set.Objects[objInd][key]];
+                    result[objInd] += featureWeights[key].FeatureContribute[set.Objects[objInd][key]];
                 }
-            }
-
-            foreach (var ga in result)
-            {
-                System.Console.WriteLine($"Obj[{ga.Key:000000}]={ga.Value}");
             }
 
             return result;

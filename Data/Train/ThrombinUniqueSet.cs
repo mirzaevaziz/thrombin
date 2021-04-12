@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using thrombin.Interfaces;
 using thrombin.Models;
 
 namespace thrombin.Data.Train
 {
-    public class ThrombinUniqueSet
+    public class ThrombinUniqueSet : IObjectSetProvider
     {
         public ObjectSet GetSet()
         {
@@ -41,7 +42,7 @@ namespace thrombin.Data.Train
                     var dt = new ObjectInfo()
                     {
                         ClassValue = line[0] == '1' ? 1 : 2,
-                        Data = Array.ConvertAll(line.Substring(2).Split('\t', StringSplitOptions.RemoveEmptyEntries), x => decimal.Parse(x, CultureInfo.InvariantCulture)),
+                        Data = Array.ConvertAll(line.Substring(2).Split('\t', StringSplitOptions.RemoveEmptyEntries), x => x == "1" ? 1M : 0M),
                         Index = ind++
                     };
 

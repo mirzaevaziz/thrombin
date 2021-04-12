@@ -1,14 +1,100 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace thrombin
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            // FindingRSSet();
+
+            FindingRSSet(1000);
+        }
+
+        private static void FindingRSSet(int pageSize = 1000)
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - FindingRSSet {pageSize}");
+
+            // Reading traind set
+            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            logger.WriteLine("01. Set info", trainSet.ToString(), true);
+
+            // Finding all features weights
+            var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+            Parallel.For(0, trainSet.Features.Length, i =>
+            {
+                trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(trainSet.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    FeatureValue = s[i],
+                    ObjectIndex = s.Index
+                }), trainSet.ClassValue);
+            });
+
+            var pages = new List<List<int>>();
+            var pageIndex = 0;
+            var counter = 0;
+            foreach (var item in trainSetFeatureWeights.OrderByDescending(o => o.Value.Value))
+            {
+                if (pages.Count == pageIndex)
+                    pages.Add(new List<int>());
+
+                counter++;
+                pages[pageIndex].Add(item.Key);
+
+                if (counter % pageSize == 0)
+                {
+                    pageIndex++;
+                }
+
+                logger.WriteLine("02. Set feature weights", $"Feature[{item.Key}] {item.Value}", false);
+            }
+
+            // System.Console.WriteLine($"Pages count is : {pages.Count} with items ({pages.SelectMany(s => s).Count()})");
+
+            var trainRS = new ConcurrentDictionary<int, Dictionary<int, decimal>>();
+
+            Parallel.For(0, pages.Count, i =>
+            {
+                trainRS[i] = Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), pages[i]);
+            });
+
+            for (int objectIndex = 0; objectIndex < trainSet.Objects.Length; objectIndex++)
+            {
+                logger.Write("03. RS set", $"{trainSet.Objects[objectIndex].ClassValue}");
+                for (int i = 0; i < pages.Count; i++)
+                {
+                    logger.Write("03. RS set", $"\t{trainRS[i][objectIndex]}");
+                }
+                logger.WriteLine("03. RS set", "");
+            }
+
+            var rsWeights = new ConcurrentDictionary<int, Criterions.FirstCriterion.FirstCriterionResult>();
+
+
+            Parallel.For(0, pages.Count, i =>
+            {
+                rsWeights[i] = Criterions.FirstCriterion.Find(trainRS[i].Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+                {
+                    ClassValue = trainSet.Objects[s.Key].ClassValue.Value,
+                    Distance = s.Value,
+                    ObjectIndex = s.Key
+                }), trainSet.ClassValue);
+            });
+
+            foreach (var item in rsWeights.OrderByDescending(o => o.Value.Value))
+            {
+                logger.WriteLine("04. RS weights ordered", $"Feature {item.Key:00}\t Weight = {item.Value.Value}");
+            }
+        }
+
+        private void OldMethod()
         {
             var uniqueFeatureIndexList = new List<int>();
 

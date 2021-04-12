@@ -30,4 +30,32 @@ namespace thrombin.Metrics
             return features.All(f => f.IsContinuous);
         }
     }
+
+    class Juravlev
+    {
+        public decimal Calculate(ObjectInfo obj1, ObjectInfo obj2, List<Feature> features, IEnumerable<int> activeFeaturesIndexes)
+        {
+            var result = 0M;
+
+            foreach (var i in activeFeaturesIndexes)
+            {
+                if (features[i].IsContinuous)
+                {
+                    var r = obj1[i] - obj2[i];
+                    if (r < 0) r *= -1;
+
+                    result += r;
+                }
+                else if (obj1[i] != obj2[i])
+                    result += 1;
+            }
+
+            return result;
+        }
+
+        public bool CanCalculate(List<Feature> features)
+        {
+            return true;
+        }
+    }
 }
