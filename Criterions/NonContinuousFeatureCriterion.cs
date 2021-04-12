@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace thrombin.Criterions
 {
@@ -14,10 +15,21 @@ namespace thrombin.Criterions
 
         public class NonContinuousFeatureCriterionResult
         {
-            public decimal lambda { get; set; }
-            public decimal betta { get; set; }
+            public decimal Lambda { get; set; }
+            public decimal Betta { get; set; }
             public decimal Value { get; set; }
             public Dictionary<decimal, decimal> FeatureContribute { get; set; }
+
+            public override string ToString()
+            {
+                var sb = new StringBuilder();
+                sb.AppendLine($"\tWeight = {Value}, Lambda = {Lambda}, Betta = {Betta}");
+                foreach (var item in FeatureContribute)
+                {
+                    sb.AppendLine($"\t{item.Key} = {item.Value}");
+                }
+                return sb.ToString();
+            }
         }
 
         public static NonContinuousFeatureCriterionResult Find(IEnumerable<NonContinuousFeatureCriterionParameter> objects, int classValue)
@@ -65,8 +77,8 @@ namespace thrombin.Criterions
                 betta_r = sum2 / (d1r + d2r);
             }
 
-            result.betta = betta_r;
-            result.lambda = lambda_r;
+            result.Betta = betta_r;
+            result.Lambda = lambda_r;
             result.Value = betta_r * lambda_r;
             foreach (var p in pList)
             {

@@ -52,17 +52,18 @@ namespace thrombin.Criterions
                 if (i != sorted.Length - 1 && sorted[i + 1].Distance == obj.Distance)
                     continue;
 
-                var val1 = (denominator1 == 0) ? 0 : (u11 * (u11 - 1) + u21 * (u21 - 1) + u12 * (u12 - 1) + u22 * (u22 - 1)) / denominator1;
+                var val1 = (u11 * (u11 - 1) + u21 * (u21 - 1) + u12 * (u12 - 1) + u22 * (u22 - 1)) / denominator1;
                 var val2 = (u11 * (nonClassCount - u21) + u21 * (classCount - u11) + u12 * (nonClassCount - u22) + u22 * (
                 classCount - u12)) / denominator2;
+                var r = val1 * val2;
 
-                if (result == null || result.Value < val1 * val2)
+                if (result == null || result.Value < r)
                 {
                     result = new FirstCriterionResult()
                     {
                         Distance = obj.Distance,
                         ObjectIndex = obj.ObjectIndex,
-                        Value = val1 * val2
+                        Value = r
                     };
                 }
             }
