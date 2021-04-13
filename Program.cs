@@ -12,9 +12,18 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            // FindingRSSet();
+            // FindingRSSet(1000);
+            RS1000FindByRelativeCount();
+        }
 
-            FindingRSSet(1000);
+        private static void RS1000FindByRelativeCount()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - RS1000FindByRelativeCount");
+
+            var rsSet = new Data.RS.ThrombinRS1000().GetSet();
+            logger.WriteLine("01. Set info", rsSet.ToString(), true);
+
+            Methods.FindFirstPairFeatureByRelativesCount.Find(rsSet, Metrics.MetricFunctionGetter.GetMetric(rsSet, "FindFirstPairFeatureByRelativesCount"), Enumerable.Range(0, rsSet.Features.Length), logger);
         }
 
         private static void FindingRSSet(int pageSize = 1000)
