@@ -13,8 +13,42 @@ namespace thrombin
         static void Main(string[] args)
         {
             // FindingRSSet(1000);
-            RS1000FindByRelativeCount();
+            // RS1000FindByRelativeCount();
+            RS1000FindByDominance();
         }
+
+        private static void RS1000FindByDominance()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - RS1000FindByDominance");
+
+            var rsSet = new Data.RS.ThrombinRS1000().GetSet();
+            logger.WriteLine("Set info", rsSet.ToString(), true);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(rsSet, "RS1000FindByDominance");
+
+            var firstPair = Methods.FindFirstPairFeatureByDominance.Find(rsSet, distFunc, Enumerable.Range(0, rsSet.Features.Length), logger);
+
+            var features = Methods.FindAllFeaturesByPhi.Find(rsSet, distFunc, logger, firstPair);
+
+            var excludedObjects = new HashSet<int>();
+
+            var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(rsSet, distFunc, features, excludedObjects);
+            var spheres = Models.Sphere.FindAll(rsSet, distances, excludedObjects, true);
+            var noisyObjects = Methods.FindNoisyObjects.Find(rsSet, spheres, excludedObjects, logger);
+            excludedObjects.UnionWith(noisyObjects);
+            distances = Utils.DistanceUtils.FindAllDistanceAndRadius(rsSet, distFunc, features, excludedObjects);
+            spheres = Models.Sphere.FindAll(rsSet, distances, excludedObjects, true);
+            var groups = Methods.FindAcquaintanceGrouping.Find(rsSet, spheres, excludedObjects);
+            var standartObject = Methods.FindStandartObjects.Find(rsSet, groups, spheres, excludedObjects, distances, logger);
+            logger.WriteLine("Result", $"Stability: {((rsSet.Objects.Length - noisyObjects.Count) / (decimal)rsSet.Objects.Length) * ((rsSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
+            logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
+            logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
+            logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
+
+            logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
+
+        }
+
 
         private static void RS1000FindByRelativeCount()
         {
@@ -23,7 +57,11 @@ namespace thrombin
             var rsSet = new Data.RS.ThrombinRS1000().GetSet();
             logger.WriteLine("01. Set info", rsSet.ToString(), true);
 
-            Methods.FindFirstPairFeatureByRelativesCount.Find(rsSet, Metrics.MetricFunctionGetter.GetMetric(rsSet, "FindFirstPairFeatureByRelativesCount"), Enumerable.Range(0, rsSet.Features.Length), logger);
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(rsSet, "RS1000FindByRelativeCount");
+
+            var firstPair = Methods.FindFirstPairFeatureByRelativesCount.Find(rsSet, distFunc, Enumerable.Range(0, rsSet.Features.Length), logger);
+
+            var features = Methods.FindAllFeaturesByPhi.Find(rsSet, distFunc, logger, firstPair);
         }
 
         private static void FindingRSSet(int pageSize = 1000)
@@ -147,7 +185,7 @@ namespace thrombin
                     uniqueObjects.Add(new Models.ObjectInfo()
                     {
                         Data = data,
-                        ClassValue = cl == 'I' ? 0 : 1,
+                        ClassValue = cl == 'A' ? 1 : 2,
                         Index = objIndex++
                     });
                 }
