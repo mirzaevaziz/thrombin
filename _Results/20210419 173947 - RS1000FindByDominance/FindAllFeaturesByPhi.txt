@@ -1,0 +1,534 @@
+=====Started FindAllFeaturesByPhi at 4/19/2021 6:14:41 PM
+Feature 003 	 R = 0.006079, MaxR = 
+Feature 000 	 R = 0.009119, MaxR = 
+Feature 006 	 R = 0.005319, MaxR = 
+Feature 004 	 R = 0.005319, MaxR = 
+Feature 001 	 R = 0.008359, MaxR = 
+Feature 005 	 R = 0.004559, MaxR = 
+Feature 002 	 R = 0.006839, MaxR = 
+Feature 007 	 R = 0.006079, MaxR = 
+Feature 011 	 R = 0.003799, MaxR = 
+Feature 010 	 R = 0.010638, MaxR = 
+Feature 008 	 R = 0.006079, MaxR = 
+Feature 014 	 R = 0.008359, MaxR = 
+Feature 009 	 R = 0.006079, MaxR = 
+Feature 013 	 R = 0.005319, MaxR = 
+Feature 015 	 R = 0.021277, MaxR = 
+Feature 016 	 R = 0.490122, MaxR = 
+Feature 020 	 R = 0.018237, MaxR = 
+Feature 021 	 R = 0.006079, MaxR = 
+Feature 017 	 R = 0.005319, MaxR = 
+Feature 018 	 R = 0.005319, MaxR = 
+Feature 019 	 R = 0.006079, MaxR = 
+Feature 029 	 R = 0.017477, MaxR = 
+Feature 024 	 R = 0.005319, MaxR = 
+Feature 022 	 R = 0.304711, MaxR = 
+Feature 027 	 R = 0.006079, MaxR = 
+Feature 025 	 R = 0.006079, MaxR = 
+Feature 033 	 R = 0.005319, MaxR = 
+Feature 031 	 R = 0.313070, MaxR = 
+Feature 030 	 R = 0.055471, MaxR = 
+Feature 026 	 R = 0.005319, MaxR = 
+Feature 028 	 R = 0.005319, MaxR = 
+Feature 035 	 R = 0.005319, MaxR = 
+Feature 023 	 R = 0.024316, MaxR = 
+Feature 032 	 R = 0.582827, MaxR = 
+Feature 034 	 R = 0.005319, MaxR = 0.582827
+Feature 039 	 R = 0.016717, MaxR = 0.582827
+Feature 041 	 R = 0.015957, MaxR = 0.582827
+Feature 036 	 R = 0.005319, MaxR = 0.582827
+Feature 037 	 R = 0.005319, MaxR = 0.582827
+Feature 045 	 R = 0.815350, MaxR = 0.582827
+Feature 043 	 R = 0.522036, MaxR = 0.815350
+Feature 047 	 R = 0.005319, MaxR = 0.815350
+Feature 049 	 R = 0.005319, MaxR = 0.815350
+Feature 040 	 R = 0.006839, MaxR = 0.815350
+Feature 042 	 R = 0.006079, MaxR = 0.815350
+Feature 044 	 R = 0.641337, MaxR = 0.815350
+Feature 046 	 R = 0.006079, MaxR = 0.815350
+Feature 048 	 R = 0.005319, MaxR = 0.815350
+Feature 050 	 R = 0.005319, MaxR = 0.815350
+Feature 051 	 R = 0.005319, MaxR = 0.815350
+Feature 055 	 R = 0.019757, MaxR = 0.815350
+Feature 053 	 R = 0.005319, MaxR = 0.815350
+Feature 057 	 R = 0.303191, MaxR = 0.815350
+Feature 059 	 R = 0.025076, MaxR = 0.815350
+Feature 061 	 R = 0.022036, MaxR = 0.815350
+Feature 052 	 R = 0.005319, MaxR = 0.815350
+Feature 054 	 R = 0.005319, MaxR = 0.815350
+Feature 056 	 R = 0.018997, MaxR = 0.815350
+Feature 058 	 R = 0.019757, MaxR = 0.815350
+Feature 060 	 R = 0.022036, MaxR = 0.815350
+Feature 062 	 R = 0.452128, MaxR = 0.815350
+Feature 065 	 R = 0.009878, MaxR = 0.815350
+Feature 069 	 R = 0.017477, MaxR = 0.815350
+Feature 073 	 R = 0.028875, MaxR = 0.815350
+Feature 077 	 R = 0.026596, MaxR = 0.815350
+Feature 081 	 R = 0.024316, MaxR = 0.815350
+Feature 085 	 R = 0.027356, MaxR = 0.815350
+Feature 070 	 R = 0.022796, MaxR = 0.815350
+Feature 066 	 R = 0.020517, MaxR = 0.815350
+Feature 078 	 R = 0.043313, MaxR = 0.815350
+Feature 074 	 R = 0.020517, MaxR = 0.815350
+Feature 082 	 R = 0.009878, MaxR = 0.815350
+Feature 086 	 R = 0.035714, MaxR = 0.815350
+Feature 012 	 R = 0.005319, MaxR = 0.815350
+Feature 079 	 R = 0.014438, MaxR = 0.815350
+Feature 071 	 R = 0.030395, MaxR = 0.815350
+Feature 075 	 R = 0.023556, MaxR = 0.815350
+Feature 067 	 R = 0.011398, MaxR = 0.815350
+Feature 083 	 R = 0.016717, MaxR = 0.815350
+Feature 087 	 R = 0.014438, MaxR = 0.815350
+Feature 080 	 R = 0.025076, MaxR = 0.815350
+Feature 076 	 R = 0.041033, MaxR = 0.815350
+Feature 089 	 R = 0.411094, MaxR = 0.815350
+Feature 038 	 R = 0.005319, MaxR = 0.815350
+Feature 072 	 R = 0.022036, MaxR = 0.815350
+Feature 068 	 R = 0.012158, MaxR = 0.815350
+Feature 084 	 R = 0.028875, MaxR = 0.815350
+Feature 088 	 R = 0.501520, MaxR = 0.815350
+Feature 090 	 R = 0.748480, MaxR = 0.815350
+	Found 0.8153495440729483282674772036 at index 45. Active features [63,64,45]
+Feature 005 	 R = 0.011398, MaxR = 
+Feature 003 	 R = 0.012918, MaxR = 
+Feature 001 	 R = 0.016717, MaxR = 
+Feature 004 	 R = 0.009878, MaxR = 
+Feature 006 	 R = 0.010638, MaxR = 
+Feature 002 	 R = 0.009878, MaxR = 
+Feature 007 	 R = 0.011398, MaxR = 
+Feature 010 	 R = 0.009878, MaxR = 
+Feature 008 	 R = 0.009119, MaxR = 
+Feature 009 	 R = 0.012918, MaxR = 
+Feature 012 	 R = 0.009878, MaxR = 
+Feature 011 	 R = 0.011398, MaxR = 
+Feature 013 	 R = 0.011398, MaxR = 
+Feature 014 	 R = 0.011398, MaxR = 
+Feature 015 	 R = 0.009119, MaxR = 
+Feature 016 	 R = 0.016717, MaxR = 
+Feature 018 	 R = 0.011398, MaxR = 
+Feature 017 	 R = 0.009119, MaxR = 
+Feature 019 	 R = 0.010638, MaxR = 
+Feature 021 	 R = 0.012158, MaxR = 
+Feature 023 	 R = 0.012158, MaxR = 
+Feature 025 	 R = 0.010638, MaxR = 
+Feature 027 	 R = 0.012158, MaxR = 
+Feature 029 	 R = 0.010638, MaxR = 
+Feature 022 	 R = 0.013678, MaxR = 
+Feature 020 	 R = 0.013678, MaxR = 
+Feature 026 	 R = 0.011398, MaxR = 
+Feature 030 	 R = 0.011398, MaxR = 
+Feature 024 	 R = 0.009119, MaxR = 
+Feature 028 	 R = 0.012918, MaxR = 
+Feature 031 	 R = 0.009119, MaxR = 
+Feature 000 	 R = 0.013678, MaxR = 
+Feature 033 	 R = 0.012158, MaxR = 
+Feature 037 	 R = 0.010638, MaxR = 
+Feature 041 	 R = 0.009878, MaxR = 
+Feature 039 	 R = 0.009878, MaxR = 
+Feature 035 	 R = 0.009119, MaxR = 
+Feature 032 	 R = 0.017477, MaxR = 
+Feature 034 	 R = 0.010638, MaxR = 
+Feature 038 	 R = 0.009878, MaxR = 
+Feature 042 	 R = 0.009119, MaxR = 
+Feature 036 	 R = 0.010638, MaxR = 
+Feature 044 	 R = 0.015198, MaxR = 
+Feature 040 	 R = 0.011398, MaxR = 
+Feature 050 	 R = 0.016717, MaxR = 
+Feature 046 	 R = 0.018997, MaxR = 
+Feature 048 	 R = 0.015957, MaxR = 
+Feature 057 	 R = 0.013678, MaxR = 
+Feature 043 	 R = 0.010638, MaxR = 
+Feature 052 	 R = 0.015198, MaxR = 
+Feature 054 	 R = 0.016717, MaxR = 
+Feature 056 	 R = 0.010638, MaxR = 
+Feature 047 	 R = 0.016717, MaxR = 
+Feature 049 	 R = 0.018237, MaxR = 
+Feature 051 	 R = 0.014438, MaxR = 
+Feature 060 	 R = 0.008359, MaxR = 
+Feature 055 	 R = 0.016717, MaxR = 
+Feature 058 	 R = 0.008359, MaxR = 
+Feature 053 	 R = 0.012918, MaxR = 
+Feature 061 	 R = 0.018997, MaxR = 
+Feature 062 	 R = 0.016717, MaxR = 
+Feature 072 	 R = 0.045593, MaxR = 
+Feature 068 	 R = 0.036474, MaxR = 
+Feature 077 	 R = 0.053951, MaxR = 
+Feature 081 	 R = 0.290274, MaxR = 
+Feature 085 	 R = 0.504559, MaxR = 
+Feature 076 	 R = 0.126900, MaxR = 0.504559
+Feature 059 	 R = 0.012918, MaxR = 0.504559
+Feature 089 	 R = 0.992401, MaxR = 0.504559
+Feature 069 	 R = 0.039514, MaxR = 0.992401
+Feature 073 	 R = 0.048632, MaxR = 0.992401
+Feature 082 	 R = 0.050152, MaxR = 0.992401
+Feature 086 	 R = 0.135258, MaxR = 0.992401
+Feature 078 	 R = 0.136778, MaxR = 0.992401
+Feature 090 	 R = 0.999240, MaxR = 0.992401
+Feature 074 	 R = 0.090426, MaxR = 0.999240
+Feature 087 	 R = 0.984043, MaxR = 0.999240
+Feature 083 	 R = 0.727204, MaxR = 0.999240
+Feature 079 	 R = 0.053191, MaxR = 0.999240
+Feature 070 	 R = 0.037234, MaxR = 0.999240
+Feature 088 	 R = 0.993921, MaxR = 0.999240
+Feature 080 	 R = 0.092705, MaxR = 0.999240
+Feature 075 	 R = 0.046353, MaxR = 0.999240
+Feature 065 	 R = 0.056991, MaxR = 0.999240
+Feature 084 	 R = 0.297112, MaxR = 0.999240
+Feature 071 	 R = 0.040274, MaxR = 0.999240
+Feature 066 	 R = 0.037234, MaxR = 0.999240
+Feature 067 	 R = 0.035714, MaxR = 0.999240
+	Found 0.999240121580547112462006079 at index 90. Active features [63,64,45,90]
+Feature 007 	 R = 0.011398, MaxR = 
+Feature 001 	 R = 0.016717, MaxR = 
+Feature 003 	 R = 0.012918, MaxR = 
+Feature 005 	 R = 0.011398, MaxR = 
+Feature 008 	 R = 0.009119, MaxR = 
+Feature 006 	 R = 0.010638, MaxR = 
+Feature 004 	 R = 0.009878, MaxR = 
+Feature 002 	 R = 0.009878, MaxR = 
+Feature 009 	 R = 0.012918, MaxR = 
+Feature 011 	 R = 0.011398, MaxR = 
+Feature 010 	 R = 0.009878, MaxR = 
+Feature 015 	 R = 0.009119, MaxR = 
+Feature 014 	 R = 0.011398, MaxR = 
+Feature 012 	 R = 0.009878, MaxR = 
+Feature 013 	 R = 0.011398, MaxR = 
+Feature 016 	 R = 0.016717, MaxR = 
+Feature 019 	 R = 0.010638, MaxR = 
+Feature 018 	 R = 0.011398, MaxR = 
+Feature 017 	 R = 0.009119, MaxR = 
+Feature 020 	 R = 0.013678, MaxR = 
+Feature 021 	 R = 0.012158, MaxR = 
+Feature 023 	 R = 0.012158, MaxR = 
+Feature 022 	 R = 0.013678, MaxR = 
+Feature 024 	 R = 0.009119, MaxR = 
+Feature 025 	 R = 0.010638, MaxR = 
+Feature 027 	 R = 0.012158, MaxR = 
+Feature 029 	 R = 0.010638, MaxR = 
+Feature 031 	 R = 0.009119, MaxR = 
+Feature 033 	 R = 0.012158, MaxR = 
+Feature 037 	 R = 0.010638, MaxR = 
+Feature 035 	 R = 0.009119, MaxR = 
+Feature 039 	 R = 0.009878, MaxR = 
+Feature 026 	 R = 0.011398, MaxR = 
+Feature 028 	 R = 0.012918, MaxR = 
+Feature 032 	 R = 0.017477, MaxR = 
+Feature 030 	 R = 0.011398, MaxR = 
+Feature 038 	 R = 0.009878, MaxR = 
+Feature 036 	 R = 0.010638, MaxR = 
+Feature 034 	 R = 0.010638, MaxR = 
+Feature 040 	 R = 0.011398, MaxR = 
+Feature 041 	 R = 0.009878, MaxR = 
+Feature 043 	 R = 0.010638, MaxR = 
+Feature 048 	 R = 0.015957, MaxR = 
+Feature 046 	 R = 0.018997, MaxR = 
+Feature 050 	 R = 0.016717, MaxR = 
+Feature 052 	 R = 0.015198, MaxR = 
+Feature 054 	 R = 0.016717, MaxR = 
+Feature 056 	 R = 0.010638, MaxR = 
+Feature 044 	 R = 0.015198, MaxR = 
+Feature 042 	 R = 0.009119, MaxR = 
+Feature 049 	 R = 0.018237, MaxR = 
+Feature 047 	 R = 0.016717, MaxR = 
+Feature 055 	 R = 0.016717, MaxR = 
+Feature 057 	 R = 0.013678, MaxR = 
+Feature 058 	 R = 0.008359, MaxR = 
+Feature 060 	 R = 0.008359, MaxR = 
+Feature 062 	 R = 0.016717, MaxR = 
+Feature 066 	 R = 0.037234, MaxR = 
+Feature 068 	 R = 0.036474, MaxR = 
+Feature 070 	 R = 0.037234, MaxR = 
+Feature 059 	 R = 0.012918, MaxR = 
+Feature 061 	 R = 0.018997, MaxR = 
+Feature 065 	 R = 0.056991, MaxR = 
+Feature 067 	 R = 0.035714, MaxR = 
+Feature 071 	 R = 0.040274, MaxR = 
+Feature 069 	 R = 0.039514, MaxR = 
+Feature 000 	 R = 0.013678, MaxR = 
+Feature 076 	 R = 0.126140, MaxR = 
+Feature 072 	 R = 0.045593, MaxR = 
+Feature 084 	 R = 0.296353, MaxR = 
+Feature 080 	 R = 0.092705, MaxR = 
+Feature 088 	 R = 0.994681, MaxR = 
+Feature 077 	 R = 0.053951, MaxR = 0.994681
+Feature 051 	 R = 0.014438, MaxR = 0.994681
+Feature 073 	 R = 0.048632, MaxR = 0.994681
+Feature 089 	 R = 0.992401, MaxR = 0.994681
+Feature 081 	 R = 0.288754, MaxR = 0.994681
+Feature 085 	 R = 0.497720, MaxR = 0.994681
+Feature 078 	 R = 0.136778, MaxR = 0.994681
+Feature 053 	 R = 0.012918, MaxR = 0.994681
+Feature 086 	 R = 0.134498, MaxR = 0.994681
+Feature 074 	 R = 0.090426, MaxR = 0.994681
+Feature 082 	 R = 0.050152, MaxR = 0.994681
+Feature 079 	 R = 0.053191, MaxR = 0.994681
+Feature 087 	 R = 0.983283, MaxR = 0.994681
+Feature 075 	 R = 0.046353, MaxR = 0.994681
+Feature 083 	 R = 0.727204, MaxR = 0.994681
+	Found 0.9946808510638297872340425532 at index 88. Active features [63,64,45,90,88]
+Feature 007 	 R = 0.011398, MaxR = 
+Feature 003 	 R = 0.012918, MaxR = 
+Feature 001 	 R = 0.015957, MaxR = 
+Feature 002 	 R = 0.009878, MaxR = 
+Feature 006 	 R = 0.010638, MaxR = 
+Feature 008 	 R = 0.009119, MaxR = 
+Feature 005 	 R = 0.011398, MaxR = 
+Feature 004 	 R = 0.009878, MaxR = 
+Feature 010 	 R = 0.009878, MaxR = 
+Feature 013 	 R = 0.011398, MaxR = 
+Feature 009 	 R = 0.012918, MaxR = 
+Feature 011 	 R = 0.011398, MaxR = 
+Feature 012 	 R = 0.009878, MaxR = 
+Feature 014 	 R = 0.011398, MaxR = 
+Feature 015 	 R = 0.009119, MaxR = 
+Feature 016 	 R = 0.016717, MaxR = 
+Feature 017 	 R = 0.009119, MaxR = 
+Feature 018 	 R = 0.010638, MaxR = 
+Feature 022 	 R = 0.013678, MaxR = 
+Feature 021 	 R = 0.012158, MaxR = 
+Feature 020 	 R = 0.013678, MaxR = 
+Feature 019 	 R = 0.010638, MaxR = 
+Feature 023 	 R = 0.012158, MaxR = 
+Feature 024 	 R = 0.009119, MaxR = 
+Feature 031 	 R = 0.009119, MaxR = 
+Feature 027 	 R = 0.012158, MaxR = 
+Feature 025 	 R = 0.009878, MaxR = 
+Feature 029 	 R = 0.010638, MaxR = 
+Feature 033 	 R = 0.012158, MaxR = 
+Feature 035 	 R = 0.009119, MaxR = 
+Feature 037 	 R = 0.010638, MaxR = 
+Feature 039 	 R = 0.009878, MaxR = 
+Feature 032 	 R = 0.016717, MaxR = 
+Feature 030 	 R = 0.011398, MaxR = 
+Feature 028 	 R = 0.012918, MaxR = 
+Feature 026 	 R = 0.011398, MaxR = 
+Feature 034 	 R = 0.010638, MaxR = 
+Feature 038 	 R = 0.009878, MaxR = 
+Feature 040 	 R = 0.011398, MaxR = 
+Feature 036 	 R = 0.010638, MaxR = 
+Feature 043 	 R = 0.009878, MaxR = 
+Feature 041 	 R = 0.009878, MaxR = 
+Feature 048 	 R = 0.015957, MaxR = 
+Feature 046 	 R = 0.018997, MaxR = 
+Feature 050 	 R = 0.016717, MaxR = 
+Feature 052 	 R = 0.015198, MaxR = 
+Feature 044 	 R = 0.015198, MaxR = 
+Feature 049 	 R = 0.018237, MaxR = 
+Feature 047 	 R = 0.016717, MaxR = 
+Feature 042 	 R = 0.009119, MaxR = 
+Feature 051 	 R = 0.014438, MaxR = 
+Feature 053 	 R = 0.012158, MaxR = 
+Feature 054 	 R = 0.016717, MaxR = 
+Feature 056 	 R = 0.010638, MaxR = 
+Feature 058 	 R = 0.008359, MaxR = 
+Feature 062 	 R = 0.018237, MaxR = 
+Feature 060 	 R = 0.007599, MaxR = 
+Feature 066 	 R = 0.035714, MaxR = 
+Feature 055 	 R = 0.016717, MaxR = 
+Feature 059 	 R = 0.011398, MaxR = 
+Feature 057 	 R = 0.012158, MaxR = 
+Feature 061 	 R = 0.018237, MaxR = 
+Feature 067 	 R = 0.034954, MaxR = 
+Feature 065 	 R = 0.057751, MaxR = 
+Feature 068 	 R = 0.035714, MaxR = 
+Feature 072 	 R = 0.046353, MaxR = 
+Feature 076 	 R = 0.107903, MaxR = 
+Feature 080 	 R = 0.094985, MaxR = 
+Feature 084 	 R = 0.231003, MaxR = 
+Feature 089 	 R = 0.992401, MaxR = 
+Feature 000 	 R = 0.012918, MaxR = 0.992401
+Feature 069 	 R = 0.039514, MaxR = 0.992401
+Feature 077 	 R = 0.052432, MaxR = 0.992401
+Feature 081 	 R = 0.276596, MaxR = 0.992401
+Feature 073 	 R = 0.048632, MaxR = 0.992401
+Feature 085 	 R = 0.312310, MaxR = 0.992401
+Feature 070 	 R = 0.036474, MaxR = 0.992401
+Feature 078 	 R = 0.136778, MaxR = 0.992401
+Feature 074 	 R = 0.091945, MaxR = 0.992401
+Feature 082 	 R = 0.048632, MaxR = 0.992401
+Feature 071 	 R = 0.040274, MaxR = 0.992401
+Feature 079 	 R = 0.050912, MaxR = 0.992401
+Feature 086 	 R = 0.095745, MaxR = 0.992401
+Feature 083 	 R = 0.497720, MaxR = 0.992401
+Feature 075 	 R = 0.044833, MaxR = 0.992401
+Feature 087 	 R = 0.952888, MaxR = 0.992401
+	Found 0.9924012158054711246200607903 at index 89. Active features [63,64,45,90,88,89]
+Feature 004 	 R = 0.009878, MaxR = 
+Feature 006 	 R = 0.010638, MaxR = 
+Feature 009 	 R = 0.012918, MaxR = 
+Feature 005 	 R = 0.011398, MaxR = 
+Feature 003 	 R = 0.012918, MaxR = 
+Feature 008 	 R = 0.009119, MaxR = 
+Feature 002 	 R = 0.009878, MaxR = 
+Feature 007 	 R = 0.011398, MaxR = 
+Feature 001 	 R = 0.015957, MaxR = 
+Feature 013 	 R = 0.010638, MaxR = 
+Feature 011 	 R = 0.011398, MaxR = 
+Feature 015 	 R = 0.009119, MaxR = 
+Feature 010 	 R = 0.009878, MaxR = 
+Feature 016 	 R = 0.016717, MaxR = 
+Feature 014 	 R = 0.011398, MaxR = 
+Feature 012 	 R = 0.009878, MaxR = 
+Feature 018 	 R = 0.010638, MaxR = 
+Feature 017 	 R = 0.009119, MaxR = 
+Feature 022 	 R = 0.014438, MaxR = 
+Feature 021 	 R = 0.012158, MaxR = 
+Feature 019 	 R = 0.010638, MaxR = 
+Feature 020 	 R = 0.013678, MaxR = 
+Feature 023 	 R = 0.011398, MaxR = 
+Feature 026 	 R = 0.011398, MaxR = 
+Feature 024 	 R = 0.009119, MaxR = 
+Feature 025 	 R = 0.009878, MaxR = 
+Feature 027 	 R = 0.012158, MaxR = 
+Feature 030 	 R = 0.011398, MaxR = 
+Feature 028 	 R = 0.012918, MaxR = 
+Feature 032 	 R = 0.017477, MaxR = 
+Feature 034 	 R = 0.010638, MaxR = 
+Feature 036 	 R = 0.010638, MaxR = 
+Feature 038 	 R = 0.009878, MaxR = 
+Feature 040 	 R = 0.011398, MaxR = 
+Feature 042 	 R = 0.009119, MaxR = 
+Feature 044 	 R = 0.013678, MaxR = 
+Feature 031 	 R = 0.009878, MaxR = 
+Feature 029 	 R = 0.010638, MaxR = 
+Feature 033 	 R = 0.012158, MaxR = 
+Feature 041 	 R = 0.009878, MaxR = 
+Feature 035 	 R = 0.009119, MaxR = 
+Feature 039 	 R = 0.009878, MaxR = 
+Feature 037 	 R = 0.010638, MaxR = 
+Feature 043 	 R = 0.010638, MaxR = 
+Feature 046 	 R = 0.018997, MaxR = 
+Feature 049 	 R = 0.018237, MaxR = 
+Feature 051 	 R = 0.014438, MaxR = 
+Feature 055 	 R = 0.016717, MaxR = 
+Feature 047 	 R = 0.017477, MaxR = 
+Feature 053 	 R = 0.012158, MaxR = 
+Feature 057 	 R = 0.012918, MaxR = 
+Feature 059 	 R = 0.010638, MaxR = 
+Feature 052 	 R = 0.015198, MaxR = 
+Feature 054 	 R = 0.017477, MaxR = 
+Feature 048 	 R = 0.016717, MaxR = 
+Feature 056 	 R = 0.010638, MaxR = 
+Feature 060 	 R = 0.007599, MaxR = 
+Feature 058 	 R = 0.007599, MaxR = 
+Feature 061 	 R = 0.019757, MaxR = 
+Feature 065 	 R = 0.056991, MaxR = 
+Feature 067 	 R = 0.039514, MaxR = 
+Feature 073 	 R = 0.049392, MaxR = 
+Feature 069 	 R = 0.040274, MaxR = 
+Feature 071 	 R = 0.041033, MaxR = 
+Feature 062 	 R = 0.017477, MaxR = 
+Feature 066 	 R = 0.038754, MaxR = 
+Feature 070 	 R = 0.038754, MaxR = 
+Feature 068 	 R = 0.039514, MaxR = 
+Feature 074 	 R = 0.092705, MaxR = 
+Feature 000 	 R = 0.012918, MaxR = 
+Feature 072 	 R = 0.044833, MaxR = 
+Feature 075 	 R = 0.047872, MaxR = 
+Feature 083 	 R = 0.537234, MaxR = 
+Feature 079 	 R = 0.050912, MaxR = 0.537234
+Feature 087 	 R = 0.983283, MaxR = 0.537234
+Feature 050 	 R = 0.016717, MaxR = 0.983283
+Feature 076 	 R = 0.116261, MaxR = 0.983283
+Feature 084 	 R = 0.294833, MaxR = 0.983283
+Feature 080 	 R = 0.101824, MaxR = 0.983283
+Feature 077 	 R = 0.052432, MaxR = 0.983283
+Feature 085 	 R = 0.346505, MaxR = 0.983283
+Feature 081 	 R = 0.272036, MaxR = 0.983283
+Feature 078 	 R = 0.143617, MaxR = 0.983283
+Feature 086 	 R = 0.116261, MaxR = 0.983283
+Feature 082 	 R = 0.054711, MaxR = 0.983283
+	Found 0.9832826747720364741641337386 at index 87. Active features [63,64,45,90,88,89,87]
+Feature 002 	 R = 0.009878, MaxR = 
+Feature 007 	 R = 0.011398, MaxR = 
+Feature 005 	 R = 0.011398, MaxR = 
+Feature 003 	 R = 0.012918, MaxR = 
+Feature 001 	 R = 0.015957, MaxR = 
+Feature 006 	 R = 0.010638, MaxR = 
+Feature 004 	 R = 0.009878, MaxR = 
+Feature 009 	 R = 0.012918, MaxR = 
+Feature 008 	 R = 0.009878, MaxR = 
+Feature 010 	 R = 0.009878, MaxR = 
+Feature 011 	 R = 0.012158, MaxR = 
+Feature 012 	 R = 0.009878, MaxR = 
+Feature 013 	 R = 0.010638, MaxR = 
+Feature 015 	 R = 0.009878, MaxR = 
+Feature 017 	 R = 0.009119, MaxR = 
+Feature 016 	 R = 0.016717, MaxR = 
+Feature 014 	 R = 0.011398, MaxR = 
+Feature 018 	 R = 0.010638, MaxR = 
+Feature 019 	 R = 0.010638, MaxR = 
+Feature 022 	 R = 0.014438, MaxR = 
+Feature 021 	 R = 0.012158, MaxR = 
+Feature 020 	 R = 0.013678, MaxR = 
+Feature 026 	 R = 0.011398, MaxR = 
+Feature 023 	 R = 0.011398, MaxR = 
+Feature 027 	 R = 0.012918, MaxR = 
+Feature 024 	 R = 0.009119, MaxR = 
+Feature 025 	 R = 0.009878, MaxR = 
+Feature 028 	 R = 0.012918, MaxR = 
+Feature 030 	 R = 0.011398, MaxR = 
+Feature 032 	 R = 0.017477, MaxR = 
+Feature 034 	 R = 0.010638, MaxR = 
+Feature 036 	 R = 0.010638, MaxR = 
+Feature 038 	 R = 0.009878, MaxR = 
+Feature 044 	 R = 0.014438, MaxR = 
+Feature 040 	 R = 0.011398, MaxR = 
+Feature 042 	 R = 0.009119, MaxR = 
+Feature 029 	 R = 0.010638, MaxR = 
+Feature 037 	 R = 0.010638, MaxR = 
+Feature 039 	 R = 0.009878, MaxR = 
+Feature 046 	 R = 0.018997, MaxR = 
+Feature 041 	 R = 0.009878, MaxR = 
+Feature 043 	 R = 0.010638, MaxR = 
+Feature 047 	 R = 0.017477, MaxR = 
+Feature 055 	 R = 0.015957, MaxR = 
+Feature 057 	 R = 0.012158, MaxR = 
+Feature 053 	 R = 0.012158, MaxR = 
+Feature 049 	 R = 0.018237, MaxR = 
+Feature 051 	 R = 0.014438, MaxR = 
+Feature 048 	 R = 0.016717, MaxR = 
+Feature 056 	 R = 0.011398, MaxR = 
+Feature 058 	 R = 0.009119, MaxR = 
+Feature 050 	 R = 0.016717, MaxR = 
+Feature 052 	 R = 0.015198, MaxR = 
+Feature 054 	 R = 0.017477, MaxR = 
+Feature 059 	 R = 0.011398, MaxR = 
+Feature 065 	 R = 0.056991, MaxR = 
+Feature 061 	 R = 0.018997, MaxR = 
+Feature 067 	 R = 0.037994, MaxR = 
+Feature 069 	 R = 0.037994, MaxR = 
+Feature 071 	 R = 0.038754, MaxR = 
+Feature 060 	 R = 0.007599, MaxR = 
+Feature 066 	 R = 0.040274, MaxR = 
+Feature 062 	 R = 0.019757, MaxR = 
+Feature 000 	 R = 0.012918, MaxR = 
+Feature 068 	 R = 0.037234, MaxR = 
+Feature 070 	 R = 0.037994, MaxR = 
+Feature 072 	 R = 0.042553, MaxR = 
+Feature 073 	 R = 0.047112, MaxR = 
+Feature 085 	 R = 0.197568, MaxR = 
+Feature 033 	 R = 0.012158, MaxR = 
+Feature 035 	 R = 0.009119, MaxR = 
+Feature 077 	 R = 0.053191, MaxR = 
+Feature 081 	 R = 0.238602, MaxR = 
+Feature 031 	 R = 0.009878, MaxR = 
+Feature 086 	 R = 0.082067, MaxR = 
+Feature 074 	 R = 0.088146, MaxR = 
+Feature 078 	 R = 0.130699, MaxR = 
+Feature 082 	 R = 0.053191, MaxR = 
+Feature 075 	 R = 0.047872, MaxR = 
+Feature 079 	 R = 0.051672, MaxR = 
+Feature 083 	 R = 0.253799, MaxR = 
+Feature 076 	 R = 0.101824, MaxR = 
+Feature 080 	 R = 0.082067, MaxR = 
+Feature 084 	 R = 0.171733, MaxR = 
+Features:
+	63. Feature{"Ft of Rs 63" is_continuous=True}
+	64. Feature{"Ft of Rs 64" is_continuous=True}
+	45. Feature{"Ft of Rs 45" is_continuous=True}
+	90. Feature{"Ft of Rs 90" is_continuous=True}
+	88. Feature{"Ft of Rs 88" is_continuous=True}
+	89. Feature{"Ft of Rs 89" is_continuous=True}
+	87. Feature{"Ft of Rs 87" is_continuous=True}
+=====Ended FindAllFeaturesByPhi at 4/19/2021 6:22:13 PM

@@ -75,7 +75,6 @@ namespace thrombin.Methods
                 }
 
                 queue.Add(result);
-                System.Console.WriteLine($"Found for features [{string.Join(", ", ft)}]");
             });
             queue.CompleteAdding();
             var max = 0;

@@ -1,0 +1,9 @@
+===== FindStandartObjects Started at 4/19/2021 6:22:15 PM
+{ ObjectIndex = 308, Radius = 0.066058322487741 }
+{ ObjectIndex = 584, Radius = 0.0686661101100827 }
+{ ObjectIndex = 508, Radius = 0.0800644979288151 }
+{ ObjectIndex = 495, Radius = 0.108528542080056 }
+{ ObjectIndex = 413, Radius = 0.084041460003191 }
+{ ObjectIndex = 908, Radius = 2.57272285192743 }
+{ ObjectIndex = 96, Radius = 0.0208319748669761 }
+===== FindStandartObjects Ended at 4/19/2021 6:25:34 PM
