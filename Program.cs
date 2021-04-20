@@ -12,9 +12,10 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
+            OldMethod();
             // FindingRSSet(1000);
             // RS1000FindByRelativeCount();
-            RS1000FindByDominance();
+            // RS1000FindByDominance();
         }
 
         private static void RS1000FindByDominance()
@@ -141,7 +142,7 @@ namespace thrombin
             }
         }
 
-        private void OldMethod()
+        private static void OldMethod()
         {
             var uniqueFeatureIndexList = new List<int>();
 
@@ -199,12 +200,20 @@ namespace thrombin
             {
                 while (!testFile.EndOfStream)
                 {
-                    var line = testFile.ReadLine().Substring(2);
+                    var line = testFile.ReadLine();
                     var data = new decimal[uniqueFeatureIndexList.Count];
-                    int i = 0;
-                    foreach (var ft in uniqueFeatureIndexList)
+                    for (int i = 0; i < uniqueFeatureIndexList.Count; i++)
                     {
-                        data[i++] = (line[(ft - 1) * 2] == '0') ? 0 : 1;
+                        var ft = uniqueFeatureIndexList[i];
+                        if (line[ft * 2] == '0')
+                            data[i] = 0;
+                        else if (line[ft * 2] == '1')
+                            data[i] = 1;
+                        else
+                        {
+                            System.Console.WriteLine("Cannot read normally test objects.");
+                            return;
+                        }
                     }
                     testObjects.Add(new Models.ObjectInfo()
                     {
@@ -228,9 +237,19 @@ namespace thrombin
             System.Console.WriteLine($"Unique features count is {uniqueFeatureWeights.Count}");
 
             var standartObjects = new List<Models.ObjectInfo>();
-            var standartObjectIndexes = new int[] { 96, 308, 413, 495, 584, 908 };
+            var standartObjectIndexes = new int[] { 96, 308, 413, 495, 508, 584, 908 };
 
             var informativeFeatures = new int[] { 45, 63, 64, 90 };
+
+            var radius = new Dictionary<int, decimal>{
+                {308, 0.066058322487741M}
+                ,{584, 0.0686661101100827M}
+                ,{508, 0.0800644979288151M}
+                ,{495, 0.108528542080056M}
+                ,{413, 0.084041460003191M}
+                ,{908, 2.57272285192743M}
+                ,{96, 0.0208319748669761M}
+            };
 
             // var informativeFeatures = new int[909];
             // for (int i = 1; i <= 909; i++)
@@ -256,6 +275,7 @@ namespace thrombin
                     }
                     standartObjects.Add(new Models.ObjectInfo()
                     {
+                        Index = objectIndex,
                         ClassValue = (line[0] == '1' ? 1 : 2),
                         Data = data
                     });
@@ -315,7 +335,7 @@ namespace thrombin
                     foreach (var ft in informativeFeatures)
                     {
                         var rs = Methods.GeneralizedAssessment.FindNonContiniousFeature(uniqueSet.Objects[objInd], informativeFeaturesWeights[ft]);
-                        resultFile.Write($"{rs:0.00000}\t");
+                        resultFile.Write($"{rs:0.000000}\t");
                     }
                     resultFile.WriteLine();
                 }
@@ -326,13 +346,13 @@ namespace thrombin
                 }
             }
 
-            using (var resultFile = new StreamWriter($"Result file {DateTime.Now: ddMMyyyy HH mm ss}"))
+            using (var resultFile = new StreamWriter($"Result file {DateTime.Now: yyyyMMdd HHmmss}"))
                 foreach (var testObject in testObjects)
                 {
                     var testRs = new Models.ObjectInfo();
                     testRs.Data = new decimal[informativeFeatures.Length];
                     int ind = 0;
-                    foreach (var ft in informativeFeatures)
+                    foreach (var ft in informativeFeatures.OrderBy(o => o))
                     {
                         testRs[ind++] = Methods.GeneralizedAssessment.FindNonContiniousFeature(testObject, informativeFeaturesWeights[ft]);
                     }
@@ -340,18 +360,15 @@ namespace thrombin
                     int? classValue = null;
                     foreach (var standartObject in standartObjects)
                     {
-                        var dist = new Metrics.Euclidean().Calculate(testRs, standartObject, featureRs, activeFeatures);
-                        if (minDist == null || minDist >= dist)
+                        var dist = new Metrics.Euclidean().Calculate(testRs, standartObject, featureRs, activeFeatures) / radius[standartObject.Index];
+                        if (minDist == null || minDist > dist)
                         {
-                            if (minDist == null || minDist > dist)
-                            {
-                                classValue = standartObject.ClassValue;
-                            }
-                            else if (classValue.HasValue && classValue != standartObject.ClassValue)
-                            {
-                                classValue = null;
-                            }
+                            classValue = standartObject.ClassValue;
                             minDist = dist;
+                        }
+                        else if (minDist == dist && classValue != standartObject.ClassValue)
+                        {
+                            classValue = null;
                         }
                     }
                     if (classValue != null)
