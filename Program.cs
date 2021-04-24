@@ -12,10 +12,60 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            OldMethod();
+            // OldMethod();
             // FindingRSSet(1000);
             // RS1000FindByRelativeCount();
             // RS1000FindByDominance();
+            ManualFirstPair();
+        }
+
+        private static void ManualFirstPair()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - ManualFirstPair");
+
+            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "ManualFirstPair");
+
+            // Finding all features weights
+            var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+            Parallel.For(0, trainSet.Features.Length, i =>
+            {
+                trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(trainSet.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    FeatureValue = s[i],
+                    ObjectIndex = s.Index
+                }), trainSet.ClassValue);
+            });
+
+
+            var firstPair = new List<int>() { 8489, 12914 };
+            var features = Methods.FindAllFeaturesByPhi.Find(trainSet, distFunc, logger, firstPair, trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToHashSet());
+
+            var excludedObjects = new HashSet<int>();
+
+            var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            // var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
+            // excludedObjects.UnionWith(noisyObjects);
+            distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
+            var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
+            // logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
+            logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
+            // logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
+            logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
+
+            foreach (var st in standartObject)
+            {
+                logger.WriteLine("Result", $"{{{st}, {distances.Radiuses[st]}M}}");
+            }
+
+            logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
+
         }
 
         private static void RS1000FindByDominance()

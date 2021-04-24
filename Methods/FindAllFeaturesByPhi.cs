@@ -21,15 +21,18 @@ namespace thrombin.Methods
             public List<int> ActiveFeatures { get; internal set; }
         }
 
-        public static List<int> Find(ObjectSet set, MetricCalculateFunctionDelegate distFunc, Logger log, List<int> activeFeatures)
+        public static List<int> Find(ObjectSet set, MetricCalculateFunctionDelegate distFunc, Logger log, List<int> activeFeatures, HashSet<int> candidateFeatures = null)
         {
             log.WriteLine("FindAllFeaturesByPhi", $"=====Started FindAllFeaturesByPhi at {DateTime.Now}", true);
-            var candidateFeatures = new HashSet<int>();
-            for (int i = 0; i < set.Features.Length; i++)
+            if (candidateFeatures == null || candidateFeatures.Count == 0)
             {
-                if (activeFeatures.Contains(i)) continue;
+                candidateFeatures = new HashSet<int>();
+                for (int i = 0; i < set.Features.Length; i++)
+                {
+                    if (activeFeatures.Contains(i)) continue;
 
-                candidateFeatures.Add(i);
+                    candidateFeatures.Add(i);
+                }
             }
 
             var prevPhi = new FeaturePhi()
@@ -59,7 +62,7 @@ namespace thrombin.Methods
                 foreach (var item in rList)
                 {
                     item.R = item.PhiList.Count(w => w.Value.Value >= prevPhi.PhiList[w.Key].Value) / (decimal)set.Objects.Length;
-                    log.WriteLine("FindAllFeaturesByPhi", $"Feature {item.FeatureIndex:000} \t R = {item.R:0.000000}, MaxR = {maxPhi?.R:0.000000}");
+                    // log.WriteLine("FindAllFeaturesByPhi", $"Feature {item.FeatureIndex:000} \t R = {item.R:0.000000}, MaxR = {maxPhi?.R:0.000000}");
                     if (item.R > 0.5M && (maxPhi == null || maxPhi.R < item.R))
                     {
                         maxPhi = item;
