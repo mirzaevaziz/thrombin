@@ -16,7 +16,117 @@ namespace thrombin
             // FindingRSSet(1000);
             // RS1000FindByRelativeCount();
             // RS1000FindByDominance();
-            ManualFirstPair();
+            // ManualFirstPair();
+            TestManualFirstPair();
+        }
+
+        private static void TestManualFirstPair()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - TestManualFirstPair");
+
+            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "TestManualFirstPair");
+
+            var uniqueFeatureIndexList = new List<int>();
+            using (var file = new StreamReader(Path.Combine("Data", "Train", "thrombin_unique_features_indexes.data")))
+            {
+                while (!file.EndOfStream)
+                {
+                    uniqueFeatureIndexList.Add(Convert.ToInt32(file.ReadLine()));
+                }
+            }          
+
+            var activeFeatures = new int[] { 2408, 2638, 8041, 8392, 8402, 8404, 8459, 8489, 8596, 8597, 8612, 8747, 8752, 12799, 12914, 13288, 15076, 15824, 17422, 18829, 18912, 19325, 19401, 19777, 19975, 20838, 20943, 21084, 21301, 21321, 21551, 24500, 24556, 24573, 24582, 24638, 24666, 24760, 24774, 24816, 24877, 24880, 24887, 24891, 41452, 44027, 48444, 57866, 62207, 63089, 63183, 63268, 64226, 65075, 65195, 66112, 66127, 66313 };
+            var standartObjects = new int[] { 83, 106, 308, 349, 357, 406, 414, 508, 519, 570, 607, 662, 668, 696, 712, 735, 740, 882, 911, 938, 947, 1061, 1097, 1098, 1099, 1238, 1242, 1275, 1296 };
+            var standartObjectsRadius = new Dictionary<int, decimal>{
+                    {1275, 2M}
+                    ,{83, 4M}
+                    ,{508, 8M}
+                    ,{668, 9M}
+                    ,{712, 12M}
+                    ,{740, 12M}
+                    ,{570, 13M}
+                    ,{1098, 15M}
+                    ,{607, 16M}
+                    ,{947, 3M}
+                    ,{519, 6M}
+                    ,{911, 27M}
+                    ,{1061, 34M}
+                    ,{106, 7M}
+                    ,{1097, 8M}
+                    ,{662, 2M}
+                    ,{1099, 4M}
+                    ,{882, 1M}
+                    ,{696, 1M}
+                    ,{938, 8M}
+                    ,{735, 4M}
+                    ,{308, 14M}
+                    ,{349, 1M}
+                    ,{357, 1M}
+                    ,{1238, 9M}
+                    ,{406, 5M}
+                    ,{414, 8M}
+                    ,{1242, 9M}
+                    ,{1296, 1M}
+            };
+
+            var testObjects = new List<Models.ObjectInfo>();
+            using (var testFile = new StreamReader(Path.Combine("Data", "Test", "Thrombin.testset")))
+            {
+                while (!testFile.EndOfStream)
+                {
+                    var line = testFile.ReadLine();
+                    var data = new decimal[uniqueFeatureIndexList.Count];
+                    for (int i = 0; i < uniqueFeatureIndexList.Count; i++)
+                    {
+                        var ft = uniqueFeatureIndexList[i];
+                        if (line[ft * 2] == '0')
+                            data[i] = 0;
+                        else if (line[ft * 2] == '1')
+                            data[i] = 1;
+                        else
+                        {
+                            System.Console.WriteLine("Cannot read normally test objects.");
+                            return;
+                        }
+                    }
+                    testObjects.Add(new Models.ObjectInfo()
+                    {
+                        Data = data
+                    });
+                }
+            }
+            System.Console.WriteLine($"Test objects count is {testObjects.Count}");
+
+            using (var resultFile = new StreamWriter($"Result file {DateTime.Now: yyyyMMdd HHmmss}"))
+                foreach (var testObject in testObjects)
+                {
+                    decimal? minDist = null;
+                    int? classValue = null;
+                    foreach (var standartObject in standartObjects)
+                    {
+                        var dist = distFunc(testObject, trainSet.Objects[standartObject], trainSet.Features, activeFeatures) / standartObjectsRadius[standartObject];
+                        if (minDist == null || minDist > dist)
+                        {
+                            classValue = trainSet.Objects[standartObject].ClassValue;
+                            minDist = dist;
+                        }
+                        else if (minDist == dist && classValue != trainSet.Objects[standartObject].ClassValue)
+                        {
+                            classValue = null;
+                        }
+                    }
+                    if (classValue != null)
+                    {
+                        resultFile.WriteLine(classValue == 1 ? "A" : "I");
+                    }
+                    else
+                    {
+                        resultFile.WriteLine("N/A");
+                    }
+                }
         }
 
         private static void ManualFirstPair()
