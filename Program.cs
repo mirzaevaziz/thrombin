@@ -17,7 +17,127 @@ namespace thrombin
             // RS1000FindByRelativeCount();
             // RS1000FindByDominance();
             // ManualFirstPair();
-            TestManualFirstPair();
+            // TestManualFirstPair();
+            // Method2D();
+            Method2DByRS();
+        }
+
+        private static void Method2DByRS()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
+
+            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method2DByRS");
+
+            // Finding all features weights
+            var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+            Parallel.For(0, trainSet.Features.Length, i =>
+            {
+                trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(trainSet.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    FeatureValue = s[i],
+                    ObjectIndex = s.Index
+                }), trainSet.ClassValue);
+            });
+
+            var orderedFeatures = trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToList();
+
+            var firstPair = new List<int>() { orderedFeatures[0] };
+            var features1 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            logger.WriteLine("01. First set of features.txt", string.Join(", ", features1));
+
+            orderedFeatures = orderedFeatures.Except(features1).ToList();
+            firstPair = new List<int>() { orderedFeatures[0] };
+            var features2 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+
+            logger.WriteLine("02. Second set of features.txt", string.Join(", ", features2));
+
+            orderedFeatures = orderedFeatures.Except(features2).ToList();
+            firstPair = new List<int>() { orderedFeatures[0] };
+            var features3 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+
+            logger.WriteLine("03. Second set of features.txt", string.Join(", ", features3));
+
+            // var excludedObjects = new HashSet<int>();
+
+            // var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            // var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            // // var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
+            // // excludedObjects.UnionWith(noisyObjects);
+            // distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            // spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            // var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
+            // var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
+            // // logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
+            // logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
+            // // logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
+            // logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
+
+            // foreach (var st in standartObject)
+            // {
+            //     logger.WriteLine("Result", $"{{{st}, {distances.Radiuses[st]}M}}");
+            // }
+
+            // logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
+        }
+
+        private static void Method2D()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2D");
+
+            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method2D");
+
+            // Finding all features weights
+            var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+            Parallel.For(0, trainSet.Features.Length, i =>
+            {
+                trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(trainSet.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    FeatureValue = s[i],
+                    ObjectIndex = s.Index
+                }), trainSet.ClassValue);
+            });
+
+            var orderedFeatures = trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToList();
+
+            var firstPair = new List<int>() { orderedFeatures[0] };
+            var features1 = Methods.FindAllFeaturesByPhi.Find(trainSet, distFunc, logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            logger.WriteLine("01. First set of features.txt", string.Join(", ", features1));
+
+            orderedFeatures = orderedFeatures.Except(features1).ToList();
+            firstPair = new List<int>() { orderedFeatures[0] };
+            var features2 = Methods.FindAllFeaturesByPhi.Find(trainSet, distFunc, logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+
+            logger.WriteLine("02. Second set of features.txt", string.Join(", ", features2));
+
+            // var excludedObjects = new HashSet<int>();
+
+            // var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            // var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            // // var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
+            // // excludedObjects.UnionWith(noisyObjects);
+            // distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            // spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            // var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
+            // var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
+            // // logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
+            // logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
+            // // logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
+            // logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
+
+            // foreach (var st in standartObject)
+            // {
+            //     logger.WriteLine("Result", $"{{{st}, {distances.Radiuses[st]}M}}");
+            // }
+
+            // logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
         }
 
         private static void TestManualFirstPair()
@@ -36,7 +156,7 @@ namespace thrombin
                 {
                     uniqueFeatureIndexList.Add(Convert.ToInt32(file.ReadLine()));
                 }
-            }          
+            }
 
             var activeFeatures = new int[] { 2408, 2638, 8041, 8392, 8402, 8404, 8459, 8489, 8596, 8597, 8612, 8747, 8752, 12799, 12914, 13288, 15076, 15824, 17422, 18829, 18912, 19325, 19401, 19777, 19975, 20838, 20943, 21084, 21301, 21321, 21551, 24500, 24556, 24573, 24582, 24638, 24666, 24760, 24774, 24816, 24877, 24880, 24887, 24891, 41452, 44027, 48444, 57866, 62207, 63089, 63183, 63268, 64226, 65075, 65195, 66112, 66127, 66313 };
             var standartObjects = new int[] { 83, 106, 308, 349, 357, 406, 414, 508, 519, 570, 607, 662, 668, 696, 712, 735, 740, 882, 911, 938, 947, 1061, 1097, 1098, 1099, 1238, 1242, 1275, 1296 };
@@ -209,7 +329,6 @@ namespace thrombin
             logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
 
         }
-
 
         private static void RS1000FindByRelativeCount()
         {
