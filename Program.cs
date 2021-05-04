@@ -46,44 +46,47 @@ namespace thrombin
             var orderedFeatures = trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToList();
 
             var firstPair = new List<int>() { orderedFeatures[0] };
-            var features1 = new int[] { 8489, 12832, 57897, 10483, 21211, 19596, 57860, 64276, 20150, 65195, 57608, 88858, 20265, 52110, 23039, 2638, 20036, 12836, 20028, 17613, 65075, 57594, 21084, 20262, 19613, 64226, 58236, 22436, 88898, 8747, 57639, 15824, 2408, 60381, 13288, 19975, 63089, 19405, 10299, 20635, 27477, 20142, 8465, 19173, 63828, 39192, 21025, 48105, 19751, 9117, 11125, 19777, 42389, 20972, 18517, 64271, 60539, 63471, 57863, 20872, 20133, 66127, 9439, 19414, 18912, 20205, 13016, 21321, 19416, 23075, 2428, 65625, 19401, 8641, 74233, 13284, 66000, 24666, 17422, 8363, 19089, 12864, 57681, 21414, 68086, 24887 };
-            //Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            // var features1 = new int[] { 8489, 12832, 57897, 10483, 21211, 19596, 57860, 64276, 20150, 65195, 57608, 88858, 20265, 52110, 23039, 2638, 20036, 12836, 20028, 17613, 65075, 57594, 21084, 20262, 19613, 64226, 58236, 22436, 88898, 8747, 57639, 15824, 2408, 60381, 13288, 19975, 63089, 19405, 10299, 20635, 27477, 20142, 8465, 19173, 63828, 39192, 21025, 48105, 19751, 9117, 11125, 19777, 42389, 20972, 18517, 64271, 60539, 63471, 57863, 20872, 20133, 66127, 9439, 19414, 18912, 20205, 13016, 21321, 19416, 23075, 2428, 65625, 19401, 8641, 74233, 13284, 66000, 24666, 17422, 8363, 19089, 12864, 57681, 21414, 68086, 24887 };
+            var features1 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
             logger.WriteLine("01. First set of features.txt", string.Join(", ", features1));
-            var crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features1).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter{
+            var crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features1).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+            {
                 ClassValue = trainSet.Objects[s.Key].ClassValue.Value,
                 Distance = s.Value,
                 ObjectIndex = s.Key
             }), trainSet.ClassValue);
 
-            logger.WriteLine("01. First set of features.txt", $"Feature count is {features1.Length}\nCriterion1 result is {crit1Result}");
+            logger.WriteLine("01. First set of features.txt", $"Feature count is {features1.Count()}\nCriterion1 result is {crit1Result}");
 
             orderedFeatures = orderedFeatures.Except(features1).ToList();
             firstPair = new List<int>() { orderedFeatures[0] };
-            var features2 = new int[] { 12914, 8519, 26772, 26934, 16007, 20143, 57696, 2592, 19614, 22562, 39181, 16057, 2839, 22564, 19599, 21368, 22391, 52093, 20983, 20146, 57935, 19770, 64143, 42443, 8600, 65193, 73837, 25679, 12515, 17511, 20245, 16246, 22612, 57951, 27422, 66119, 18088, 20282, 2384, 24753, 13440, 52114, 17735, 20243, 16760, 21301, 24880, 65057, 57612, 8041, 22294, 22366, 20930, 22624, 52191, 19459, 48980, 20856, 9002, 22680, 57972, 15821, 64100, 60363, 16422, 20033, 7970, 57697, 5712, 21262, 67458, 12799, 12395, 66112, 44370, 8262, 22665, 19385, 64731, 64398, 57939, 758, 58028, 8752, 65263, 2194, 20020, 8612, 66084, 85895, 17582, 18392, 19325, 19028, 12720, 18934, 9204, 16580, 20135, 27617, 57866, 17579, 8772, 22744, 41452, 21068, 19571, 24556, 13236, 19402, 11128, 17682, 22434, 24821, 41700, 18944, 24943, 65042, 8278, 21433, 20838, 57691, 13080, 64195, 42432, 19468, 13448, 57642, 64761, 19540, 9291, 57766, 20238, 8629 };
-            //Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            // var features2 = new int[] { 12914, 8519, 26772, 26934, 16007, 20143, 57696, 2592, 19614, 22562, 39181, 16057, 2839, 22564, 19599, 21368, 22391, 52093, 20983, 20146, 57935, 19770, 64143, 42443, 8600, 65193, 73837, 25679, 12515, 17511, 20245, 16246, 22612, 57951, 27422, 66119, 18088, 20282, 2384, 24753, 13440, 52114, 17735, 20243, 16760, 21301, 24880, 65057, 57612, 8041, 22294, 22366, 20930, 22624, 52191, 19459, 48980, 20856, 9002, 22680, 57972, 15821, 64100, 60363, 16422, 20033, 7970, 57697, 5712, 21262, 67458, 12799, 12395, 66112, 44370, 8262, 22665, 19385, 64731, 64398, 57939, 758, 58028, 8752, 65263, 2194, 20020, 8612, 66084, 85895, 17582, 18392, 19325, 19028, 12720, 18934, 9204, 16580, 20135, 27617, 57866, 17579, 8772, 22744, 41452, 21068, 19571, 24556, 13236, 19402, 11128, 17682, 22434, 24821, 41700, 18944, 24943, 65042, 8278, 21433, 20838, 57691, 13080, 64195, 42432, 19468, 13448, 57642, 64761, 19540, 9291, 57766, 20238, 8629 };
+            var features2 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
 
             logger.WriteLine("02. Second set of features.txt", string.Join(", ", features2));
-            crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features2).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter{
+            crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features2).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+            {
                 ClassValue = trainSet.Objects[s.Key].ClassValue.Value,
                 Distance = s.Value,
                 ObjectIndex = s.Key
             }), trainSet.ClassValue);
 
-            logger.WriteLine("02. Second set of features.txt", $"Feature count is {features2.Length}\nCriterion1 result is {crit1Result}");
+            logger.WriteLine("02. Second set of features.txt", $"Feature count is {features2.Count()}\nCriterion1 result is {crit1Result}");
 
             orderedFeatures = orderedFeatures.Except(features2).ToList();
             firstPair = new List<int>() { orderedFeatures[0] };
-            var features3 = new int[] { 26745, 8597, 26716, 12876, 12540, 67367, 57725, 12676, 9147, 19101, 8392, 39393, 8611, 8461, 13794, 10546, 8303, 57599, 22678, 13303, 18877, 12712, 24767, 58744, 19517, 24891, 50215, 52124, 19610, 39475, 25909, 66116, 44492, 19766, 60217, 805, 22674, 39546, 21551, 57679, 8440, 25923, 44268, 20836, 19343, 65726, 16241, 19398, 19453, 24717, 19521, 57623, 64377, 13307, 58615, 48257, 20029, 13745, 19673, 2634, 64369, 22457, 8989, 17704, 8459, 21412, 13346, 64201, 24872, 21411, 58627, 63268, 64372, 18092, 19087, 24774, 86259, 25653, 12834, 19690, 58152, 23555, 24602, 66313, 23582, 24816, 62207, 41622, 67986, 2664, 18119, 8404, 18705, 24857, 52090, 42441, 82974, 10100, 20978, 19103, 12568, 67216, 9373, 13268, 52047, 8607, 64355, 18106, 12468, 57844, 67473, 22572, 27273, 2833, 22308, 63183, 11342, 12545, 19018, 64352, 20815, 58125, 2586, 19098, 20888, 57847, 14033, 18154, 50320, 20745, 19707, 18269, 19616, 8575, 20993, 26862 };
-            // Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            // var features3 = new int[] { 26745, 8597, 26716, 12876, 12540, 67367, 57725, 12676, 9147, 19101, 8392, 39393, 8611, 8461, 13794, 10546, 8303, 57599, 22678, 13303, 18877, 12712, 24767, 58744, 19517, 24891, 50215, 52124, 19610, 39475, 25909, 66116, 44492, 19766, 60217, 805, 22674, 39546, 21551, 57679, 8440, 25923, 44268, 20836, 19343, 65726, 16241, 19398, 19453, 24717, 19521, 57623, 64377, 13307, 58615, 48257, 20029, 13745, 19673, 2634, 64369, 22457, 8989, 17704, 8459, 21412, 13346, 64201, 24872, 21411, 58627, 63268, 64372, 18092, 19087, 24774, 86259, 25653, 12834, 19690, 58152, 23555, 24602, 66313, 23582, 24816, 62207, 41622, 67986, 2664, 18119, 8404, 18705, 24857, 52090, 42441, 82974, 10100, 20978, 19103, 12568, 67216, 9373, 13268, 52047, 8607, 64355, 18106, 12468, 57844, 67473, 22572, 27273, 2833, 22308, 63183, 11342, 12545, 19018, 64352, 20815, 58125, 2586, 19098, 20888, 57847, 14033, 18154, 50320, 20745, 19707, 18269, 19616, 8575, 20993, 26862 };
+            var features3 = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
 
             logger.WriteLine("03. Third set of features.txt", string.Join(", ", features3));
-            crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features3).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter{
+            crit1Result = Criterions.FirstCriterion.Find(Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(s => s.Key, s => s.Value), features3).Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+            {
                 ClassValue = trainSet.Objects[s.Key].ClassValue.Value,
                 Distance = s.Value,
                 ObjectIndex = s.Key
             }), trainSet.ClassValue);
 
-            logger.WriteLine("03. Third set of features.txt", $"Feature count is {features3.Length}\nCriterion1 result is {crit1Result}");
+            logger.WriteLine("03. Third set of features.txt", $"Feature count is {features3.Count()}\nCriterion1 result is {crit1Result}");
 
             // var excludedObjects = new HashSet<int>();
 
