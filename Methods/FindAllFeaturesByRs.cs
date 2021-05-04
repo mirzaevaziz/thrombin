@@ -38,11 +38,10 @@ namespace thrombin.Methods
             var prevPhi = new FindAllFeaturesByRsResult()
             {
                 FeatureIndex = -1,
-                R = -1,
+                R = 1,
                 RSList = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, weights, activeFeatures)
             };
 
-            FindAllFeaturesByRsResult minR = null;
             do
             {
                 var rList = new BlockingCollection<FindAllFeaturesByRsResult>();
@@ -59,6 +58,7 @@ namespace thrombin.Methods
                     rList.Add(result);
                 });
                 rList.CompleteAdding();
+                FindAllFeaturesByRsResult minR = null;
                 foreach (var item in rList)
                 {
                     int k = 0, ck = 1;
@@ -93,7 +93,7 @@ namespace thrombin.Methods
                     }
                 }
 
-                if (minR == null || activeFeatures.Contains(minR.FeatureIndex))
+                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || Math.Abs(prevPhi.R - minR.R) < 0.0001M)
                     break;
                 prevPhi = minR;
                 candidateFeatures.Remove(minR.FeatureIndex);
