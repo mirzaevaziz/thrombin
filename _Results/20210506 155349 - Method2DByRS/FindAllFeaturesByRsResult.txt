@@ -1,0 +1,100 @@
+=====Started FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM
+	Found 0.6106397352532756192233852354 at index 47. Active features [13,47]
+	Found 0.5586581143013333968695551783 at index 39. Active features [13,47,39]
+	Found 0.5290825892010688911308344457 at index 1. Active features [13,47,39,1]
+	Found 0.4995901108823031246649883344 at index 41. Active features [13,47,39,1,41]
+	Found 0.4806648215954169076614526296 at index 44. Active features [13,47,39,1,41,44]
+	Found 0.4732111383576630361968830956 at index 21. Active features [13,47,39,1,41,44,21]
+	Found 0.4663636788721107922012889511 at index 43. Active features [13,47,39,1,41,44,21,43]
+	Found 0.4615067288945059793828351225 at index 2. Active features [13,47,39,1,41,44,21,43,2]
+	Found 0.4418444043928746064645389995 at index 14. Active features [13,47,39,1,41,44,21,43,2,14]
+	Found 0.4282062261819723868592058804 at index 38. Active features [13,47,39,1,41,44,21,43,2,14,38]
+	Found 0.4193075931934335461554266718 at index 17. Active features [13,47,39,1,41,44,21,43,2,14,38,17]
+	Found 0.4133731231178241819588658045 at index 32. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32]
+	Found 0.4075356995311928651907941219 at index 7. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7]
+	Found 0.3991849269067962439891227835 at index 45. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45]
+	Found 0.3961752350405517917875675001 at index 16. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16]
+	Found 0.3915691852163925446206574232 at index 0. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0]
+	Found 0.3889931555954453448591794611 at index 33. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33]
+	Found 0.3871208517407050376305887563 at index 23. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23]
+	Found 0.3860716712975001211193770548 at index 36. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36]
+	Found 0.3849032036907201013448402675 at index 8. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8]
+	Found 0.3826837894999395801590545496 at index 24. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24]
+	Found 0.3819307170888062864902952985 at index 5. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5]
+	Found 0.3814328474073458910922037864 at index 20. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20]
+	Found 0.3809302037986000418763631222 at index 25. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25]
+	Found 0.380576517314945590125014567 at index 29. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29]
+	Found 0.3804260778895069423341465215 at index 34. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29,34]
+	Found 0.3802704317776870969149980567 at index 28. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29,34,28]
+	Found 0.3801315771865662226636057598 at index 9. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29,34,28,9]
+	Found 0.3800381912459432076528057726 at index 3. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29,34,28,9,3]
+	Found 0.3800054506576559629848268059 at index 12. Active features [13,47,39,1,41,44,21,43,2,14,38,17,32,7,45,16,0,33,23,36,8,24,5,20,25,29,34,28,9,3,12]
+Features:
+	13. Feature{"Ft 13" is_continuous=False}
+	47. Feature{"Ft 47" is_continuous=False}
+	39. Feature{"Ft 39" is_continuous=False}
+	1. Feature{"Ft 01" is_continuous=False}
+	41. Feature{"Ft 41" is_continuous=False}
+	44. Feature{"Ft 44" is_continuous=False}
+	21. Feature{"Ft 21" is_continuous=False}
+	43. Feature{"Ft 43" is_continuous=False}
+	2. Feature{"Ft 02" is_continuous=False}
+	14. Feature{"Ft 14" is_continuous=False}
+	38. Feature{"Ft 38" is_continuous=False}
+	17. Feature{"Ft 17" is_continuous=False}
+	32. Feature{"Ft 32" is_continuous=False}
+	7. Feature{"Ft 07" is_continuous=False}
+	45. Feature{"Ft 45" is_continuous=False}
+	16. Feature{"Ft 16" is_continuous=False}
+	0. Feature{"Ft 00" is_continuous=False}
+	33. Feature{"Ft 33" is_continuous=False}
+	23. Feature{"Ft 23" is_continuous=False}
+	36. Feature{"Ft 36" is_continuous=False}
+	8. Feature{"Ft 08" is_continuous=False}
+	24. Feature{"Ft 24" is_continuous=False}
+	5. Feature{"Ft 05" is_continuous=False}
+	20. Feature{"Ft 20" is_continuous=False}
+	25. Feature{"Ft 25" is_continuous=False}
+	29. Feature{"Ft 29" is_continuous=False}
+	34. Feature{"Ft 34" is_continuous=False}
+	28. Feature{"Ft 28" is_continuous=False}
+	9. Feature{"Ft 09" is_continuous=False}
+	3. Feature{"Ft 03" is_continuous=False}
+	12. Feature{"Ft 12" is_continuous=False}
+=====Ended FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM
+=====Started FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM
+	Found 0.793608442948310013002195007 at index 31. Active features [35,31]
+	Found 0.7744572366941514665516035522 at index 42. Active features [35,31,42]
+	Found 0.6841660971151151635855517203 at index 15. Active features [35,31,42,15]
+	Found 0.6635589090848173338624152739 at index 46. Active features [35,31,42,15,46]
+	Found 0.6540096152856579933439579511 at index 19. Active features [35,31,42,15,46,19]
+	Found 0.6460378502890343225756954199 at index 22. Active features [35,31,42,15,46,19,22]
+	Found 0.6343305487810339561130696343 at index 11. Active features [35,31,42,15,46,19,22,11]
+	Found 0.6289649674442878067869030493 at index 4. Active features [35,31,42,15,46,19,22,11,4]
+	Found 0.6263473329681551789337626135 at index 10. Active features [35,31,42,15,46,19,22,11,4,10]
+	Found 0.6251577050306793251048478082 at index 40. Active features [35,31,42,15,46,19,22,11,4,10,40]
+	Found 0.6246775258426600393905707137 at index 26. Active features [35,31,42,15,46,19,22,11,4,10,40,26]
+	Found 0.6244662262664477869343408666 at index 18. Active features [35,31,42,15,46,19,22,11,4,10,40,26,18]
+Features:
+	35. Feature{"Ft 35" is_continuous=False}
+	31. Feature{"Ft 31" is_continuous=False}
+	42. Feature{"Ft 42" is_continuous=False}
+	15. Feature{"Ft 15" is_continuous=False}
+	46. Feature{"Ft 46" is_continuous=False}
+	19. Feature{"Ft 19" is_continuous=False}
+	22. Feature{"Ft 22" is_continuous=False}
+	11. Feature{"Ft 11" is_continuous=False}
+	4. Feature{"Ft 04" is_continuous=False}
+	10. Feature{"Ft 10" is_continuous=False}
+	40. Feature{"Ft 40" is_continuous=False}
+	26. Feature{"Ft 26" is_continuous=False}
+	18. Feature{"Ft 18" is_continuous=False}
+=====Ended FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM
+=====Started FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM
+	Found 0.9048972235893346729716916719 at index 27. Active features [37,27]
+	Found 0.9035277382471732556136666873 at index 6. Active features [37,27,6]
+Features:
+	37. Feature{"Ft 37" is_continuous=False}
+	27. Feature{"Ft 27" is_continuous=False}
+	6. Feature{"Ft 06" is_continuous=False}
+=====Ended FindAllFeaturesByRsResult at 5/6/2021 3:53:49 PM

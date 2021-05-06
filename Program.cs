@@ -27,6 +27,27 @@ namespace thrombin
             var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
 
             var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            // var data = new Models.ObjectInfo[149];
+            // var ind = 0;
+            // using (var f = new StreamReader(Path.Combine("Data", "Train", "tubnb.dat")))
+            // {
+            //     while (!f.EndOfStream)
+            //     {
+            //         var line = f.ReadLine().Trim();
+            //         System.Console.WriteLine(line);
+
+            //         var d = Array.ConvertAll(line.Split(' ', StringSplitOptions.RemoveEmptyEntries), x => decimal.Parse(x, CultureInfo.InvariantCulture));
+            //         data[ind] = new Models.ObjectInfo
+            //         {
+            //             Data = d.Take(d.Length - 1).ToArray(),
+            //             ClassValue = (int)d[d.Length - 1],
+            //             Index = ind++,
+            //         };
+            //         System.Console.WriteLine($"{d.Length}\n{string.Join(" ", d.Take(d.Length - 1))}\n\n");
+            //     }
+            // }
+            // var trainSet = new Models.ObjectSet("Tuber", data, Enumerable.Range(0, 48).Select(s => new Models.Feature { IsContinuous = false, Name = $"Ft {s:00}" }).ToArray(), 1);
+
             logger.WriteLine("Set info", trainSet.ToString(), true);
 
             // Finding all features weights
@@ -84,31 +105,31 @@ namespace thrombin
 
             var rsSet = new Models.ObjectSet("Method3DByRs set", rsObjects, newFeatures, 1);
             rsSet.ToFileData("new rs set");
-            // var excludedObjects = new HashSet<int>();
+            var excludedObjects = new HashSet<int>();
 
-            // trainSet = rsSet;
-            // var features = Enumerable.Range(0, 3);
+            trainSet = rsSet;
+            var features = Enumerable.Range(0, 3);
 
-            // var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method3DByRS set");
-            // var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
-            // var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
-            // var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
-            // excludedObjects.UnionWith(noisyObjects);
-            // distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
-            // spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
-            // var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
-            // var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
-            // logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
-            // logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
-            // logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
-            // logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method3DByRS set");
+            var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
+            excludedObjects.UnionWith(noisyObjects);
+            distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
+            spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
+            var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
+            logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
+            logger.WriteLine("Result", $"Active features: {string.Join(", ", features.OrderBy(o => o))}");
+            logger.WriteLine("Result", $"Noisy objects ({noisyObjects.Count}): {string.Join(", ", noisyObjects.OrderBy(o => o))}");
+            logger.WriteLine("Result", $"Standart objects ({standartObject.Count}): {string.Join(", ", standartObject.OrderBy(o => o))}");
 
-            // foreach (var st in standartObject)
-            // {
-            //     logger.WriteLine("Result", $"{{{st}, {distances.Radiuses[st]}M}}");
-            // }
+            foreach (var st in standartObject)
+            {
+                logger.WriteLine("Result", $"{{{st}, {distances.Radiuses[st]}M}}");
+            }
 
-            // logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
+            logger.WriteLine("Result", $"Groups ({groups.Count}): {string.Join(Environment.NewLine, groups.Select(s => $"{{{string.Join(", ", s)}}}"))}");
         }
 
         private static void Method2D()
