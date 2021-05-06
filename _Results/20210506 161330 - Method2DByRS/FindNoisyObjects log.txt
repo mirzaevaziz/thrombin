@@ -1,0 +1,31 @@
+Object[49], Relative count = 1, Enemy count = 25, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.2358490566037735849056603774
+Object[62], Relative count = 1, Enemy count = 3, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0697674418604651162790697674
+Object[146], Relative count = 1, Enemy count = 6, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.0566037735849056603773584906Object[83], Relative count = 1, Enemy count = 9, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.2093023255813953488372093023
+Object[37], Relative count = 1, Enemy count = 32, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.301886792452830188679245283
+Object[53], Relative count = 1, Enemy count = 6, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.0566037735849056603773584906
+Object[28], Relative count = 1, Enemy count = 2, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0465116279069767441860465116
+Object[22], Relative count = 1, Enemy count = 1, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0232558139534883720930232558
+Object[107], Relative count = 1, Enemy count = 1, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0232558139534883720930232558
+Object[136], Relative count = 1, Enemy count = 1, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0232558139534883720930232558
+Object[11], Relative count = 1, Enemy count = 4, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.0377358490566037735849056604
+Object[116], Relative count = 1, Enemy count = 2, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0465116279069767441860465116
+Object[132], Relative count = 1, Enemy count = 4, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.0377358490566037735849056604
+Object[104], Relative count = 1, Enemy count = 5, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.1162790697674418604651162791
+Object[96], Relative count = 1, Enemy count = 1, Class count = 106, Non class count = 43,
+		0.0094339622641509433962264151 < 0.0232558139534883720930232558
+Object[101], Relative count = 1, Enemy count = 7, Class count = 43, Non class count = 106,
+		0.0232558139534883720930232558 < 0.0660377358490566037735849057

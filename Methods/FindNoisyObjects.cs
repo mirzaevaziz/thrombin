@@ -32,7 +32,7 @@ namespace thrombin.Methods
 
                 if (set.Objects[candidate].ClassValue == set.ClassValue)
                 {
-                    if (relativeCount / classCount < enemyCount / nonclassCount)
+                    if (relativeCount < enemyCount)
                     {
                         result.Add(candidate);
                         log.WriteLine("FindNoisyObjects log", $"Object[{candidate}], Relative count = {relativeCount}, Enemy count = {enemyCount}, Class count = {classCount}, Non class count = {nonclassCount},\n\t\t{relativeCount / classCount} < {enemyCount / nonclassCount}");
@@ -40,7 +40,7 @@ namespace thrombin.Methods
                 }
                 else
                 {
-                    if (relativeCount / nonclassCount < enemyCount / classCount)
+                    if (relativeCount < enemyCount)
                     {
                         result.Add(candidate);
                         log.WriteLine("FindNoisyObjects log", $"Object[{candidate}], Relative count = {relativeCount}, Enemy count = {enemyCount}, Class count = {nonclassCount}, Non class count = {classCount},\n\t\t{relativeCount / nonclassCount} < {enemyCount / classCount}");
