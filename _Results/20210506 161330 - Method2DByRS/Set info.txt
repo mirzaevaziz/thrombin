@@ -1,7 +1,0 @@
-ObjectSet = "Tuber"
-               , Objects count = 149 
-               , Features count = 48 
-               , Class value = 1
-               , Class objects = 43
-               , Non Class objects = 106
-               , ClassValues = 1, 2

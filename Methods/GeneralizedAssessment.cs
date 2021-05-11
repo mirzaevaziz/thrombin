@@ -6,11 +6,11 @@ namespace thrombin.Methods
 {
     public class GeneralizedAssessment
     {
-        public static decimal FindNonContiniousFeature(ObjectInfo objectInfo, Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult> weights)
+        public static decimal FindNonContiniousFeature(ObjectInfo objectInfo, Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult> weights, IEnumerable<int> activeFeatures)
         {
             var result = 0M;
 
-            foreach (var ft in weights.Keys)
+            foreach (var ft in activeFeatures)
             {
                 result += weights[ft].FeatureContribute[objectInfo[ft]];
             }
