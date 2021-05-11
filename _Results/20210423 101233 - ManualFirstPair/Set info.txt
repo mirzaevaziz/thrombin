@@ -1,7 +1,0 @@
-ObjectSet = "ThrombinUniqueSet"
-               , Objects count = 1316 
-               , Features count = 90967 
-               , Class value = 1
-               , Class objects = 40
-               , Non Class objects = 1276
-               , ClassValues = 2, 1
