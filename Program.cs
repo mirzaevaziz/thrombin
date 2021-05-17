@@ -17,16 +17,44 @@ namespace thrombin
             // RS1000FindByRelativeCount();
             // RS1000FindByDominance();
             // ManualFirstPair();
-            // TestManualFirstPair();
+            TestManualFirstPair();
             // Method2D();
-            Method2DByRS();
+            // Method2DByRS();
+            // FindSimilarObjects();
+        }
+
+        private static void FindSimilarObjects()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
+
+            var trainSet = new Data.Train.ThrombinSet().GetSet();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+            var foundedIndexes = new HashSet<int>();
+            for (int i = 0; i < trainSet.Objects.Length - 1; i++)
+            {
+                if (foundedIndexes.Contains(i)) continue;
+
+                var found = false;
+                for (int j = i + 1; j < trainSet.Objects.Length; j++)
+                {
+                    if (trainSet.Objects[i].EqualsByValues(trainSet.Objects[j]))
+                    {
+                        foundedIndexes.Add(j);
+                        found = true;
+                        logger.WriteLine("Similar Objects", $"Object {i:0000} = {j:00000} Class {trainSet.Objects[i].ClassValue} and {trainSet.Objects[j].ClassValue}");
+                    }
+                }
+                if (found)
+                    logger.WriteLine("Similar Objects", "==================");
+
+            }
         }
 
         private static void Method2DByRS()
         {
             var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
 
-            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            var trainSet = new Data.Train.ThrombinSet().GetSet();
             // var data = new Models.ObjectInfo[149];
             // var ind = 0;
             // using (var f = new StreamReader(Path.Combine("Data", "Train", "tubnb.dat")))
@@ -109,7 +137,32 @@ namespace thrombin
 
 
             var rsSet = new Models.ObjectSet("Method3DByRs set", rsObjects, newFeatures, 1);
+            // var rsSet = new Data.RS.ThrombinRS5().GetSet();
+
+            for (int i = 0; i < newFeaturesCount; i++)
+            {
+                var crit1Result = Criterions.FirstCriterion.Find(rsSet.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    Distance = s[i],
+                    ObjectIndex = s.Index
+                }), rsSet.ClassValue);
+
+                logger.WriteLine("Criterion 1 results", crit1Result.ToString());
+                logger.WriteLine("Criterion 1 results", $"\tMin: {rsSet.Objects.Min(m => m[i])}, Max: {rsSet.Objects.Max(m => m[i])}");
+
+                logger.WriteLine("Criterion 1 results", $"\tUnique values: {rsSet.Objects.Select(m => m[i]).Distinct().Count()}");
+
+                var near = rsSet.Objects.Where(w => w[i] > crit1Result.Distance).Min(m => m[i]);
+                logger.WriteLine("Criterion 1 results", $"\tNear: {near}, Boundary: {(crit1Result.Distance + near) / 2M}");
+
+                logger.WriteLine("Criterion 1 results", $"\tK1: {rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count()}");
+                logger.WriteLine("Criterion 1 results", $"\tK2: {rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()}");
+                logger.WriteLine("Criterion 1 results", $"\tK2: {((rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()) / (decimal)rsSet.Objects.Length) * 100}%");
+            }
+
             rsSet.ToFileData("new rs set");
+            rsSet = Methods.NormilizingMinMax.Normalize(rsSet);
             var excludedObjects = new HashSet<int>();
 
             trainSet = rsSet;
@@ -117,11 +170,11 @@ namespace thrombin
 
             var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method3DByRS set");
             var distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
-            var spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            var spheres = Models.Sphere.FindAll(trainSet, distances.Distances, excludedObjects, true);
             var noisyObjects = Methods.FindNoisyObjects.Find(trainSet, spheres, excludedObjects, logger);
             excludedObjects.UnionWith(noisyObjects);
             distances = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, excludedObjects);
-            spheres = Models.Sphere.FindAll(trainSet, distances, excludedObjects, true);
+            spheres = Models.Sphere.FindAll(trainSet, distances.Distances, excludedObjects, true);
             var groups = Methods.FindAcquaintanceGrouping.Find(trainSet, spheres, excludedObjects);
             var standartObject = Methods.FindStandartObjects.Find(trainSet, groups, spheres, excludedObjects, distances, logger);
             logger.WriteLine("Result", $"Stability: {((trainSet.Objects.Length - noisyObjects.Count) / (decimal)trainSet.Objects.Length) * ((trainSet.Objects.Length - noisyObjects.Count) / (decimal)standartObject.Count)}");
@@ -198,19 +251,13 @@ namespace thrombin
             //
             var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - TestManualFirstPair");
 
-            var trainSet = new Data.Train.ThrombinUniqueSet().GetSet();
+            var trainSet = new Data.Train.ThrombinSet().GetSet();
             logger.WriteLine("Set info", trainSet.ToString(), true);
 
-            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "TestManualFirstPair");
+            var testObjects = new Data.Test.ThrombinTestSet().GetSet();
+            System.Console.WriteLine($"Test objects count is {testObjects.ToString()}");
 
-            var uniqueFeatureIndexList = new List<int>();
-            using (var file = new StreamReader(Path.Combine("Data", "Train", "thrombin_unique_features_indexes.data")))
-            {
-                while (!file.EndOfStream)
-                {
-                    uniqueFeatureIndexList.Add(Convert.ToInt32(file.ReadLine()));
-                }
-            }
+            // var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "TestManualFirstPair");
 
             // Finding all features weights
             var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
@@ -224,48 +271,21 @@ namespace thrombin
                 }), trainSet.ClassValue);
             });
 
-            var activeFeatures = new int[] { 8489, 12832, 57897, 10483, 21211, 19596, 57860, 64276, 20150, 65195, 57608, 88858, 20265, 52110, 23039, 2638, 20036, 12836, 20028, 17613, 65075, 57594, 21084, 20262, 19613, 64226, 58236, 22436, 88898, 8747, 57639, 15824, 2408, 60381, 13288, 19975, 63089, 19405, 10299, 20635, 27477, 20142, 8465, 19173, 63828, 39192, 21025, 48105, 19751, 9117, 11125, 19777, 42389, 20972, 18517, 64271, 60539, 63471, 57863, 20872, 20133, 66127, 9439, 19414, 18912, 20205, 13016, 21321, 19416, 23075, 2428, 65625, 19401, 8641, 74233, 13284, 66000, 24666, 17422, 8363, 19089, 12864, 57681, 21414, 68086, 24887 };
+            var activeFeatures = new int[] { 10694, 16793, 79650, 13358, 29152, 26237, 90405, 79603, 27150, 91838, 79244, 135816, 27359, 32596, 79419, 3391, 72033, 16797, 27355, 23405, 26964, 90587, 89728, 79225, 24797, 28851, 26264, 100530, 31643, 90330, 26952, 26871, 28531, 83119, 113059, 88024, 100784, 25987, 35281, 135881, 79290, 88790, 92747, 10890, 90494, 54841, 11642, 29422, 17358, 26448, 29530, 24759, 39498, 27135, 12068, 29311, 136005, 27122, 83344, 3157, 79608, 32637, 92646, 14225, 26006, 88308, 23595, 93357, 29289, 16829, 79278, 91878, 25497, 17003, 135964, 106988, 35433, 28681, 79696, 35544
+ };
 
-            var testObjects = new List<Models.ObjectInfo>();
-            using (var testFile = new StreamReader(Path.Combine("Data", "Test", "Thrombin.testset")))
-            {
-                while (!testFile.EndOfStream)
-                {
-                    var line = testFile.ReadLine();
-                    var data = new decimal[uniqueFeatureIndexList.Count];
-                    for (int i = 0; i < uniqueFeatureIndexList.Count; i++)
-                    {
-                        var ft = uniqueFeatureIndexList[i];
-                        if (line[ft * 2] == '0')
-                            data[i] = 0;
-                        else if (line[ft * 2] == '1')
-                            data[i] = 1;
-                        else
-                        {
-                            System.Console.WriteLine("Cannot read normally test objects.");
-                            return;
-                        }
-                    }
-                    testObjects.Add(new Models.ObjectInfo()
-                    {
-                        Data = data
-                    });
-                }
-            }
-            System.Console.WriteLine($"Test objects count is {testObjects.Count}");
 
             using (var resultFile = new StreamWriter($"Result file {DateTime.Now: yyyyMMdd HHmmss}"))
                 foreach (var testObject in testObjects)
                 {
-                    decimal? minDist = null;
                     int? classValue = null;
                     var rs = Methods.GeneralizedAssessment.FindNonContiniousFeature(testObject, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), activeFeatures);
 
-                    if (rs < -8.261894912292053306428601170M)
+                    if (rs < -7.5866635357567683545779447525M)
                     {
                         classValue = 2;
                     }
-                    else if (rs > -8.261894912292053306428601170M)
+                    else if (rs > -7.5866635357567683545779447525M)
                     {
                         classValue = 1;
                     }

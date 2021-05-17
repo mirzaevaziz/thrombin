@@ -28,6 +28,75 @@ namespace thrombin.Models
                coverage= ({Coverage.Count}) {{{string.Join(", ", Coverage.OrderBy(o => o))}}}";
         }
 
+        public static IEnumerable<Sphere> FindAll(ObjectSet set, decimal[,] dist, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
+        {
+            var result = new BlockingCollection<Sphere>();
+
+            Parallel.For(0, set.Objects.Length, i =>
+            {
+                if (excludedObjects?.Contains(i) == true)
+                    return;
+
+                var sphere = new Sphere()
+                {
+                    Radius = decimal.MaxValue,
+                    ObjectIndex = i
+                };
+                for (int j = 0; j < set.Objects.Length; j++)
+                {
+                    if (excludedObjects?.Contains(j) == true)
+                        continue;
+
+                    if (set.Objects[i].ClassValue != set.Objects[j].ClassValue && (sphere.Radius >= dist[i, j]))
+                    {
+                        if (sphere.Radius != dist[i, j])
+                        {
+                            sphere.Enemies.Clear();
+                        }
+                        sphere.Radius = dist[i, j];
+                        sphere.Enemies.Add(j);
+                    }
+                }
+
+                for (int j = 0; j < set.Objects.Length; j++)
+                {
+                    if (excludedObjects?.Contains(j) == true)
+                        continue;
+
+                    if (set.Objects[i].ClassValue == set.Objects[j].ClassValue && sphere.Radius > dist[i, j])
+                    {
+                        sphere.Relatives.Add(j);
+                    }
+                }
+
+                if (ShouldFindCoverage)
+                {
+                    foreach (var enemyIndex in sphere.Enemies)
+                    {
+                        decimal radius = decimal.MaxValue;
+                        foreach (var j in sphere.Relatives)
+                        {
+                            if (radius >= dist[enemyIndex, j])
+                            {
+                                if (radius != dist[enemyIndex, j])
+                                {
+                                    sphere.Coverage.Clear();
+                                }
+                                radius = dist[enemyIndex, j];
+                                sphere.Coverage.Add(j);
+                            }
+                        }
+                    }
+                }
+
+                result.Add(sphere);
+            });
+
+            result.CompleteAdding();
+
+            return result;
+        }
+
         public static IEnumerable<Sphere> FindAll(ObjectSet set, DistanceAndRadius dist, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
         {
             var result = new BlockingCollection<Sphere>();

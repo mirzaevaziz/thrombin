@@ -1,3 +1,5 @@
+using System;
+
 namespace thrombin.Models
 {
     public class ObjectInfo
@@ -44,6 +46,17 @@ namespace thrombin.Models
         public override int GetHashCode()
         {
             return base.GetHashCode();
+        }
+
+        internal bool EqualsByValues(ObjectInfo objectInfo)
+        {
+            for (int i = 0; i < this.Data.Length; i++)
+            {
+                if (this[i] != objectInfo[i])
+                    return false;
+            }
+
+            return true;
         }
     }
 }
