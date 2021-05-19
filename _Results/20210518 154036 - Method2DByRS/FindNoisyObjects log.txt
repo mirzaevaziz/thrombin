@@ -1,0 +1,1858 @@
+Object[727], Relative count = 6, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0032137118371719335832886984 < 0.0238095238095238095238095238
+Object[753], Relative count = 0, Enemy count = 1541, Class count = 42, Non class count = 1867,
+		0 < 0.8253883235136582753079807177
+38095238095238095238095238
+bject[1417], Relative count = 0, Enemy count = 77, Class count = 42, Non class count = 1867,
+		0 < 0.0412426352437064809855382967
+Object[635], Relative count = 1, Enemy count = 51, Class count = 42, Non class count = 1867,
+		0.0238095238095238095238095238 < 0.0273165506159614354579539368
+Object[438], Relative count = 3, Enemy count = 3, Class count = 1867, Non class count = 42,
+		0.0016068559185859667916443492 < 0.0714285714285714285714285714
+Object[1024], Relative count = 1, Enemy count = 12, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.2857142857142857142857142857
+Object[1406], Relative count = 0, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0 < 0.0238095238095238095238095238
+0238095238095238095238095238
+Object[275], Relative count = 0, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0 < 0.0238095238095238095238095238
+Object[3], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+016068559185859667916443492 < 0.0952380952380952380952380952
+Object[1573], Relative count = 2, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0010712372790573111944295661 < 0.0238095238095238095238095238
+Object[1675], Relative count = 0, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0 < 0.0238095238095238095238095238
+Object[5], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[284], Relative count = 0, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0 < 0.0238095238095238095238095238
+Object[8], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[4], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[10], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[2], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[7], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[17], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476OObject[12], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[16], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[24], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[23], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[18], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[40], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[31], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[43], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[45], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[39], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[46], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[44], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[51], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[47], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[66], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[67], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[68], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[69], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[63], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[36], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[57], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[73], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[71], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[49], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[60], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[87], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[90], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[88], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[91], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[89], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[92], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[95], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[93], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[97], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[98], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[100], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[101], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[81], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[104], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[116], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[123], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[124], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[105], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[132], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[120], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[137], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[108], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[138], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[121], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[128], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[140], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[150], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[143], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[151], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[159], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[152], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[160], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[153], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[163], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[171], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[154], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[50], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[135], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[175], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[155], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[172], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[111], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[149], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[156], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[181], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[166], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[112], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[189], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[177], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[113], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[157], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[179], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[200], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[191], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[183], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[218], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[201], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[209], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[245], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[192], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[203], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[185], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[246], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[220], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[210], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[221], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[211], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[226], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[212], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[227], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[234], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[228], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[247], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[195], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[235], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[215], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[230], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[248], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[236], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[216], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[199], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[269], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[249], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[260], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[217], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[207], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[281], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[271], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[237], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[282], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[292], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[262], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[302], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[273], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[283], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[263], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[244], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[295], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[285], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[277], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[304], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[265], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[256], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[296], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[305], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[279], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[289], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[320], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[306], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[290], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[268], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[280], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[307], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[347], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[299], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[308], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[300], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[348], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[325], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[339], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[349], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[331], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[341], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[350], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[358], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[342], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[332], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[351], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[359], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[360], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[352], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[380], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[334], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[353], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[361], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[336], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[362], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[381], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[441], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[345], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[442], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[346], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[363], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[422], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[398], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[443], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[463], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[400], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[444], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[485], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[384], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[465], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[385], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[487], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[446], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[386], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[467], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[489], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[387], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[426], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[490], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[468], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[372], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[491], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[406], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[390], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[373], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[407], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[492], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[429], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[375], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[472], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[430], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[392], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[431], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[473], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[408], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[498], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[432], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[494], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[475], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[393], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[454], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[476], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[499], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[394], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[455], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[500], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[457], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[434], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[481], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[395], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[458], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[436], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[482], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[437], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[523], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[460], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[537], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[461], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[564], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[538], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[565], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[504], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[586], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[631], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[588], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[568], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[590], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[569], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[632], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[613], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[591], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[542], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[506], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[570], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[527], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[633], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[592], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[571], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[528], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[547], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[616], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[634], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[508], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[572], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[597], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[529], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[549], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[511], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[637], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[531], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[600], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[512], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[639], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[554], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[620], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[576], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[601], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[514], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[577], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[602], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[516], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[533], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[641], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[578], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[519], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[534], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[654], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[642], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[623], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[579], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[606], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[645], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[581], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[607], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[536], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[647], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[583], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[670], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[657], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[609], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[558], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[584], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[625], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[671], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[690], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[628], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[560], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[653], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[674], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[726], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[675], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[691], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[659], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[709], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[692], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[561], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[728], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[693], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[730], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[710], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[680], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[731], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[711], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[681], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[712], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[682], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[765], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[697], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[661], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[746], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[683], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[766], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[698], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[733], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[713], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[767], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[747], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[684], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[663], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[714], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[685], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[734], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[699], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[769], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[715], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[664], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[735], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[770], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[665], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[749], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[687], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[666], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[688], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[702], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[750], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[737], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[718], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[689], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[703], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[668], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[738], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[751], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[669], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[754], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[774], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[787], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[755], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[809], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[739], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[720], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[776], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[740], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[790], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[721], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[777], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[792], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[741], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[779], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[722], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[781], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[742], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[793], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[759], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[782], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[744], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[761], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[783], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[828], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[796], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[784], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[830], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[723], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[785], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[725], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[705], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[872], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[763], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[786], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[873], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[799], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[918], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[815], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[832], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1011], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[875], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[920], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[962], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[964], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[833], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1013], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[803], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1014], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[805], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[817], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[806], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[834], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1016], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[966], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[923], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1018], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476OObject[819], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[881], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1020], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[969], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[924], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[970], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1058], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[837], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[822], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[925], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[838], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[976], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1060], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1025], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[977], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1061], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[824], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[928], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[882], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[929], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1062], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[883], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[979], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1063], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1027], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+bject[930], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[980], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1064], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[931], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[827], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[932], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1067], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476OObject[984], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1035], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[850], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1068], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1036], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+bject[891], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1070], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[892], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[935], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1037], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[852], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1071], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[936], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1038], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1099], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+bject[893], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1040], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[937], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[854], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1101], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[939], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1074], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[897], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[855], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1103], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1075], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[992], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[898], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[859], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1076], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[944], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[899], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1048], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1077], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[945], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1079], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476Object[900], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1108], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[863], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[997], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1080], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[947], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[865], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[998], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1051], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[948], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1052], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[904], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+bject[949], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1081], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[867], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1056], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+bject[868], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1002], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[905], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1057], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1003], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[906], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[871], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1141], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1005], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[955], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1084], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[908], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+
+Object[1008], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1143], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1086], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1009], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[959], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1117], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1184], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476OObject[1010], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1185], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1272], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1119], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1274], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1120], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[913], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1231], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1275], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1123], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[914], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1147], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1187], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1091], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1276], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1124], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1148], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[915], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1188], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1092], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1150], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[916], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1189], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1236], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1093], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1278], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1094], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1279], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1352], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1280], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1128], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1313], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1151], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1190], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1314], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1130], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1152], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1315], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1131], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1286], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1240], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1154], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1193], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1319], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1356], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1156], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1133], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1288], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1320], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1134], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1157], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1135], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1321], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1158], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1195], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1291], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1322], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1197], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1364], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1138], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1292], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1365], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1245], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1161], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1366], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1325], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1295], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1326], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1202], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1368], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1248], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1400], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1297], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1163], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1204], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1328], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1164], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1249], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1329], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1250], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1299], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1331], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1407], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1300], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1376], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1211], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1252], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1409], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1333], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1253], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1212], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1410], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1379], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1335], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1172], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1411], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1305], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1336], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1381], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1175], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1412], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1337], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1260], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1178], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1338], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1385], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1261], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1340], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1416], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1218], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1262], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1219], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1454], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1263], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1220], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1181], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1221], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1456], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1342], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1389], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1224], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1423], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1458], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1424], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1504], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1459], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1391], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1344], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1546], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1427], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1463], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1270], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1507], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1392], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1428], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1467], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1394], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1271], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1429], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1348], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1468], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1585], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1469], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1349], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1509], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1587], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1470], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1553], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1433], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1473], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1624], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1398], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1591], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1474], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1435], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1513], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1670], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1475], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1514], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1626], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1478], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1515], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1437], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1593], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1627], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1673], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1557], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1594], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1448], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1559], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1449], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1596], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1676], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1519], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1631], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1486], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1561], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1521], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1488], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1562], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1599], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1452], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1679], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1523], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1524], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1600], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1601], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1563], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1525], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1490], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1680], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1491], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1528], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1603], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1565], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1634], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1530], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1493], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1531], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1635], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1606], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1683], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1607], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1495], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1637], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1684], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1720], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1686], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1569], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1640], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1721], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1610], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1570], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1499], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1612], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1687], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1571], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1538], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1723], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1539], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1724], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1613], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1688], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1500], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1689], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1615], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1577], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1540], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1616], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1502], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1578], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1541], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1503], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1649], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1579], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1727], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1694], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1651], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1580], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1618], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1652], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1619], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1582], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1655], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1731], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1621], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1835], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1734], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1757], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1735], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1657], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1584], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1623], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1839], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1658], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1758], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1699], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1736], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1840], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[251], Relative count = 1, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.0238095238095238095238095238
+Object[1661], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1737], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1841], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[999], Relative count = 1, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.0238095238095238095238095238
+ = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1842], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1763], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1843], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1764], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+0238095238095238095238095238
+Object[1740], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1703], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1668], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1844], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[488], Relative count = 1, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.0238095238095238095238095238
+Object[1765], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1707], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1743], Relative countObject[1766], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1846], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1745], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1767], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1709], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1746], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1768], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1710], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1747], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1770], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1748], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1771], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1713], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1749], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1773], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1852], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1750], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1774], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1853], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1775], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1752], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1854], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1776], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1754], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1855], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1777], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1856], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1778], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1857], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1781], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1858], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1782], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1859], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1783], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1860], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1784], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1861], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1786], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1862], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1787], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1865], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1788], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1868], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1791], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1869], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1792], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1870], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1795], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1797], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1798], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1872], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1799], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1873], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1801], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1875], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1802], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1876], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1803], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1877], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1804], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1880], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1805], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1882], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1807], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1883], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1808], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1884], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1809], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1885], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1810], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1886], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1811], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1887], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1812], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1888], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1814], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1889], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1815], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1891], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1816], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1892], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1817], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1893], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1819], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1894], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1820], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1895], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1821], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1896], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1822], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1823], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1824], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1897], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1825], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1898], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1826], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1899], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1827], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1900], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1902], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1903], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1904], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1828], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1905], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1831], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1907], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1832], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1908], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1833], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[1420], Relative count = 4, Enemy count = 3, Class count = 1867, Non class count = 42,
+		0.0021424745581146223888591323 < 0.0714285714285714285714285714
+Object[1834], Relative count = 0, Enemy count = 2, Class count = 1867, Non class count = 42,
+		0 < 0.0476190476190476190476190476
+Object[552], Relative count = 1, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.0238095238095238095238095238
+Object[510], Relative count = 1, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0005356186395286555972147831 < 0.0238095238095238095238095238
+Object[1096], Relative count = 5, Enemy count = 1, Class count = 1867, Non class count = 42,
+		0.0026780931976432779860739154 < 0.0238095238095238095238095238

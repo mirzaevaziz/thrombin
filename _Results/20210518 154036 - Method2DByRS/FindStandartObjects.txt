@@ -1,0 +1,17 @@
+===== FindStandartObjects Started at 5/18/2021 8:06:46 PM
+{ ObjectIndex = 551, Radius = 0.274791406724479 }
+{ ObjectIndex = 548, Radius = 0.302296603699885 }
+{ ObjectIndex = 864, Radius = 0.321708976860823 }
+{ ObjectIndex = 1890, Radius = 0.337403227784099 }
+{ ObjectIndex = 56, Radius = 0.440705359273415 }
+{ ObjectIndex = 1372, Radius = 0.478225722126792 }
+{ ObjectIndex = 1114, Radius = 0.501046634042012 }
+{ ObjectIndex = 1667, Radius = 0.559196924484451 }
+{ ObjectIndex = 1533, Radius = 1.66555963958206 }
+{ ObjectIndex = 409, Radius = 0.476760128099212 }
+{ ObjectIndex = 125, Radius = 0.0930661642391175 }
+{ ObjectIndex = 587, Radius = 0.158012318167784 }
+{ ObjectIndex = 1137, Radius = 0.250151093634598 }
+{ ObjectIndex = 1800, Radius = 0.262160336355573 }
+{ ObjectIndex = 270, Radius = 0.296650311208735 }
+===== FindStandartObjects Ended at 5/18/2021 8:06:55 PM
