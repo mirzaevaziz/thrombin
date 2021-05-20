@@ -103,7 +103,7 @@ namespace thrombin
             {
                 newFeatures[i] = new Models.Feature { Name = $"Ft of RS {i}", IsContinuous = true };
                 var firstPair = new List<int>() { orderedFeatures[0] };
-                var featuresSet = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+                var featuresSet = Methods.FindAllFeaturesByRsSphere.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
                 logger.WriteLine($"0{i}. Set of features.txt", string.Join(", ", featuresSet));
 
                 rs[i] = Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
