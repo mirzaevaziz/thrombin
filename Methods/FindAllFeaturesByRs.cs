@@ -93,7 +93,7 @@ namespace thrombin.Methods
                     }
                 }
 
-                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R < minR.R) //  || Math.Abs(prevPhi.R - minR.R) < 0.0001M
+                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R <= minR.R) //  || Math.Abs(prevPhi.R - minR.R) < 0.0001M
                     break;
                 prevPhi = minR;
                 candidateFeatures.Remove(minR.FeatureIndex);

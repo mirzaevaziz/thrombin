@@ -19,10 +19,9 @@ namespace thrombin
             // ManualFirstPair();
             // TestManualFirstPair();
             // Method2D();
-            Method2DByRS();
+            // Method2DByRS();
             // FindSimilarObjects();
-
-
+            MethodFeatureSetBySphere();
         }
 
         private static void FindSimilarObjects()
@@ -52,11 +51,86 @@ namespace thrombin
             }
         }
 
+        private static void MethodFeatureSetBySphere()
+        {
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - MethodFeatureSetBySphere");
+
+            var trainSet = new Data.Train.ThrombinSet().GetSetUniqueByObjects();
+            logger.WriteLine("Set info", trainSet.ToString(), true);
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "MethodFeatureSetBySphere set");
+
+            var newFeaturesCount = 3;
+            var notSeenFeatures = Enumerable.Range(0, trainSet.Features.Length).ToList();
+            for (int i = 0; i < newFeaturesCount; i++)
+            {
+                var activeFeatures = new HashSet<int>();
+                var spheresList = new BlockingCollection<Tuple<int, Dictionary<int, int>>>();
+                var prevSphere = new Dictionary<int, int>();
+                while (notSeenFeatures.Count > 0)
+                {
+                    Parallel.For(0, notSeenFeatures.Count, ftIndex =>
+                   {
+                       var features = new List<int>(activeFeatures);
+                       features.Add(ftIndex);
+
+                       var dist = Utils.DistanceUtils.FindAllDistanceAndRadius(trainSet, distFunc, features, new HashSet<int>());
+
+                       var spheres = Models.Sphere.FindAll(trainSet, dist, new HashSet<int>(), false);
+
+                       spheresList.Add(new Tuple<int, Dictionary<int, int>>(ftIndex, spheres.ToDictionary(k => k.ObjectIndex.Value, v => v.Relatives.Count)));
+                   });
+
+                    if (activeFeatures.Count == 0)
+                    {
+                        var maxRelativesCount = 0;
+                        var maxSphere = new Tuple<int, Dictionary<int, int>>(-1, new Dictionary<int, int>());
+                        foreach (var sphere in spheresList)
+                        {
+                            var relativesCount = sphere.Item2.Sum(s => s.Value);
+                            if (maxRelativesCount < relativesCount)
+                            {
+                                maxRelativesCount = relativesCount;
+                                maxSphere = sphere;
+                            }
+                        }
+
+                        if (maxRelativesCount == 0) break;
+
+                        prevSphere = maxSphere.Item2;
+                        activeFeatures.Append(maxSphere.Item1);
+                        notSeenFeatures.Remove(maxSphere.Item1);
+                    }
+                    else
+                    {
+                        var maxRelativesCount = 0;
+                        var maxSphere = new Tuple<int, Dictionary<int, int>>(-1, new Dictionary<int, int>());
+                        foreach (var sphere in spheresList)
+                        {
+                            var relativesCount = sphere.Item2.Where(w => w.Value >= prevSphere[w.Key]).Count();
+                            if (maxRelativesCount < relativesCount)
+                            {
+                                maxRelativesCount = relativesCount;
+                                maxSphere = sphere;
+                            }
+                        }
+                        if (maxRelativesCount <= 1 / 2M) break;
+
+                        prevSphere = maxSphere.Item2;
+                        activeFeatures.Append(maxSphere.Item1);
+                        notSeenFeatures.Remove(maxSphere.Item1);
+                    }
+                }
+
+                logger.WriteLine($"0{i}. Set of features.txt", string.Join(", ", activeFeatures));
+                logger.WriteLine($"0{i}. Set of features.txt", $"Features count: {activeFeatures.Count}");
+            }
+        }
+
         private static void Method2DByRS()
         {
             var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
 
-            var trainSet = new Data.Train.ThrombinSet().GetSet();
+            var trainSet = new Data.Train.NewPr().GetSet();
             // var data = new Models.ObjectInfo[149];
             // var ind = 0;
             // using (var f = new StreamReader(Path.Combine("Data", "Train", "tubnb.dat")))
@@ -94,7 +168,7 @@ namespace thrombin
 
             var orderedFeatures = trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToList();
 
-            var newFeaturesCount = 25;
+            var newFeaturesCount = 3;
             var newFeatures = new Models.Feature[newFeaturesCount];
 
             var rs = new Dictionary<int, Dictionary<int, decimal>>();
@@ -103,7 +177,7 @@ namespace thrombin
             {
                 newFeatures[i] = new Models.Feature { Name = $"Ft of RS {i}", IsContinuous = true };
                 var firstPair = new List<int>() { orderedFeatures[0] };
-                var featuresSet = Methods.FindAllFeaturesByRsSphere.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+                var featuresSet = Methods.FindAllFeaturesByRs.Find(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
                 logger.WriteLine($"0{i}. Set of features.txt", string.Join(", ", featuresSet));
 
                 rs[i] = Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
@@ -151,6 +225,8 @@ namespace thrombin
                 }), rsSet.ClassValue);
 
                 logger.WriteLine("Criterion 1 results", crit1Result.ToString());
+                logger.WriteLine("Criterion 1 results", $"Objects count {rsSet.Objects.Length}");
+
                 logger.WriteLine("Criterion 1 results", $"\tMin: {rsSet.Objects.Min(m => m[i])}, Max: {rsSet.Objects.Max(m => m[i])}");
 
                 logger.WriteLine("Criterion 1 results", $"\tUnique values: {rsSet.Objects.Select(m => m[i]).Distinct().Count()}");
@@ -159,8 +235,8 @@ namespace thrombin
                 logger.WriteLine("Criterion 1 results", $"\tNear: {near}, Boundary: {(crit1Result.Distance + near) / 2M}");
 
                 logger.WriteLine("Criterion 1 results", $"\tK1: {rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count()}");
-                logger.WriteLine("Criterion 1 results", $"\tK2: {rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()}");
-                logger.WriteLine("Criterion 1 results", $"\tK2: {((rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()) / (decimal)rsSet.Objects.Length) * 100}%");
+                logger.WriteLine("Criterion 1 results", $"\tK2: {rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()}");
+                logger.WriteLine("Criterion 1 results", $"\tPercent: {((rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()) / (decimal)rsSet.Objects.Length) * 100}%");
             }
 
             // rsSet.ToFileData("new rs set");
