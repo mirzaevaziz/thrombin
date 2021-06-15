@@ -10,11 +10,12 @@ namespace thrombin.Data.Test
 {
     public class ThrombinTestSet
     {
-        public List<ObjectInfo> GetSet()
+        public ObjectSet GetSet()
         {
             var objects = new List<ObjectInfo>();
             int ind = 0;
-            // using (var writer = new StreamWriter(Path.Combine("Data", "Dorothea", "thrombin_unique_set_True.data.new")))
+            var features = Enumerable.Range(0, 139351).Select(s => new Feature() { IsContinuous = false, Name = $"Ft {s:000000}" });
+
             using (var reader = new StreamReader(Path.Combine("Data", "Test", "Thrombin.testset")))
             {
                 while (!reader.EndOfStream)
@@ -32,7 +33,18 @@ namespace thrombin.Data.Test
                 }
             }
 
-            return objects;
+            ind = 0;
+            using (var reader = new StreamReader(Path.Combine("Data", "Test", "thrombin_test_keys.txt")))
+            {
+                while (!reader.EndOfStream)
+                {
+                    var line = reader.ReadLine();
+
+                    objects[ind++].ClassValue = line[0] == 'A' ? 1 : 2;
+                }
+            }
+
+            return new ObjectSet(this.GetType().Name, objects.ToArray(), features.ToArray());
         }
     }
 }
