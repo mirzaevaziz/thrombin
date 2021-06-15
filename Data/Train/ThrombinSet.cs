@@ -46,7 +46,6 @@ namespace thrombin.Data.Train
                 while (!reader.EndOfStream)
                 {
                     var line = reader.ReadLine();
-                    System.Console.WriteLine(line);
                     uniqueIndexes.Add(int.Parse(line));
                 }
             }
@@ -78,7 +77,6 @@ namespace thrombin.Data.Train
                 objects[ind].Index = ind;
             }
 
-            System.Console.WriteLine(objects[0].Data.Count());
             var newset = new ObjectSet(this.GetType().Name, objects.ToArray(), features.ToArray());
             return newset;
         }
