@@ -17,6 +17,7 @@ namespace thrombin.Methods
             public int FeatureIndex { get; set; }
             public decimal R { get; set; }
             public IEnumerable<int> ActiveFeatures { get; set; }
+            public string Note { get; set; }
         }
 
         public static List<int> Find(ObjectSet set, Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult> weights, Logger log, List<int> activeFeatures, HashSet<int> candidateFeatures = null)
@@ -48,10 +49,17 @@ namespace thrombin.Methods
                 Parallel.ForEach(candidateFeatures, i =>
                 {
                     // log.WriteLine($"Finding phi for feature {i}");
+                    if (weights[i].FeatureContribute.Count < 2) return;
+
                     var result = new FindAllFeaturesByRsResult() { FeatureIndex = i };
                     var ft = new List<int>(activeFeatures);
                     ft.Add(i);
-                    result.RSList = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, weights, ft);
+                    result.RSList = new Dictionary<int, decimal>();
+                    foreach (var objInd in prevPhi.RSList.Keys)
+                    {
+                        result.RSList[objInd] = prevPhi.RSList[objInd] + weights[i].FeatureContribute[set.Objects[objInd][i]];
+                    }
+                    // result.RSList = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, weights, ft);
                     result.ActiveFeatures = ft;
                     if (result.RSList.Count == 0)
                         return;
@@ -61,7 +69,7 @@ namespace thrombin.Methods
                 FindAllFeaturesByRsResult minR = null;
                 foreach (var item in rList)
                 {
-                    int k = 0, ck = 1;
+                    int k = 0, ck = 0;
                     decimal k_sum = 0, ck_sum = 0;
 
                     for (int i = 0; i < set.Objects.Length; i++)
@@ -81,24 +89,46 @@ namespace thrombin.Methods
                     k_sum = k_sum / k;
                     ck_sum = ck_sum / ck;
 
+                    decimal tetta = 0, gamma = 0;
 
-                    decimal tetta = item.RSList.Sum(s => (set.Objects[s.Key].ClassValue == set.ClassValue) ? Math.Abs(s.Value - k_sum) : Math.Abs(s.Value - ck_sum));
-                    decimal gamma = item.RSList.Sum(s => (set.Objects[s.Key].ClassValue == set.ClassValue) ? Math.Abs(s.Value - ck_sum) : Math.Abs(s.Value - k_sum));
+                    foreach (var r in item.RSList)
+                    {
+                        if (set.Objects[r.Key].ClassValue == set.ClassValue)
+                        {
+                            tetta += Math.Abs(k_sum - r.Value);
+                            gamma += Math.Abs(ck_sum - r.Value);
+                        }
+                        else
+                        {
+                            tetta += Math.Abs(ck_sum - r.Value);
+                            gamma += Math.Abs(k_sum - r.Value);
+                        }
+                    }
+
+                    if (gamma == 0) continue;
 
                     item.R = tetta / gamma;
 
-                    if (minR == null || minR.R > item.R)
+                    if (minR == null || minR.R > item.R || (minR.R == item.R && weights[minR.FeatureIndex].Value < weights[item.FeatureIndex].Value))
                     {
                         minR = item;
+                        minR.Note = $"Feature {minR.FeatureIndex}, k_sum = {k_sum}, ck_sum = {ck_sum}, tetta = {tetta}, gamma = {gamma}, value = {minR.R}\n";
                     }
                 }
 
-                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R <= minR.R) //  || Math.Abs(prevPhi.R - minR.R) < 0.0001M
+                // log.WriteLine("TettaGamma.txt", "===================");
+                // foreach (var item in rList.OrderBy(o => o.R))
+                // {
+                //     log.WriteLine("TettaGamma.txt", $"{item.FeatureIndex}\tvalue={item.R}");
+                // }
+
+                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R <= minR.R || Math.Abs(prevPhi.R - minR.R) < 0.001M) //  
                     break;
+
                 prevPhi = minR;
                 candidateFeatures.Remove(minR.FeatureIndex);
                 activeFeatures.Add(minR.FeatureIndex);
-                log.WriteLine("FindAllFeaturesByRsResult", $"\tFound {minR.R} at index {minR.FeatureIndex}. Active features [{string.Join(',', minR.ActiveFeatures)}]");
+                log.WriteLine("FindAllFeaturesByRsResult", $"\tFound {minR.R} at index {minR.FeatureIndex}. Active features ({minR.ActiveFeatures.Count()})[{string.Join(',', minR.ActiveFeatures)}]{Environment.NewLine}\t{minR.Note}");
             } while (candidateFeatures.Count > 0);
             var sb = new StringBuilder();
 
