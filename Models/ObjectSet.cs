@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -55,24 +56,52 @@ namespace thrombin.Models
             return Objects.Select(s => s.ClassValue.GetValueOrDefault(-1)).Distinct();
         }
 
+        internal static ObjectSet FromFileData(string path)
+        {
+            using (var file = new StreamReader(path))
+            {
+                var fline = file.ReadLine().Split('\t');
+
+                var objectsCount = int.Parse(fline[0]);
+                var featuresCount = int.Parse(fline[1]);
+                var objects = new ObjectInfo[objectsCount];
+                for (int i = 0; i < objectsCount; i++)
+                {
+                    var line = file.ReadLine().Split('\t');
+                    objects[i] = new ObjectInfo
+                    {
+                        Index = i,
+                        Data = line.Take(featuresCount).Select(s => decimal.Parse(s, NumberStyles.Float, CultureInfo.InvariantCulture)).ToArray(),
+                        ClassValue = int.Parse(line[featuresCount])
+                    };
+                }
+                int ind = 0;
+                var features = file.ReadLine().Split('\t').Take(featuresCount).Select(s => new Feature
+                {
+                    IsContinuous = s == "1",
+                    Name = $"Ft {ind++}"
+                }).ToArray();
+                return new ObjectSet(path, objects, features, 1);
+            }
+        }
+
         internal void ToFileData(string path)
         {
-            using (var file = new StreamWriter(path + ".features"))
-            {
-                file.WriteLine("IsContinuous|Name");
-                file.WriteLine("5|Class feature");
-                foreach (var ft in Features)
-                {
-                    file.WriteLine($"{ft.IsContinuous}|{ft.Name}");
-                }
-            }
-
             using (var file = new StreamWriter(path))
             {
+                file.WriteLine($"{Objects.Length}\t{Features.Length}\t{GetClassValues().Count()}");
                 for (int i = 0; i < Objects.Length; i++)
                 {
-                    file.WriteLine($"{Objects[i].ClassValue}\t{string.Join('\t', Objects[i].Data)}");
+                    file.WriteLine($"{string.Join('\t', Objects[i].Data)}\t{Objects[i].ClassValue}");
                 }
+                foreach (var ft in Features)
+                {
+                    if (ft.IsContinuous)
+                        file.Write("1\t");
+                    else
+                        file.Write("0\t");
+                }
+                file.Write("0");
             }
         }
 

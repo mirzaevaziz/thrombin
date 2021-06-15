@@ -21,7 +21,273 @@ namespace thrombin
             // Method2D();
             // Method2DByRS();
             // FindSimilarObjects();
-            MethodFeatureSetBySphere();
+            // MethodFeatureSetBySphere();
+
+            // KNNMethod();
+
+            // ClusterByFeature();
+
+            // var trainSet = new Data.Train.FizmatNNSet().GetSet();
+            // System.Console.WriteLine(trainSet);
+
+            // var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+            // Parallel.For(0, trainSet.Features.Length, i =>
+            // {
+            //     trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(trainSet.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+            //     {
+            //         ClassValue = s.ClassValue.Value,
+            //         FeatureValue = s[i],
+            //         ObjectIndex = s.Index
+            //     }), trainSet.ClassValue);
+            // });
+
+            // using (var file = new StreamWriter($"{trainSet.Name} set feature weights.txt"))
+            // {
+            //     foreach (var item in trainSetFeatureWeights.OrderByDescending(o => o.Key))
+            //     {
+            //         file.WriteLine(item);
+            //     }
+            // }
+
+            var trainSet = Models.ObjectSet.FromFileData(Path.Combine("Data", "RS", "rs", "ThrombinSet New Rs DataSet.txt"));
+            System.Console.WriteLine(trainSet);
+
+            var testSet = Models.ObjectSet.FromFileData(Path.Combine("Data", "RS", "rs", "ThrombinTestSet New Rs DataSet.txt"));
+            System.Console.WriteLine(testSet);
+
+            var featureMinMax = Enumerable.Range(0, trainSet.Features.Length).Select(s => new
+            {
+                Index = s,
+                Min = trainSet.Objects.Min(m => m.Data[s]),
+                Max = trainSet.Objects.Max(m => m.Data[s])
+            }).ToList();
+
+            foreach (var ft in featureMinMax)
+            {
+                foreach (var obj in trainSet.Objects)
+                {
+                    obj[ft.Index] = (obj[ft.Index] - ft.Min) / (ft.Max - ft.Min) + 0.000001M;
+                }
+                foreach (var obj in testSet.Objects)
+                {
+                    obj[ft.Index] = (obj[ft.Index] - ft.Min) / (ft.Max - ft.Min) + 0.000001M;
+                }
+            }
+
+            for (int i = 0; i < trainSet.Features.Length; i++)
+            {
+                using (var file = new StreamWriter($"Interval criterion for feature {i}"))
+                {
+                    var result = Criterions.IntervalCriterion.Find(trainSet.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+                    {
+                        ClassValue = s.ClassValue.Value,
+                        Distance = s[i],
+                        ObjectIndex = s.Index
+                    }), trainSet.ClassValue);
+
+                    file.WriteLine("Train=====================");
+                    foreach (var item in result.OrderBy(o => o.ObjectValueStart))
+                    {
+                        file.WriteLine(item);
+                    }
+
+                    result = Criterions.IntervalCriterion.Find(testSet.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+                    {
+                        ClassValue = s.ClassValue.Value,
+                        Distance = s[i],
+                        ObjectIndex = s.Index
+                    }), trainSet.ClassValue);
+
+                    file.WriteLine("Test=====================");
+                    foreach (var item in result.OrderBy(o => o.ObjectValueStart))
+                    {
+                        file.WriteLine(item);
+                    }
+                }
+            }
+
+            // var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "For first pair");
+
+            // var logger = new Helpers.Logger("FindFirstPairFeatureByRelativesCount");
+            // var firstPair = Methods.FindFirstPairFeatureByRelativesCount.Find(trainSet, distFunc, Enumerable.Range(0, trainSet.Features.Length), logger);
+
+            // var activeFeatures = Methods.FindAllFeaturesByPhi.Find(trainSet, distFunc, logger, firstPair);
+
+            // trainSet.ToFileData("Thrombin train set normed set.txt");
+            // testSet.ToFileData("Thrombin test set normed.txt");
+
+            // // var activeFeatures = Enumerable.Range(0, testSet.Features.Length);
+            // // var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "kNN");
+            // for (int k = 1; k < 79; k += 2)
+            // {
+            //     System.Console.WriteLine($"========= {k} ===============");
+            //     decimal k1 = 0, k2 = 0;
+            //     var knn = new HashSet<int>();
+            //     for (int i = 0; i < testSet.Objects.Length; i++)
+            //     {
+            //         var dist = trainSet.Objects.ToDictionary(k => k.Index, v => distFunc(testSet.Objects[i], v, testSet.Features, activeFeatures)).OrderBy(o => o.Value).Take(k);
+
+            //         var k1Count = dist.Count(w => trainSet.Objects[w.Key].ClassValue == 1);
+            //         var k2Count = dist.Count(w => trainSet.Objects[w.Key].ClassValue != 1);
+            //         if (k1Count == k2Count)
+            //         {
+            //             System.Console.WriteLine($"Error on test {i}");
+            //         }
+            //         if (k1Count > k2Count && testSet.Objects[i].ClassValue == 1)
+            //         {
+            //             k1++;
+            //             knn = knn.Union(dist.Select(s => s.Key)).ToHashSet();
+            //         }
+            //         else if (k1Count < k2Count && testSet.Objects[i].ClassValue != 1)
+            //         {
+            //             k2++;
+            //             knn = knn.Union(dist.Select(s => s.Key)).ToHashSet();
+            //         }
+            //         // foreach (var item in dist)
+            //         // {
+            //         //     System.Console.WriteLine($"{item.Key} = {item.Value}");
+            //         // }
+            //     }
+
+            //     System.Console.WriteLine(knn.Count);
+
+            //     System.Console.WriteLine($"K1 {k1}\tK2 {k2}");
+
+            //     System.Console.WriteLine($"All percent: {(k1 + k2) / testSet.Objects.Length}");
+
+            //     System.Console.WriteLine($"Weighted percent: {(k1 / testSet.ClassObjectCount + k2 / testSet.NonClassObjectCount) / 2}");
+            // }
+        }
+
+        private static void ClusterByFeature()
+        {
+            var trainSet = new Data.Train.ThrombinSet().GetSetUniqueByObjects();
+            var clusterSet = new BlockingCollection<ClusterSet>();
+
+            Parallel.For(0, trainSet.Features.Length, j =>
+            {
+                var zeroValueObjects = trainSet.Objects.Where(w => w[j] == 0);
+                var oneValueObjects = trainSet.Objects.Where(w => w[j] == 1);
+                if (zeroValueObjects.All(a => a.ClassValue == trainSet.ClassValue))
+                {
+                    clusterSet.Add(new ClusterSet
+                    {
+                        ClassValue = trainSet.ClassValue,
+                        FeatureIndex = j,
+                        FeatureValue = 0,
+                        Objects = zeroValueObjects.Select(s => s.Index).ToHashSet(),
+                        ObjectsWeight = zeroValueObjects.Count() / (decimal)trainSet.ClassObjectCount
+                    });
+                }
+                if (zeroValueObjects.All(a => a.ClassValue != trainSet.ClassValue))
+                {
+                    clusterSet.Add(new ClusterSet
+                    {
+                        ClassValue = trainSet.ClassValue + 1,
+                        FeatureIndex = j,
+                        FeatureValue = 0,
+                        Objects = zeroValueObjects.Select(s => s.Index).ToHashSet(),
+                        ObjectsWeight = zeroValueObjects.Count() / (decimal)trainSet.NonClassObjectCount
+                    });
+                }
+                if (oneValueObjects.All(a => a.ClassValue == trainSet.ClassValue))
+                {
+                    clusterSet.Add(new ClusterSet
+                    {
+                        ClassValue = trainSet.ClassValue,
+                        FeatureIndex = j,
+                        FeatureValue = 1,
+                        Objects = oneValueObjects.Select(s => s.Index).ToHashSet(),
+                        ObjectsWeight = oneValueObjects.Count() / (decimal)trainSet.ClassObjectCount
+                    });
+                }
+                if (oneValueObjects.All(a => a.ClassValue != trainSet.ClassValue))
+                {
+                    clusterSet.Add(new ClusterSet
+                    {
+                        ClassValue = trainSet.ClassValue + 1,
+                        FeatureIndex = j,
+                        FeatureValue = 1,
+                        Objects = oneValueObjects.Select(s => s.Index).ToHashSet(),
+                        ObjectsWeight = oneValueObjects.Count() / (decimal)trainSet.NonClassObjectCount
+                    });
+                }
+            });
+
+            using (var file = new StreamWriter("cluster result.txt"))
+            {
+                foreach (var cluster in clusterSet.OrderByDescending(o => o.ObjectsWeight))
+                {
+                    file.WriteLine($@"Feature {cluster.FeatureIndex}=========================
+        Class value: {cluster.ClassValue}
+        Feature value: {cluster.FeatureValue}
+        Objects({cluster.Objects.Count}): {string.Join(", ", cluster.Objects)}
+        Objects weight: {cluster.ObjectsWeight}");
+                }
+            }
+        }
+
+        class ClusterSet
+        {
+            public HashSet<int> Objects { get; set; }
+            public int FeatureIndex { get; set; }
+            public decimal FeatureValue { get; set; }
+            public int ClassValue { get; set; }
+            public decimal FeatureWeight { get; set; }
+            public decimal ObjectsWeight { get; set; }
+        }
+
+        private static void KNNMethod()
+        {
+            var trainSet = new Data.Train.ThrombinSet().GetSetUniqueByObjects();
+
+            var testSet = new Data.Test.ThrombinTestSet().GetSet();
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(trainSet, "Method2D");
+            var dir = new DirectoryInfo(Path.Combine("_Results", $"kNN Result {DateTime.Now: yyyyMMdd HHmmss}"));
+            dir.Create();
+
+            foreach (var testObject in testSet.Objects)
+            {
+                var dist = new Dictionary<int, decimal>();
+                for (int i = 0; i < trainSet.Objects.Length; i++)
+                {
+                    dist[i] = distFunc(testObject, trainSet.Objects[i], trainSet.Features, Enumerable.Range(0, trainSet.Features.Length));
+                }
+                var orderedDist = dist.OrderBy(o => o.Value);
+                for (int k = 1; k < 80; k++)
+                    using (var resultFile = new StreamWriter(Path.Combine(dir.FullName, $"Result file {k}"), true))
+                    {
+                        var classValue = new int?[k];
+                        int i = 0, ind = 0;
+                        while (i < k)
+                        {
+                            if (!classValue[i].HasValue)
+                                classValue[i] = trainSet.Objects[orderedDist.ElementAt(ind).Key].ClassValue;
+                            else if (classValue[i] != trainSet.Objects[orderedDist.ElementAt(ind).Key].ClassValue)
+                                classValue[i] = -1;
+
+                            ind++;
+
+                            // if (orderedDist.ElementAt(ind).Value != orderedDist.ElementAt(ind + 1).Value)
+                            {
+                                i++;
+                            }
+                        }
+
+                        var k1 = classValue.Count(w => w == 1);
+                        var k2 = classValue.Count(w => w == 2);
+
+                        if (k1 != k2)
+                        {
+                            resultFile.WriteLine(k1 > k2 ? "A" : "I");
+                        }
+                        else
+                        {
+                            resultFile.WriteLine("N/A");
+                        }
+                    }
+            }
         }
 
         private static void FindSimilarObjects()
@@ -129,28 +395,8 @@ namespace thrombin
         private static void Method2DByRS()
         {
             var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - Method2DByRS");
-
-            var trainSet = new Data.Train.NewPr().GetSet();
-            // var data = new Models.ObjectInfo[149];
-            // var ind = 0;
-            // using (var f = new StreamReader(Path.Combine("Data", "Train", "tubnb.dat")))
-            // {
-            //     while (!f.EndOfStream)
-            //     {
-            //         var line = f.ReadLine().Trim();
-            //         System.Console.WriteLine(line);
-
-            //         var d = Array.ConvertAll(line.Split(' ', StringSplitOptions.RemoveEmptyEntries), x => decimal.Parse(x, CultureInfo.InvariantCulture));
-            //         data[ind] = new Models.ObjectInfo
-            //         {
-            //             Data = d.Take(d.Length - 1).ToArray(),
-            //             ClassValue = (int)d[d.Length - 1],
-            //             Index = ind++,
-            //         };
-            //         System.Console.WriteLine($"{d.Length}\n{string.Join(" ", d.Take(d.Length - 1))}\n\n");
-            //     }
-            // }
-            // var trainSet = new Models.ObjectSet("Tuber", data, Enumerable.Range(0, 48).Select(s => new Models.Feature { IsContinuous = false, Name = $"Ft {s:00}" }).ToArray(), 1);
+            var testSet = new Data.Test.ThrombinTestSet().GetSet();
+            var trainSet = new Data.Train.ThrombinSet().GetSetUniqueByObjects(); //
 
             logger.WriteLine("Set info", trainSet.ToString(), true);
 
@@ -166,12 +412,13 @@ namespace thrombin
                 }), trainSet.ClassValue);
             });
 
-            var orderedFeatures = trainSetFeatureWeights.OrderByDescending(o => o.Value.Value).Take(1500).Select(s => s.Key).ToList();
+            var orderedFeatures = trainSetFeatureWeights.Where(w => w.Value.Value > 0).OrderByDescending(o => o.Value.Value).Select(s => s.Key).ToList();
 
-            var newFeaturesCount = 3;
+            var newFeaturesCount = 50;
             var newFeatures = new Models.Feature[newFeaturesCount];
 
             var rs = new Dictionary<int, Dictionary<int, decimal>>();
+            var testrs = new Dictionary<int, Dictionary<int, decimal>>();
             var boundary = new Dictionary<int, decimal>();
             for (int i = 0; i < newFeaturesCount; i++)
             {
@@ -181,6 +428,7 @@ namespace thrombin
                 logger.WriteLine($"0{i}. Set of features.txt", string.Join(", ", featuresSet));
 
                 rs[i] = Methods.GeneralizedAssessment.FindNonContiniousFeature(trainSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
+                testrs[i] = Methods.GeneralizedAssessment.FindNonContiniousFeature(testSet, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
 
                 var crit1Result = Criterions.FirstCriterion.Find(rs[i].Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
                 {
@@ -210,10 +458,22 @@ namespace thrombin
                 };
             }
 
-
+            var testrsObjects = new Models.ObjectInfo[testSet.Objects.Length];
+            for (int i = 0; i < testSet.Objects.Length; i++)
+            {
+                testrsObjects[i] = new Models.ObjectInfo
+                {
+                    Index = i,
+                    Data = Enumerable.Range(0, newFeaturesCount).Select(s => testrs[s][i]).ToArray(), //new decimal[3] { rs[0][i], rs[1][i], rs[2][i] },
+                    ClassValue = testSet.Objects[i].ClassValue,
+                };
+            }
 
             var rsSet = new Models.ObjectSet("Method3DByRs set", rsObjects, newFeatures, 1);
-            // var rsSet = new Data.RS.ThrombinRS5().GetSet();
+            rsSet.ToFileData($"{trainSet.Name} New Rs DataSet.txt");
+
+            var testrsSet = new Models.ObjectSet("Method3DByRs set", testrsObjects, newFeatures, 1);
+            testrsSet.ToFileData($"{testSet.Name} New Rs DataSet.txt");
 
             for (int i = 0; i < newFeaturesCount; i++)
             {
@@ -232,14 +492,26 @@ namespace thrombin
                 logger.WriteLine("Criterion 1 results", $"\tUnique values: {rsSet.Objects.Select(m => m[i]).Distinct().Count()}");
 
                 var near = rsSet.Objects.Where(w => w[i] > crit1Result.Distance).Min(m => m[i]);
-                logger.WriteLine("Criterion 1 results", $"\tNear: {near}, Boundary: {(crit1Result.Distance + near) / 2M}");
+                logger.WriteLine("Criterion 1 results", $"\tNear: {near}, Boundary: {boundary[i]}");
 
-                logger.WriteLine("Criterion 1 results", $"\tK1: {rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count()}");
-                logger.WriteLine("Criterion 1 results", $"\tK2: {rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()}");
-                logger.WriteLine("Criterion 1 results", $"\tPercent: {((rsSet.Objects.Where(w => w[i] > near && w.ClassValue == 1).Count() + rsSet.Objects.Where(w => w[i] < near && w.ClassValue != 1).Count()) / (decimal)rsSet.Objects.Length) * 100}%");
+                decimal k1 = rsSet.Objects.Where(w => w[i] > boundary[i] && w.ClassValue == 1).Count();
+                decimal k1All = rsSet.Objects.Where(w => w.ClassValue == 1).Count();
+                decimal k2 = rsSet.Objects.Where(w => w[i] < boundary[i] && w.ClassValue != 1).Count();
+                decimal k2All = rsSet.Objects.Where(w => w.ClassValue != 1).Count();
+                logger.WriteLine("Criterion 1 results", $"\tK1: {k1} ({k1All})");
+                logger.WriteLine("Criterion 1 results", $"\tK2: {k2} ({k2All})");
+                logger.WriteLine("Criterion 1 results", $"\tPercent: {((k1 + k2) / (decimal)rsSet.Objects.Length) * 100:00.00}%");
+
+                logger.WriteLine("Criterion 1 results", $"===Test objects {testrsSet.Objects.Length}===");
+                k1 = testrsSet.Objects.Where(w => w[i] > boundary[i] && w.ClassValue == 1).Count();
+                k1All = testrsSet.Objects.Where(w => w.ClassValue == 1).Count();
+                k2 = testrsSet.Objects.Where(w => w[i] < boundary[i] && w.ClassValue != 1).Count();
+                k2All = testrsSet.Objects.Where(w => w.ClassValue != 1).Count();
+                logger.WriteLine("Criterion 1 results", $"\tK1: {k1} ({k1All})\t{k1 / k1All * 100:00.00}%");
+                logger.WriteLine("Criterion 1 results", $"\tK2: {k2} ({k2All})\t{k2 / k2All * 100:00.00}%");
+                logger.WriteLine("Criterion 1 results", $"\tPercent: {((k1 + k2) / (decimal)testrsSet.Objects.Length) * 100:00.00}%,\tWeighted: {(k1 / k1All + k2 / k2All) / 2}");
             }
 
-            // rsSet.ToFileData("new rs set");
             // rsSet = Methods.NormilizingMinMax.Normalize(rsSet);
             // var excludedObjects = new HashSet<int>();
 
@@ -382,7 +654,7 @@ namespace thrombin
 
 
                 using (var resultFile = new StreamWriter($"Result file {DateTime.Now: yyyyMMdd HHmmss} {activeFeaturesCount}"))
-                    foreach (var testObject in testObjects)
+                    foreach (var testObject in testObjects.Objects)
                     {
                         var classValue = new int?[activeFeaturesCount];
                         for (int i = 0; i < activeFeaturesCount; i++)
