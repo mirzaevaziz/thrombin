@@ -1,0 +1,7 @@
+ObjectSet = "ThrombinTestSet"
+               , Objects count = 634 
+               , Features count = 139351 
+               , Class value = 1
+               , Class objects = 150
+               , Non Class objects = 484
+               , ClassValues = 2, 1

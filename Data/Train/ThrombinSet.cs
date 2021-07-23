@@ -7,7 +7,7 @@ using thrombin.Models;
 
 namespace thrombin.Data.Train
 {
-    public class ThrombinSet : IObjectSetProvider
+    public class ThrombinSet
     {
         public ObjectSet GetSet()
         {
