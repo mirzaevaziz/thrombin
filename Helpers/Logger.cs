@@ -4,7 +4,7 @@ namespace thrombin.Helpers
 {
     public class Logger
     {
-        public DirectoryInfo Directory { get; set; }
+        public DirectoryInfo Directory { get; private set; }
 
         public Logger(string directory)
         {
