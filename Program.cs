@@ -1,6 +1,5 @@
 ﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System;
@@ -12,7 +11,49 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            Method2DByRS();
+            var set = Models.ObjectSet.FromFileData("Data/Train/Dry_Bean.txt");
+
+            System.Console.WriteLine(set);
+
+            System.Console.WriteLine("Normalizing data set...");
+            set = Methods.NormilizingMinMax.Normalize(set);
+
+            var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
+
+            var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            System.Console.WriteLine($"Finding all distances at {DateTime.Now}...");
+            var dist = Utils.DistanceUtils.FindAllDistanceAndRadius(set, distFunc, Enumerable.Range(0, 16), null);
+
+            System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+            var spheres = Models.Sphere.FindAll(set, dist, null, true);
+
+            System.Console.WriteLine("=====Begin Groups======");
+            var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres, null);
+
+            // foreach (var group in groups)
+            // {
+            //     System.Console.WriteLine($"({group.Count}) {{{string.Join(", ", group)}}}");
+            // }
+            System.Console.WriteLine("=====End Groups======");
+
+            System.Console.WriteLine($"Groups count {groups.Count}");
+
+            var logger = new Helpers.Logger("FindNoisyObjects");
+            var noisyObjects = Methods.FindNoisyObjects.Find(set, spheres, logger);
+            System.Console.WriteLine($"Noisy objects ({noisyObjects.Count}){{{string.Join(", ", noisyObjects)}}}");
+
+            groups = Methods.FindAcquaintanceGrouping.Find(set, spheres.Where(w => !noisyObjects.Contains(w.ObjectIndex.Value)), noisyObjects);
+            System.Console.WriteLine($"New groups count {groups.Count}");
+
+            var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, noisyObjects, dist, logger);
+
+            System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
+
+
+            watch.Stop();
+            var elapsedMs = watch.ElapsedMilliseconds;
+            // Method2DByRS();
 
             // while (true)
             // {
@@ -93,6 +134,8 @@ namespace thrombin
 
             //     System.Console.WriteLine($"Weighted percent: {(k1 / testSet.ClassObjectCount + k2 / testSet.NonClassObjectCount) / 2}");
             // }
+            System.Console.WriteLine($"Done at {DateTime.Now}...");
+            // Console.ReadKey();
         }
 
         private static void Method2DByRS()

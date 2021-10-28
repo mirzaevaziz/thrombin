@@ -1,0 +1,25 @@
+Area
+Perimeter
+MajorAxisLength
+MinorAxisLength
+AspectRation
+Eccentricity
+ConvexArea
+EquivDiameter
+Extent
+Solidity
+roundness
+Compactness
+ShapeFactor1
+ShapeFactor2
+ShapeFactor3
+ShapeFactor4
+Class
+
+SEKER 1
+BARBUNYA 2 
+BOMBAY 3
+CALI 4
+DERMOSAN 5
+HOROZ 6
+SIRA 7
