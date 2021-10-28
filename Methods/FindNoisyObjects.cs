@@ -11,6 +11,37 @@ namespace thrombin.Methods
     {
         public static HashSet<int> Find(
             ObjectSet set,
+            IEnumerable<Sphere> spheres, Helpers.Logger log)
+        {
+            log.WriteLine("FindNoisyObjects", $"===== FindNoisyObjects Started at {DateTime.Now}", true);
+
+            var result = new BlockingCollection<int>();
+
+            var candidates = spheres.SelectMany(s => s.Enemies).Distinct();
+
+            Parallel.ForEach(candidates, candidate =>
+            {
+                var relativeCount = spheres.First(w => w.ObjectIndex == candidate).Relatives.Count();
+
+                var enemyCount = spheres.Count(w => w.Enemies.Contains(candidate));
+
+                if (relativeCount < enemyCount)
+                {
+                    result.Add(candidate);
+                    log.WriteLine("FindNoisyObjects log", $"Object[{candidate}], Relative count = {relativeCount}, Enemy count = {enemyCount}");
+                }
+
+            });
+            result.CompleteAdding();
+
+            log.WriteLine("FindNoisyObjects", string.Join(Environment.NewLine, result));
+
+            log.WriteLine("FindNoisyObjects", $"===== FindNoisyObjects Ended at {DateTime.Now}", true);
+            return result.ToHashSet();
+        }
+
+        public static HashSet<int> Find(
+            ObjectSet set,
             IEnumerable<Sphere> spheres,
             HashSet<int> excludedObjects, Helpers.Logger log)
         {
