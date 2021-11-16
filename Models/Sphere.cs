@@ -32,38 +32,38 @@ namespace thrombin.Models
         {
             var result = new BlockingCollection<Sphere>();
 
-            Parallel.For(0, set.Objects.Length, i =>
-            {
-                if (excludedObjects?.Contains(i) == true)
-                    return;
+            var objects = Enumerable.Range(0, set.Objects.Length);
+            if (excludedObjects?.Count > 0)
+                objects = objects.Where(w => !excludedObjects.Contains(w));
 
+            Parallel.ForEach(objects, i =>
+            {
                 var sphere = new Sphere()
                 {
                     Radius = decimal.MaxValue,
                     ObjectIndex = i
                 };
-                for (int j = 0; j < set.Objects.Length; j++)
-                {
-                    if (excludedObjects?.Contains(j) == true)
-                        continue;
 
-                    if (set.Objects[i].ClassValue != set.Objects[j].ClassValue && (sphere.Radius >= dist[i, j]))
+                foreach (int j in objects)
+                {
+                    if (set.Objects[i].ClassValue != set.Objects[j].ClassValue)
                     {
-                        if (sphere.Radius != dist[i, j])
+                        if (sphere.Radius > dist[i, j])
                         {
+                            sphere.Radius = dist[i, j];
                             sphere.Enemies.Clear();
+                            sphere.Enemies.Add(j);
                         }
-                        sphere.Radius = dist[i, j];
-                        sphere.Enemies.Add(j);
+                        else if (sphere.Radius == dist[i, j])
+                        {
+                            sphere.Enemies.Add(j);
+                        }
                     }
                 }
 
-                for (int j = 0; j < set.Objects.Length; j++)
+                foreach (int j in objects)
                 {
-                    if (excludedObjects?.Contains(j) == true)
-                        continue;
-
-                    if (set.Objects[i].ClassValue == set.Objects[j].ClassValue && sphere.Radius > dist[i, j])
+                    if (i != j && set.Objects[i].ClassValue == set.Objects[j].ClassValue && sphere.Radius > dist[i, j])
                     {
                         sphere.Relatives.Add(j);
                     }
@@ -73,77 +73,22 @@ namespace thrombin.Models
                 {
                     foreach (var enemyIndex in sphere.Enemies)
                     {
+                        var cov = new HashSet<int>();
                         decimal radius = decimal.MaxValue;
-                        foreach (var j in sphere.Relatives)
+                        var indexes = sphere.Relatives.ToArray().Append(sphere.ObjectIndex.Value);
+                        foreach (var j in indexes)
                         {
                             if (radius >= dist[enemyIndex, j])
                             {
                                 if (radius != dist[enemyIndex, j])
                                 {
-                                    sphere.Coverage.Clear();
+                                    cov.Clear();
+                                    radius = dist[enemyIndex, j];
                                 }
-                                radius = dist[enemyIndex, j];
-                                sphere.Coverage.Add(j);
+                                cov.Add(j);
                             }
                         }
-                    }
-                }
-
-                result.Add(sphere);
-            });
-
-            result.CompleteAdding();
-
-            return result;
-        }
-
-        public static IEnumerable<Sphere> FindAll(ObjectSet set, DistanceAndRadius dist, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
-        {
-            var result = new BlockingCollection<Sphere>();
-
-            Parallel.For(0, set.Objects.Length, i =>
-            {
-                if (excludedObjects?.Contains(i) == true)
-                    return;
-
-                var sphere = new Sphere()
-                {
-                    Radius = dist.Radiuses[i],
-                    ObjectIndex = i
-                };
-
-                for (int j = 0; j < set.Objects.Length; j++)
-                {
-                    if (excludedObjects?.Contains(j) == true)
-                        continue;
-
-                    if (set.Objects[i].ClassValue == set.Objects[j].ClassValue && sphere.Radius > dist.Distances[i, j])
-                    {
-                        sphere.Relatives.Add(j);
-                    }
-                    if (set.Objects[i].ClassValue != set.Objects[j].ClassValue && sphere.Radius == dist.Distances[i, j])
-                    {
-                        sphere.Enemies.Add(j);
-                    }
-                }
-
-                if (ShouldFindCoverage)
-                {
-                    foreach (var enemyIndex in sphere.Enemies)
-                    {
-                        decimal radius = decimal.MaxValue;
-                        foreach (var j in sphere.Relatives)
-                        {
-                            if (radius >= dist.Distances[enemyIndex, j])
-                            {
-                                if (radius != dist.Distances[enemyIndex, j])
-                                {
-                                    sphere.Coverage.Clear();
-                                }
-                                radius = dist.Distances[enemyIndex, j];
-                                sphere.Coverage.Add(j);
-                            }
-                        }
+                        sphere.Coverage.UnionWith(cov);
                     }
                 }
 

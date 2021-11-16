@@ -34,7 +34,7 @@ namespace thrombin.Methods
             });
             result.CompleteAdding();
 
-            log.WriteLine("FindNoisyObjects", string.Join(Environment.NewLine, result));
+            log.WriteLine("FindNoisyObjects", string.Join(Environment.NewLine, result.OrderBy(o => o)));
 
             log.WriteLine("FindNoisyObjects", $"===== FindNoisyObjects Ended at {DateTime.Now}", true);
             return result.ToHashSet();

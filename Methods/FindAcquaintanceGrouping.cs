@@ -6,31 +6,36 @@ namespace thrombin.Methods
 {
     public class FindAcquaintanceGrouping
     {
-        public static List<HashSet<int>> Find(ObjectSet set, IEnumerable<Sphere> spheres, HashSet<int> excludedObjects)
+        public static List<HashSet<int>> Find(ObjectSet set, IEnumerable<Sphere> spheres)
         {
             var result = new List<HashSet<int>>();
 
-            var coverage = spheres.SelectMany(s => s.Coverage).ToHashSet();
             var allCoverage = spheres.SelectMany(s => s.Coverage).ToHashSet();
             var notSeenObjects = spheres.Select(s => s.ObjectIndex.Value).ToHashSet();
 
-            while (coverage.Count > 0)
+            while (notSeenObjects.Count > 0)
             {
-                var obj = coverage.ElementAt(0);
-                coverage.Remove(obj);
-                var group = spheres.Where(w => w.Relatives.Contains(obj) && notSeenObjects.Contains(w.ObjectIndex.Value)).Select(s => s.ObjectIndex.Value).ToHashSet();
-                if (group.Count == 0)
-                    continue;
-                do
+                var obj = notSeenObjects.ElementAt(0);
+                // notSeenObjects.Remove(obj);
+                var group = new HashSet<int>();
+                group.Add(obj);
+
+                while (true)
                 {
-                    var cov = spheres.Where(w => group.Contains(w.ObjectIndex.Value) && w.Relatives.Any(a => allCoverage.Contains(a))).SelectMany(s => allCoverage.Where(w => s.Relatives.Contains(w))).ToHashSet();
+                    var cov = spheres.Where(w => group.Contains(w.ObjectIndex.Value) || w.Relatives.Overlaps(group)).SelectMany(s => s.Relatives).ToHashSet();
+                    cov.UnionWith(spheres.Where(w => group.Contains(w.ObjectIndex.Value) || w.Relatives.Overlaps(group)).Select(s => s.ObjectIndex.Value).ToHashSet());
+                    cov.IntersectWith(allCoverage);
+                    group.UnionWith(cov.Intersect(notSeenObjects));
                     notSeenObjects.RemoveWhere(w => group.Contains(w));
-                    var newObjects = spheres.Where(w => notSeenObjects.Contains(w.ObjectIndex.Value) && w.Relatives.Any(a => cov.Contains(a))).Select(s => s.ObjectIndex.Value).ToHashSet();
+
+                    var newObjects = spheres.Where(w => notSeenObjects.Contains(w.ObjectIndex.Value) && (w.Relatives.Overlaps(cov) || cov.Contains(w.ObjectIndex.Value))).Select(s => s.ObjectIndex.Value);
                     if (newObjects.Count() == 0)
                         break;
+
                     group.UnionWith(newObjects);
-                    coverage.RemoveWhere(w => cov.Contains(w));
-                } while (true);
+                    notSeenObjects.RemoveWhere(w => group.Contains(w));
+                }
+
                 result.Add(group);
             }
 
