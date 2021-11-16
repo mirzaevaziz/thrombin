@@ -75,7 +75,7 @@ namespace thrombin.Models
                     {
                         var cov = new HashSet<int>();
                         decimal radius = decimal.MaxValue;
-                        var indexes = sphere.Relatives.ToArray().Append(sphere.ObjectIndex.Value);
+                        var indexes = sphere.Relatives.ToArray();//.Append(sphere.ObjectIndex.Value);
                         foreach (var j in indexes)
                         {
                             if (radius >= dist[enemyIndex, j])
