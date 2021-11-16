@@ -23,32 +23,44 @@ namespace thrombin
             var watch = System.Diagnostics.Stopwatch.StartNew();
 
             System.Console.WriteLine($"Finding all distances at {DateTime.Now}...");
-            var dist = Utils.DistanceUtils.FindAllDistanceAndRadius(set, distFunc, Enumerable.Range(0, 16), null);
+            var dist = Utils.DistanceUtils.FindAllDistance(set, distFunc, Enumerable.Range(0, set.Features.Length), false);
 
             System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
             var spheres = Models.Sphere.FindAll(set, dist, null, true);
+            System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
 
-            System.Console.WriteLine("=====Begin Groups======");
-            var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres, null);
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - FindNoisyObjects");
 
-            // foreach (var group in groups)
-            // {
-            //     System.Console.WriteLine($"({group.Count}) {{{string.Join(", ", group)}}}");
-            // }
-            System.Console.WriteLine("=====End Groups======");
+            logger.WriteLine("Spheres with noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
 
-            System.Console.WriteLine($"Groups count {groups.Count}");
+            logger.WriteLine("Boundary objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
 
-            var logger = new Helpers.Logger("FindNoisyObjects");
+            logger.WriteLine("Coverage objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
             var noisyObjects = Methods.FindNoisyObjects.Find(set, spheres, logger);
             System.Console.WriteLine($"Noisy objects ({noisyObjects.Count}){{{string.Join(", ", noisyObjects)}}}");
 
-            groups = Methods.FindAcquaintanceGrouping.Find(set, spheres.Where(w => !noisyObjects.Contains(w.ObjectIndex.Value)), noisyObjects);
+            System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+            spheres = Models.Sphere.FindAll(set, dist, noisyObjects, true);
+            System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
+
+            logger.WriteLine("Spheres without noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
+
+            logger.WriteLine("Boundary objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
+
+            logger.WriteLine("Coverage objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
+            var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres);
             System.Console.WriteLine($"New groups count {groups.Count}");
 
-            var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, noisyObjects, dist, logger);
+            foreach (var group in groups.OrderByDescending(o => o.Count))
+            {
+                logger.WriteLine("Groups", $"Group ({group.Count}) {{{string.Join(", ", group.OrderBy(o => o))}}}");
+            }
 
-            System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
+            var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, dist, logger);
+
+            // System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
 
 
             watch.Stop();
