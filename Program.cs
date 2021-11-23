@@ -17,54 +17,67 @@ namespace thrombin
 
             System.Console.WriteLine("Normalizing data set...");
             set = Methods.NormilizingMinMax.Normalize(set);
-
-            var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
-
-            var watch = System.Diagnostics.Stopwatch.StartNew();
-
-            System.Console.WriteLine($"Finding all distances at {DateTime.Now}...");
-            var dist = Utils.DistanceUtils.FindAllDistance(set, distFunc, Enumerable.Range(0, set.Features.Length), false);
-
-            System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
-            var spheres = Models.Sphere.FindAll(set, dist, null, true);
-            System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
-
-            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - FindNoisyObjects");
-
-            logger.WriteLine("Spheres with noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
-
-            logger.WriteLine("Boundary objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
-
-            logger.WriteLine("Coverage objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
-
-            var noisyObjects = Methods.FindNoisyObjects.Find(set, spheres, logger);
-            System.Console.WriteLine($"Noisy objects ({noisyObjects.Count}){{{string.Join(", ", noisyObjects)}}}");
-
-            System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
-            spheres = Models.Sphere.FindAll(set, dist, noisyObjects, true);
-            System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
-
-            logger.WriteLine("Spheres without noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
-
-            logger.WriteLine("Boundary objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
-
-            logger.WriteLine("Coverage objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
-
-            var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres);
-            System.Console.WriteLine($"New groups count {groups.Count}");
-
-            foreach (var group in groups.OrderByDescending(o => o.Count))
+            for (int i = 0; i < set.Features.Count(); i++)
             {
-                logger.WriteLine("Groups", $"Group ({group.Count}) {{{string.Join(", ", group.OrderBy(o => o))}}}");
+                var p = set.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    Distance = s[i],
+                    ObjectIndex = s.Index
+                }).ToArray();
+                var c = Criterions.FirstCriterion.Find(p);
+                System.Console.WriteLine(c);
             }
 
-            var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, dist, logger);
+            // var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
 
-            // System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
+            // var watch = System.Diagnostics.Stopwatch.StartNew();
+
+            // System.Console.WriteLine($"Finding all distances at {DateTime.Now}...");
+            // var dist = Utils.DistanceUtils.FindAllDistance(set, distFunc, Enumerable.Range(0, set.Features.Length), false);
+
+            // System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+            // var spheres = Models.Sphere.FindAll(set, dist, null, true);
+            // System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
+
+            // var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - FindNoisyObjects");
+
+            // logger.WriteLine("Spheres with noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
+
+            // logger.WriteLine("Boundary objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
+
+            // logger.WriteLine("Coverage objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
+            // var noisyObjects = Methods.FindNoisyObjects.Find(set, spheres, logger);
+            // System.Console.WriteLine($"Noisy objects ({noisyObjects.Count}){{{string.Join(", ", noisyObjects)}}}");
+
+            // System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+            // spheres = Models.Sphere.FindAll(set, dist, noisyObjects, true);
+            // System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
+
+            // logger.WriteLine("Spheres without noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
+
+            // logger.WriteLine("Boundary objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
+
+            // logger.WriteLine("Coverage objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
+            // var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres);
+            // System.Console.WriteLine($"New groups count {groups.Count}");
+
+            // foreach (var group in groups.OrderByDescending(o => o.Count))
+            // {
+            //     logger.WriteLine("Groups", $"Group ({group.Count}) {{{string.Join(", ", group.OrderBy(o => o))}}}");
+            // }
+
+            // var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, dist, logger);
+
+            // // System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
 
 
-            watch.Stop();
-            var elapsedMs = watch.ElapsedMilliseconds;
+            // watch.Stop();
+            // var elapsedMs = watch.ElapsedMilliseconds;
+
+
             // Method2DByRS();
 
             // while (true)
@@ -147,7 +160,7 @@ namespace thrombin
             //     System.Console.WriteLine($"Weighted percent: {(k1 / testSet.ClassObjectCount + k2 / testSet.NonClassObjectCount) / 2}");
             // }
             System.Console.WriteLine($"Done at {DateTime.Now}...");
-            // Console.ReadKey();
+            Console.ReadKey();
         }
 
         private static void Method2DByRS()
