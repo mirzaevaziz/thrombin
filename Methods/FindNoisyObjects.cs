@@ -28,7 +28,7 @@ namespace thrombin.Methods
                 if (relativeCount < enemyCount)
                 {
                     result.Add(candidate);
-                    log.WriteLine("FindNoisyObjects log", $"Object[{candidate}], Relative count = {relativeCount}, Enemy count = {enemyCount}");
+                    // log.WriteLine("FindNoisyObjects log", $"Object[{candidate}], Relative count = {relativeCount}, Enemy count = {enemyCount}");
                 }
 
             });
