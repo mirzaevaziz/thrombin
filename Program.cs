@@ -17,7 +17,8 @@ namespace thrombin
 
             System.Console.WriteLine("Normalizing data set...");
             set = Methods.NormilizingMinMax.Normalize(set);
-            for (int i = 0; i < set.Features.Count(); i++)
+            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
+            Parallel.For(0, set.Features.Count(), i =>
             {
                 var p = set.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
                 {
@@ -26,8 +27,8 @@ namespace thrombin
                     ObjectIndex = s.Index
                 }).ToArray();
                 var c = Criterions.FirstCriterion.Find(p);
-                System.Console.WriteLine(c);
-            }
+                logger.WriteLine($"Result for feature #{i:00}", c.ToString());
+            });
 
             // var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
 

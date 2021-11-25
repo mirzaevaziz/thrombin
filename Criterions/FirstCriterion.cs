@@ -213,6 +213,8 @@ namespace thrombin.Criterions
                     }
                 }
 
+                var old = intervals[1];
+
                 bool wasChange = false;
                 for (int i = 1; i < classCount; i++)
                 {
@@ -229,6 +231,9 @@ namespace thrombin.Criterions
                 }
                 if (!wasChange)
                     break;
+
+                if (intervals[1] != old)
+                    System.Console.WriteLine(string.Join(", ", intervals));
             }
 
             return result;
