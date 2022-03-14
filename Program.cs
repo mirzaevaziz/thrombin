@@ -11,24 +11,26 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            var set = Models.ObjectSet.FromFileData("Data/Train/Dry_Bean.txt");
+            thrombin.Data.HeartDataSetProvider.ReadDataSet();
 
-            System.Console.WriteLine(set);
+            // var set = Models.ObjectSet.FromFileData("Data/Train/Dry_Bean.txt");
 
-            System.Console.WriteLine("Normalizing data set...");
-            set = Methods.NormilizingMinMax.Normalize(set);
-            var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
-            Parallel.For(0, set.Features.Count(), i =>
-            {
-                var p = set.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
-                {
-                    ClassValue = s.ClassValue.Value,
-                    Distance = s[i],
-                    ObjectIndex = s.Index
-                }).ToArray();
-                var c = Criterions.FirstCriterion.Find(p);
-                logger.WriteLine($"Result for feature #{i:00}", c.ToString());
-            });
+            // System.Console.WriteLine(set);
+
+            // System.Console.WriteLine("Normalizing data set...");
+            // set = Methods.NormilizingMinMax.Normalize(set);
+            // var logger = new Helpers.Logger($"{DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
+            // Parallel.For(0, set.Features.Count(), i =>
+            // {
+            //     var p = set.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+            //     {
+            //         ClassValue = s.ClassValue.Value,
+            //         Distance = s[i],
+            //         ObjectIndex = s.Index
+            //     }).ToArray();
+            //     var c = Criterions.FirstCriterion.Find(p);
+            //     logger.WriteLine($"Result for feature #{i:00}", c.ToString());
+            // });
 
             // var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
 
