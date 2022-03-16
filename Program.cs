@@ -11,7 +11,36 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            thrombin.Data.HeartDataSetProvider.ReadDataSet();
+            var set = thrombin.Data.HeartDataSetProvider.ReadDataSet();
+            var logger = new Helpers.Logger($"Heart {DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
+
+            Parallel.For(0, set.Features.Count(), i =>
+            {
+                if (set.Features[i].IsContinuous)
+                {
+                    var p = set.Objects.Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+                    {
+                        ClassValue = s.ClassValue.Value,
+                        Distance = s[i],
+                        ObjectIndex = s.Index
+                    }).ToArray();
+                    var c = Criterions.FirstCriterion.Find(p, set.ClassValue);
+                    logger.WriteLine($"Result for feature #{i:00}", c.ToString());
+                }
+                else
+                {
+                    var p = set.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
+                    {
+                        ClassValue = s.ClassValue.Value,
+                        FeatureValue = s[i],
+                        ObjectIndex = s.Index
+                    }).ToArray();
+
+                    var c = Criterions.NonContinuousFeatureCriterion.Find(p, set.ClassValue);
+                    logger.WriteLine($"Result for feature #{i:00}", c.ToString());
+                }
+            });
+
 
             // var set = Models.ObjectSet.FromFileData("Data/Train/Dry_Bean.txt");
 

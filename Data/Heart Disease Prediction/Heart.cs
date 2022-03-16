@@ -6,7 +6,7 @@ using System.Linq;
 namespace thrombin.Data;
 public class HeartDataSetProvider
 {
-    public static void ReadDataSet()
+    public static Models.ObjectSet ReadDataSet()
     {
         var features = new List<Models.Feature>();
         using (var header = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "names.data")))
@@ -82,5 +82,7 @@ public class HeartDataSetProvider
 
         var set = new Models.ObjectSet("Heart Disease Prediction", objectList.ToArray(), features.Skip(1).ToArray(), featureValues[0]["Yes"]);
         System.Console.WriteLine(set);
+
+        return set;
     }
 }

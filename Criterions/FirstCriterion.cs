@@ -60,15 +60,15 @@ namespace thrombin.Criterions
         {
             FirstCriterionResult result = null;
 
-            var classCount = objects.Count(w => w.ClassValue == classValue);
-            var nonClassCount = objects.Count(w => w.ClassValue != classValue);
+            decimal classCount = objects.Count(w => w.ClassValue == classValue);
+            decimal nonClassCount = objects.Count(w => w.ClassValue != classValue);
 
             decimal denominator1 = classCount * (classCount - 1) + nonClassCount * (nonClassCount - 1);
             decimal denominator2 = 2 * classCount * nonClassCount;
 
             var sorted = objects.OrderBy(o => o.Distance).ToArray();
 
-            int u11 = 0, u12 = 0, u21 = 0, u22 = 0;
+            decimal u11 = 0, u12 = 0, u21 = 0, u22 = 0;
             for (int i = 0; i < sorted.Length - 1; i++)
             {
                 var obj = sorted[i];
