@@ -1,0 +1,1 @@
+ObjectIndex = 0, Distance = 7.0, Value = 0.2548342198613143271565616200

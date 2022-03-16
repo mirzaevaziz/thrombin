@@ -45,8 +45,8 @@ namespace thrombin.Criterions
             result.FeatureContribute = new Dictionary<decimal, decimal>();
             foreach (var p in pList)
             {
-                var g1r = objects.Count(w => w.FeatureValue == p && w.ClassValue == classValue);
-                var g2r = objects.Count(w => w.FeatureValue == p && w.ClassValue != classValue);
+                decimal g1r = objects.Count(w => w.FeatureValue == p && w.ClassValue == classValue);
+                decimal g2r = objects.Count(w => w.FeatureValue == p && w.ClassValue != classValue);
                 result.FeatureContribute[p] = (g1r * nonClassCount - g2r * classCount) / (classCount * nonClassCount);
                 sum += g1r * g2r;
 
