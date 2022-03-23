@@ -11,9 +11,10 @@ namespace thrombin
     {
         static void Main(string[] args)
         {
-            var set = thrombin.Data.HeartDataSetProvider.ReadDataSet();
             var logger = new Helpers.Logger($"Heart {DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
 
+            var set = thrombin.Data.HeartDataSetProvider.ReadDataSet(logger);
+            // set = Methods.NormilizingMinMax.Normalize(set);
             Parallel.For(0, set.Features.Count(), i =>
             {
                 if (set.Features[i].IsContinuous)
@@ -40,6 +41,30 @@ namespace thrombin
                     logger.WriteLine($"Result for feature #{i:00}", c.ToString());
                 }
             });
+
+            Parallel.For(0, set.Features.Count(), i =>
+            {
+                if (set.Features[i].IsContinuous)
+                {
+                    var p = set.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+                    {
+                        ClassValue = s.ClassValue.Value,
+                        Distance = s[i],
+                        ObjectIndex = s.Index
+                    });
+                    var c = Criterions.IntervalCriterion.Find(p, set.ClassValue);
+                    logger.WriteLine($"Result for feature interval criterion #{i:00}", string.Join("\n", c));
+                }
+            });
+
+            var p = set.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+            {
+                ClassValue = s.ClassValue.Value,
+                Distance = s[0],
+                ObjectIndex = s.Index
+            });
+
+            logger.WriteLine("Feature 0 ordered values", string.Join("\n", p.OrderBy(o => o.Distance).Select(s => $"{s.Distance}\t{s.ClassValue}")));
 
 
             // var set = Models.ObjectSet.FromFileData("Data/Train/Dry_Bean.txt");

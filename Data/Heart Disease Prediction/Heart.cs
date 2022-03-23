@@ -6,7 +6,7 @@ using System.Linq;
 namespace thrombin.Data;
 public class HeartDataSetProvider
 {
-    public static Models.ObjectSet ReadDataSet()
+    public static Models.ObjectSet ReadDataSet(Helpers.Logger logger)
     {
         var features = new List<Models.Feature>();
         using (var header = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "names.data")))
@@ -27,7 +27,7 @@ public class HeartDataSetProvider
 
         foreach (var item in features)
         {
-            System.Console.WriteLine(item);
+            logger.WriteLine("Set info", item.ToString());
         }
 
         var featureValues = new Dictionary<int, Dictionary<string, int>>();
@@ -66,13 +66,12 @@ public class HeartDataSetProvider
 
         foreach (var ft in featureValues)
         {
-            System.Console.WriteLine($"Feature {features[ft.Key].Name} values:");
+            logger.WriteLine("Set info", $"Feature {features[ft.Key].Name} values:");
             foreach (var ftVal in ft.Value)
             {
-                System.Console.WriteLine($"\t{ftVal.Value} = {ftVal.Key}");
+                logger.WriteLine("Set info", $"\t{ftVal.Value} = {ftVal.Key}");
             }
         }
-        System.Console.WriteLine($"Read {objectList.Count} objects...");
 
         for (int i = 0; i < objectList.Count; i++)
         {
@@ -81,7 +80,7 @@ public class HeartDataSetProvider
         }
 
         var set = new Models.ObjectSet("Heart Disease Prediction", objectList.ToArray(), features.Skip(1).ToArray(), featureValues[0]["Yes"]);
-        System.Console.WriteLine(set);
+        logger.WriteLine("Set info", set.ToString(), true);
 
         return set;
     }
