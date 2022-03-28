@@ -13,7 +13,30 @@ namespace thrombin
         {
             var logger = new Helpers.Logger($"Heart {DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
 
-            var set = thrombin.Data.HeartDataSetProvider.ReadDataSet(logger);
+            var set = thrombin.Data.HeartDataSetProvider.ReadDataSetUnique(logger);
+            // var similars = new HashSet<int>();
+
+            // for (int i = 0; i < set.Objects.Length - 1; i++)
+            // {
+            //     if (similars.Contains(i)) continue;
+            //     for (int j = i + 1; j < set.Objects.Length; j++)
+            //     {
+            //         if (similars.Contains(j)) continue;
+
+            //         if (set.Objects[i].EqualsByValues(set.Objects[j]))
+            //         {
+            //             similars.Add(j);
+            //             if (set.Objects[i].ClassValue != set.Objects[j].ClassValue)
+            //             {
+            //                 similars.Add(i);
+            //             }
+            //             logger.WriteLine("Similar objects", $"Object[{i}] = Object[{j}]   {set.Objects[i].ClassValue} = {set.Objects[j].ClassValue}");
+            //         }
+            //     }
+            // }
+
+            // logger.WriteLine("Similar indexes", string.Join(Environment.NewLine, similars));
+
             // set = Methods.NormilizingMinMax.Normalize(set);
             Parallel.For(0, set.Features.Count(), i =>
             {
