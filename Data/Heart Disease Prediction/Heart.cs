@@ -140,7 +140,7 @@ public class HeartDataSetProvider
                 {
                     if (features[i].IsContinuous)
                     {
-                        obj.Data[i] = decimal.Parse(line[i]);
+                        obj.Data[i] = decimal.Parse(line[i], System.Globalization.CultureInfo.InvariantCulture);
                     }
                     else
                     {

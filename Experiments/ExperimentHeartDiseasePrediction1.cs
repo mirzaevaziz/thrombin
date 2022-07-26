@@ -45,6 +45,49 @@ class ExperimentHeartDiseasePrediction1
         set.ToFileData("ExperimentHeartDiseasePrediction1AllNonContinuous.txt");
     }
 
+    public static void TransformUniqueToNonContinuous()
+    {
+        var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction1 {DateTime.Now:yyyyMMdd HHmmss} - TransformToNonContinuous");
+
+        var set = thrombin.Data.HeartDataSetProvider.ReadDataSetUnique(logger);
+        set.ToFileData("HeartDiseasePredictionRaw.txt");
+
+        for (int i = 0; i < set.Features.Length; i++)
+        {
+            if (set.Features[i].IsContinuous)
+            {
+                logger.WriteLine("Continuous features", $"Feature[{i}] is continuous.", true);
+                var p = set.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+                {
+                    ClassValue = s.ClassValue.Value,
+                    Distance = s[i],
+                    ObjectIndex = s.Index
+                });
+                var c = Criterions.IntervalCriterion.Find(p, set.ClassValue);
+                logger.WriteLine($"Result for feature interval criterion #{i:00}", string.Join("\n", c));
+
+                foreach (var obj in set.Objects)
+                {
+                    var interval = c.First(w => w.ObjectValueStart <= obj[i] && obj[i] <= w.ObjectValueEnd);
+                    obj[i] = (interval.FunctionValue > 0.5M) ? 1 : 0;
+                }
+
+                // for (int j = 0; j < c.Count(); j++)
+                // {
+                //     var boundary = c.ElementAt(j);
+                //     var objs = set.Objects.Where(w => boundary.ObjectValueStart <= w[i] && w[i] <= boundary.ObjectValueEnd);
+                //     foreach (var obj in objs)
+                //     {
+                //         obj[i] = j;
+                //     }
+                // }
+                set.Features[i].IsContinuous = false;
+            }
+        }
+
+        set.ToFileData("ExperimentHeartDiseasePrediction1AllNonContinuous.txt");
+    }
+
     public static void Run()
     {
         var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction1 {DateTime.Now:yyyyMMdd HHmmss}");
@@ -80,24 +123,37 @@ class ExperimentHeartDiseasePrediction1
         {
             ftIndex++;
             newFeatures.Add(new Models.Feature { Name = $"Ft of RS {ftIndex}", IsContinuous = true });
-            var featuresSet = orderedFeatures.Take(4);
-            // var firstPair = new List<int>() { orderedFeatures[0] };
-            // var featuresSet = Methods.FindAllFeaturesByRs.Find(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            // var featuresSet = orderedFeatures.Take(9);
+            var firstPair = new List<int>() { orderedFeatures[0] };
+            var featuresSet = Methods.FindAllFeaturesByRs.Find(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join(", ", featuresSet));
 
             rs[ftIndex] = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
 
-            var crit1Result = Criterions.FirstCriterion.Find(rs[ftIndex].Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
+            var param = rs[ftIndex].Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
             {
                 ClassValue = set.Objects[s.Key].ClassValue.Value,
                 Distance = s.Value,
                 ObjectIndex = s.Key
-            }), set.ClassValue);
+            });
+
+            var crit1Result = Criterions.FirstCriterion.Find(param, set.ClassValue);
 
             boundary[ftIndex] = (crit1Result.Distance + rs[ftIndex].Where(w => w.Value > crit1Result.Distance).Min(m => m.Value)) / 2M;
 
+            var classCountOnFirstInterval = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue == set.ClassValue);
+            var nonClassCountOnFirstInterval = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
+
+            System.Console.WriteLine($"{classCountOnFirstInterval} ---- {nonClassCountOnFirstInterval}");
+            System.Console.WriteLine($"{param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue == set.ClassValue)} ---- {param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue != set.ClassValue)}");
+
+            var found = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue == set.ClassValue || crit1Result.Distance < obj.Distance && obj.ClassValue != set.ClassValue);
+
             logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Feature count is {featuresSet.Count()}\nCriterion1 result is {crit1Result}\nBoundary = {boundary[ftIndex]}");
+            logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Accuracy: {found / (decimal)param.Count()} Found: {found}");
+
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join("\n", rs[ftIndex].Values.Select(s => $"{s:0.000000}")));
+
 
             orderedFeatures = orderedFeatures.Except(featuresSet).ToList();
         }
@@ -123,6 +179,16 @@ class ExperimentHeartDiseasePrediction1
                 }).ToArray();
                 var c = Criterions.FirstCriterion.Find(p, set.ClassValue);
                 logger.WriteLine($"Result for feature #{i:00}", c.ToString());
+
+                var found = p.Count(obj => c.Distance < obj.Distance && obj.ClassValue == set.ClassValue || c.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
+
+                System.Console.WriteLine($"{c.Distance}");
+
+                System.Console.WriteLine($"{p.Count(obj => c.Distance >= obj.Distance && obj.ClassValue == set.ClassValue)} -- {p.Count(obj => c.Distance >= obj.Distance && obj.ClassValue != set.ClassValue)}");
+
+                System.Console.WriteLine($"{p.Count(obj => c.Distance < obj.Distance && obj.ClassValue == set.ClassValue)} -- {p.Count(obj => c.Distance < obj.Distance && obj.ClassValue != set.ClassValue)}");
+
+                System.Console.WriteLine($"Found {found};\t Accuracy {found / (decimal)p.Count()}");
             }
             else
             {
