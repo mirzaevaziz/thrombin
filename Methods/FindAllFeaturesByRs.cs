@@ -122,7 +122,7 @@ namespace thrombin.Methods
                 //     log.WriteLine("TettaGamma.txt", $"{item.FeatureIndex}\tvalue={item.R}");
                 // }
 
-                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R <= minR.R || Math.Abs(prevPhi.R - minR.R) < 0.001M) //  
+                if (minR == null || activeFeatures.Contains(minR.FeatureIndex) || prevPhi.R <= minR.R || Math.Abs(prevPhi.R - minR.R) < 0.0001M) //   
                     break;
 
                 prevPhi = minR;
