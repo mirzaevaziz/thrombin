@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace thrombin.Experiments;
 
 class ExperimentHeartDiseasePrediction1
@@ -216,7 +211,7 @@ class ExperimentHeartDiseasePrediction1
         {
             ftIndex++;
             newFeatures.Add(new Models.Feature { Name = $"Ft of RS {ftIndex}", IsContinuous = true });
-            var featuresSet = orderedFeatures.Take(8);
+            var featuresSet = orderedFeatures.Take(4);
             // var firstPair = new List<int>() { orderedFeatures[0] };
             // var featuresSet = Methods.FindAllFeaturesByRs.Find(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join(", ", featuresSet));
@@ -246,20 +241,9 @@ class ExperimentHeartDiseasePrediction1
 
             boundary[ftIndex] = (crit1Result.Distance + rs[ftIndex].Where(w => w.Value > crit1Result.Distance).Min(m => m.Value)) / 2M;
 
-            var classCountOnFirstInterval = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue == set.ClassValue);
-            var nonClassCountOnFirstInterval = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
-
-            System.Console.WriteLine($"{classCountOnFirstInterval} ---- {nonClassCountOnFirstInterval}");
-            System.Console.WriteLine($"{param.Count(obj => crit1Result.Distance > obj.Distance && obj.ClassValue == set.ClassValue)} ---- {param.Count(obj => crit1Result.Distance <= obj.Distance && obj.ClassValue != set.ClassValue)}");
-
-            var found = param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue == set.ClassValue || crit1Result.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
-
             logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Feature count is {featuresSet.Count()}\nCriterion1 result is {crit1Result}\nBoundary = {boundary[ftIndex]}");
-            logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Accuracy: {found / (decimal)param.Count()} Found: {found}");
-
-            System.Console.WriteLine($"Found {found};\t Accuracy {found / (decimal)param.Count()}");
-
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join("\n", rs[ftIndex].Values.Select(s => $"{s:0.000000}")));
+
 
             orderedFeatures = orderedFeatures.Except(featuresSet).ToList();
         }
