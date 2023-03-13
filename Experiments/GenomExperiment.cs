@@ -160,6 +160,20 @@ public class GenomExperiment
 
             forStandartSet = Methods.NormilizingMinMax.Normalize(forStandartSet);
 
+
+
+            // for (int i = 0; i < forStandartSet.Objects.Length; i++)
+            // {
+            //     var objectNeighborhood = new Models.ObjectNeighborhood(i, null);
+            //     for (int j = 0; j < forStandartSet.Objects.Length; j++)
+            //     {
+            //         if (i == j) continue;
+
+            //         var distance = distFunc(forStandartSet.Objects[i], forStandartSet.Objects[j], forStandartSet.Features, Enumerable.Range(0, forStandartSet.Features.Length));
+            //         var neighbor = new Models.ObjectNeighborhood.ObjectNeighbor();
+            //     }
+            // }
+
             var distances = Utils.DistanceUtils.FindAllDistance(forStandartSet, distFunc);
             var spheres = Models.Sphere.FindAll(forStandartSet, distances, excludedObjects, true);
             var noisyObjects = Methods.FindNoisyObjects.Find(forStandartSet, spheres, excludedObjects, logger);
