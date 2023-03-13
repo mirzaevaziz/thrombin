@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,7 +11,7 @@ class ExperimentHeartDiseasePrediction1
     {
         var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction1 {DateTime.Now:yyyyMMdd HHmmss} - TransformToNonContinuous");
 
-        var set = thrombin.Data.HeartDataSetProvider.ReadDataSet(logger);
+        var set = thrombin.Data.HeartDataSetProvider.ReadDataSetUnique(logger);
         set.ToFileData("HeartDiseasePredictionRaw.txt");
 
         for (int i = 0; i < set.Features.Length; i++)
@@ -92,28 +91,122 @@ class ExperimentHeartDiseasePrediction1
     {
         var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction1 {DateTime.Now:yyyyMMdd HHmmss}");
 
-        var set = Models.ObjectSet.FromFileData(System.IO.Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "ExperimentHeartDiseasePrediction1AllNonContinuous.txt"));
+        var set = Models.ObjectSet.FromFileData(System.IO.Path.Combine(Environment.CurrentDirectory, "HeartDiseasePredictionAllNonContinuous.txt"), 0);
 
         logger.WriteLine("Set info", set.ToString(), true);
 
-        // Finding all features weights
-        var trainSetFeatureWeights = new ConcurrentDictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
-        Parallel.For(0, set.Features.Length, i =>
+        var featureGradationContribute = new Dictionary<int, Dictionary<decimal, decimal>>();
+        var trainSetFeatureWeights = new Dictionary<int, Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionResult>();
+        // for (int ft = 0; ft < set.Features.Length; ft++)
+        // {
+        //     var gradationList = set.Objects.Select(s => s[ft]).Distinct().ToArray();
+        //     var gradationContribute = new Dictionary<decimal, decimal>();
+        //     foreach (var gradient in gradationList)
+        //     {
+        //         decimal n1 = set.Objects.Count(w => w[ft] == gradient && w.ClassValue == set.ClassValue) / (decimal)set.Objects.Count(w => w.ClassValue == set.ClassValue);
+        //         decimal n2 = set.Objects.Count(w => w[ft] == gradient && w.ClassValue != set.ClassValue) / (decimal)set.Objects.Count(w => w.ClassValue != set.ClassValue);
+        //         gradationContribute[gradient] = n1 / (n1 + n2);
+        //     }
+        //     featureGradationContribute[ft] = gradationContribute;
+        // }
+
+        // foreach (var i in featureGradationContribute.Keys)
+        // {
+        //     for (int j = 0; j < set.Objects.Length; j++)
+        //     {
+        //         if (featureGradationContribute[i][set.Objects[j][i]] > 0.5M)
+        //         {
+        //             set.Objects[j][i] = 1;
+        //         }
+        //         else if (featureGradationContribute[i][set.Objects[j][i]] < 0.5M)
+        //         {
+        //             set.Objects[j][i] = 2;
+        //         }
+        //         else set.Objects[j][i] = 3;
+        //     }
+
+        //     foreach (var j in featureGradationContribute[i].Keys)
+        //     {
+        //         System.Console.WriteLine($"Feature[{i}]  grad[{j}] \t{featureGradationContribute[i][j]}");
+        //     }
+        // }
+
+        for (int i = 0; i < set.Features.Length; i++)
         {
+            var p = set.Objects.Select(s => new Criterions.IntervalCriterion.IntervalCriterionParameter
+            {
+                ClassValue = s.ClassValue.Value,
+                Distance = s[i],
+                ObjectIndex = s.Index
+            });
+            var c = Criterions.IntervalCriterion.Find(p, set.ClassValue);
+            logger.WriteLine($"Result for feature interval criterion #{i:00}", string.Join("\n", c));
+
+            for (int objIndex = 0; objIndex < set.Objects.Length; objIndex++)
+            {
+                var interval = c.First(w => w.ObjectValueStart <= set.Objects[objIndex][i] && w.ObjectValueEnd >= set.Objects[objIndex][i]);
+                if (interval.FunctionValue > 0.5M)
+                {
+                    set.Objects[objIndex][i] = 0;
+                }
+                else
+                {
+                    set.Objects[objIndex][i] = 1;
+                }
+            }
+
+            for (int j = 0; j < c.Count(); j++)
+            {
+                System.Console.WriteLine($"\t{c.ElementAt(j)}");
+            }
+        }
+
+        set.ToFileData("ExperimentHeartDiseasePrediction1_NewNonContinuousSet");
+
+        featureGradationContribute = new Dictionary<int, Dictionary<decimal, decimal>>();
+        for (int ft = 0; ft < set.Features.Length; ft++)
+        {
+            var gradationList = set.Objects.Select(s => s[ft]).Distinct().ToArray();
+            var gradationContribute = new Dictionary<decimal, decimal>();
+            foreach (var gradient in gradationList)
+            {
+                decimal n1 = set.Objects.Count(w => w[ft] == gradient && w.ClassValue == set.ClassValue) / (decimal)set.Objects.Count(w => w.ClassValue == set.ClassValue);
+                decimal n2 = set.Objects.Count(w => w[ft] == gradient && w.ClassValue != set.ClassValue) / (decimal)set.Objects.Count(w => w.ClassValue != set.ClassValue);
+                gradationContribute[gradient] = n1 / (n1 + n2);
+            }
+            featureGradationContribute[ft] = gradationContribute;
+        }
+
+        var featureStability = new Dictionary<int, decimal>();
+        foreach (var i in featureGradationContribute.Keys)
+        {
+            featureStability[i] = 0;
+            for (int j = 0; j < set.Objects.Length; j++)
+            {
+                if (featureGradationContribute[i][set.Objects[j][i]] > 0.5M)
+                {
+                    featureStability[i] += featureGradationContribute[i][set.Objects[j][i]];
+                }
+                else if (featureGradationContribute[i][set.Objects[j][i]] < 0.5M)
+                {
+                    featureStability[i] += 1 - featureGradationContribute[i][set.Objects[j][i]];
+                }
+            }
+            featureStability[i] = featureStability[i] / set.Objects.Length;
             trainSetFeatureWeights[i] = Criterions.NonContinuousFeatureCriterion.Find(set.Objects.Select(s => new Criterions.NonContinuousFeatureCriterion.NonContinuousFeatureCriterionParameter
             {
                 ClassValue = s.ClassValue.Value,
                 FeatureValue = s[i],
                 ObjectIndex = s.Index
             }), set.ClassValue);
-        });
 
-        foreach (var item in trainSetFeatureWeights)
-        {
-            logger.WriteLine("Feature weights", $"Feature[{item.Key}] = {item.Value.Value}", true);
+            System.Console.WriteLine($"Feature[{i}] Stability\t{featureStability[i]}");
         }
 
-        var orderedFeatures = trainSetFeatureWeights.Where(w => w.Value.Value > 0).OrderByDescending(o => o.Value.Value).Select(s => s.Key).ToList();
+        // // var orderedFeatures = trainSetFeatureWeights.Where(w => w.Value.Value > 0).OrderByDescending(o => o.Value.Value).Select(s => s.Key).ToList();
+
+        var orderedFeatures = featureStability.Where(w => w.Value > 0).OrderByDescending(o => o.Value).Select(s => s.Key).ToList();
+
 
         var newFeatures = new List<Models.Feature>();
         var rs = new Dictionary<int, Dictionary<int, decimal>>();
@@ -123,12 +216,24 @@ class ExperimentHeartDiseasePrediction1
         {
             ftIndex++;
             newFeatures.Add(new Models.Feature { Name = $"Ft of RS {ftIndex}", IsContinuous = true });
-            // var featuresSet = orderedFeatures.Take(9);
-            var firstPair = new List<int>() { orderedFeatures[0] };
-            var featuresSet = Methods.FindAllFeaturesByRs.Find(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
+            var featuresSet = orderedFeatures.Take(8);
+            // var firstPair = new List<int>() { orderedFeatures[0] };
+            // var featuresSet = Methods.FindAllFeaturesByRs.Find(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), logger, firstPair, orderedFeatures.Skip(1).ToHashSet());
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join(", ", featuresSet));
 
-            rs[ftIndex] = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, trainSetFeatureWeights.ToDictionary(k => k.Key, v => v.Value), featuresSet);
+            // var objRS = new Dictionary<int, decimal>();
+            // for (int i = 0; i < set.Objects.Length; i++)
+            // {
+            //     foreach (var ft in featuresSet)
+            //     {
+            //         if (objRS.ContainsKey(i))
+            //             objRS[i] += featureGradationContribute[ft][set.Objects[i][ft]];
+            //         else
+            //             objRS[i] = featureGradationContribute[ft][set.Objects[i][ft]];
+            //     }
+            // }
+
+            rs[ftIndex] = Methods.GeneralizedAssessment.FindNonContiniousFeature(set, trainSetFeatureWeights, featuresSet);
 
             var param = rs[ftIndex].Select(s => new Criterions.FirstCriterion.FirstCriterionParameter
             {
@@ -145,17 +250,27 @@ class ExperimentHeartDiseasePrediction1
             var nonClassCountOnFirstInterval = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
 
             System.Console.WriteLine($"{classCountOnFirstInterval} ---- {nonClassCountOnFirstInterval}");
-            System.Console.WriteLine($"{param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue == set.ClassValue)} ---- {param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue != set.ClassValue)}");
+            System.Console.WriteLine($"{param.Count(obj => crit1Result.Distance > obj.Distance && obj.ClassValue == set.ClassValue)} ---- {param.Count(obj => crit1Result.Distance <= obj.Distance && obj.ClassValue != set.ClassValue)}");
 
-            var found = param.Count(obj => crit1Result.Distance >= obj.Distance && obj.ClassValue == set.ClassValue || crit1Result.Distance < obj.Distance && obj.ClassValue != set.ClassValue);
+            var found = param.Count(obj => crit1Result.Distance < obj.Distance && obj.ClassValue == set.ClassValue || crit1Result.Distance >= obj.Distance && obj.ClassValue != set.ClassValue);
 
             logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Feature count is {featuresSet.Count()}\nCriterion1 result is {crit1Result}\nBoundary = {boundary[ftIndex]}");
             logger.WriteLine($"0{ftIndex}. Set of features.txt", $"Accuracy: {found / (decimal)param.Count()} Found: {found}");
 
+            System.Console.WriteLine($"Found {found};\t Accuracy {found / (decimal)param.Count()}");
+
             logger.WriteLine($"0{ftIndex}. Set of features.txt", string.Join("\n", rs[ftIndex].Values.Select(s => $"{s:0.000000}")));
 
-
             orderedFeatures = orderedFeatures.Except(featuresSet).ToList();
+        }
+
+        for (int i = 0; i < rs[0].Count; i++)
+        {
+            for (int j = 0; j <= ftIndex; j++)
+            {
+                logger.Write("New set", $"{rs[j][i]}\t");
+            }
+            logger.WriteLine("New set", $"{set.Objects[i].ClassValue}");
         }
     }
 
@@ -163,7 +278,7 @@ class ExperimentHeartDiseasePrediction1
     {
         var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction1 {DateTime.Now:yyyyMMdd HHmmss}");
 
-        var set = Models.ObjectSet.FromFileData(System.IO.Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "Fazo_Lm17.dat"));
+        var set = Models.ObjectSet.FromFileData(System.IO.Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "Fazo_Lm17.dat"), 1);
 
         logger.WriteLine("Set info", set.ToString(), true);
 
@@ -265,6 +380,57 @@ class ExperimentHeartDiseasePrediction1
         }
 
         logger.WriteLine("Feature Pair Combination", $"Max is {max}", true);
+    }
+
+    public static void Run4()
+    {
+        var logger = new Helpers.Logger($"ExperimentHeartDiseasePrediction Run4 {DateTime.Now:yyyyMMdd HHmmss}");
+
+        var set = Models.ObjectSet.FromFileData(System.IO.Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "Fazo_Lm17.dat"), 1);
+
+        logger.WriteLine("Set info", set.ToString(), true);
+
+        set = Methods.NormilizingMinMax.Normalize(set);
+
+        var distFunc = Metrics.MetricFunctionGetter.GetMetric(set, "For distance");
+
+        // System.Console.WriteLine($"Finding all distances at {DateTime.Now}...");
+        // var dist = Utils.DistanceUtils.FindAllDistance(set, distFunc);
+
+        System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+        var spheres = Models.Sphere.FindAll(set, distFunc, null, true);
+        System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
+
+        logger.WriteLine("Spheres with noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
+
+        logger.WriteLine("Boundary objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
+
+        logger.WriteLine("Coverage objects with noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
+        var noisyObjects = Methods.FindNoisyObjects.Find(set, spheres, logger);
+        System.Console.WriteLine($"Noisy objects ({noisyObjects.Count}){{{string.Join(", ", noisyObjects)}}}");
+
+        System.Console.WriteLine($"Finding all spheres at {DateTime.Now}...");
+        spheres = Models.Sphere.FindAll(set, distFunc, noisyObjects, true);
+        System.Console.WriteLine($"Founded {spheres.Count()} spheres...");
+
+        logger.WriteLine("Spheres without noisy objects", string.Join(Environment.NewLine, spheres.OrderBy(o => o.ObjectIndex)));
+
+        logger.WriteLine("Boundary objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Enemies).Distinct().OrderBy(o => o)));
+
+        logger.WriteLine("Coverage objects without noisy", string.Join(Environment.NewLine, spheres.SelectMany(s => s.Coverage).Distinct().OrderBy(o => o)));
+
+        var groups = Methods.FindAcquaintanceGrouping.Find(set, spheres);
+        System.Console.WriteLine($"New groups count {groups.Count}");
+
+        foreach (var group in groups.OrderByDescending(o => o.Count))
+        {
+            logger.WriteLine("Groups", $"Group ({group.Count}) {{{string.Join(", ", group.OrderBy(o => o))}}}");
+        }
+
+        var standartObject = Methods.FindStandartObjects.Find(set, groups, spheres, distFunc, logger);
+
+        System.Console.WriteLine($"Standart object ({standartObject.Count}) {{{string.Join(", ", standartObject)}}}");
     }
 }
 

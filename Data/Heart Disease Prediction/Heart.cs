@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 
@@ -33,7 +34,7 @@ public class HeartDataSetProvider
         var featureValues = new Dictionary<int, Dictionary<string, int>>();
         var objectList = new List<Models.ObjectInfo>();
 
-        using (var data = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "heart_2020_cleaned.csv")))
+        using (var data = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "heart_2020_cleaned_original.csv")))
         {
             while (!data.EndOfStream)
             {
@@ -47,7 +48,7 @@ public class HeartDataSetProvider
                 {
                     if (features[i].IsContinuous)
                     {
-                        obj.Data[i] = decimal.Parse(line[i]);
+                        obj.Data[i] = decimal.Parse(line[i], CultureInfo.InvariantCulture);
                     }
                     else
                     {
@@ -123,7 +124,7 @@ public class HeartDataSetProvider
         var objectList = new List<Models.ObjectInfo>();
 
         int ind = -1;
-        using (var data = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "heart_2020_cleaned.csv")))
+        using (var data = new StreamReader(Path.Combine(Environment.CurrentDirectory, "Data", "Heart Disease Prediction", "heart_2020_cleaned_original.csv")))
         {
             while (!data.EndOfStream)
             {

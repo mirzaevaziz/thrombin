@@ -11,8 +11,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        Experiments.GenomExperiment.Run();
+
         // Experiments.ExperimentHeartDiseasePrediction1.TransformToNonContinuous();
-        Experiments.ExperimentHeartDiseasePrediction1.Run3();
+        // Experiments.ExperimentHeartDiseasePrediction1.TransformUniqueToNonContinuous();
+        // Experiments.ExperimentHeartDiseasePrediction1.Run4();
+        // Experiments.ExperimentHeartDiseasePrediction1.Run3();
 
         // var logger = new Helpers.Logger($"Heart {DateTime.Now:yyyyMMdd HHmmss} - First criterion results");
 
@@ -243,7 +247,7 @@ class Program
         //     System.Console.WriteLine($"Weighted percent: {(k1 / testSet.ClassObjectCount + k2 / testSet.NonClassObjectCount) / 2}");
         // }
         System.Console.WriteLine($"Done at {DateTime.Now}...");
-        Console.ReadKey();
+        // Console.ReadKey();
     }
 
     private static void Method2DByRS()

@@ -2,6 +2,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using thrombin.Metrics;
 
 namespace thrombin.Models
 {
@@ -28,7 +29,7 @@ namespace thrombin.Models
                coverage= ({Coverage.Count}) {{{string.Join(", ", Coverage.OrderBy(o => o))}}}";
         }
 
-        public static IEnumerable<Sphere> FindAll(ObjectSet set, decimal[,] dist, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
+        public static IEnumerable<Sphere> FindAll(ObjectSet set, Utils.DistanceUtils.DistanceList dist, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
         {
             var result = new BlockingCollection<Sphere>();
 
@@ -84,6 +85,81 @@ namespace thrombin.Models
                                 {
                                     cov.Clear();
                                     radius = dist[enemyIndex, j];
+                                }
+                                cov.Add(j);
+                            }
+                        }
+                        sphere.Coverage.UnionWith(cov);
+                    }
+                }
+
+                result.Add(sphere);
+            });
+
+            result.CompleteAdding();
+
+            return result;
+        }
+
+        public static IEnumerable<Sphere> FindAll(ObjectSet set, MetricCalculateFunctionDelegate distFunc, HashSet<int> excludedObjects, bool ShouldFindCoverage = true)
+        {
+            var result = new BlockingCollection<Sphere>();
+
+            var objects = Enumerable.Range(0, set.Objects.Length);
+            if (excludedObjects?.Count > 0)
+                objects = objects.Where(w => !excludedObjects.Contains(w));
+
+            Parallel.ForEach(objects, i =>
+            {
+                var sphere = new Sphere()
+                {
+                    Radius = decimal.MaxValue,
+                    ObjectIndex = i
+                };
+
+                foreach (int j in objects)
+                {
+                    if (set.Objects[i].ClassValue != set.Objects[j].ClassValue)
+                    {
+                        var dist = distFunc(set.Objects[i], set.Objects[j], set.Features, Enumerable.Range(0, set.Features.Length));
+                        if (sphere.Radius > dist)
+                        {
+                            sphere.Radius = dist;
+                            sphere.Enemies.Clear();
+                            sphere.Enemies.Add(j);
+                        }
+                        else if (sphere.Radius == dist)
+                        {
+                            sphere.Enemies.Add(j);
+                        }
+                    }
+                }
+
+                foreach (int j in objects)
+                {
+                    var dist = distFunc(set.Objects[i], set.Objects[j], set.Features, Enumerable.Range(0, set.Features.Length));
+                    if (i != j && set.Objects[i].ClassValue == set.Objects[j].ClassValue && sphere.Radius > dist)
+                    {
+                        sphere.Relatives.Add(j);
+                    }
+                }
+
+                if (ShouldFindCoverage)
+                {
+                    foreach (var enemyIndex in sphere.Enemies)
+                    {
+                        var cov = new HashSet<int>();
+                        decimal radius = decimal.MaxValue;
+                        var indexes = sphere.Relatives.ToArray();//.Append(sphere.ObjectIndex.Value);
+                        foreach (var j in indexes)
+                        {
+                            var dist = distFunc(set.Objects[enemyIndex], set.Objects[j], set.Features, Enumerable.Range(0, set.Features.Length));
+                            if (radius >= dist)
+                            {
+                                if (radius != dist)
+                                {
+                                    cov.Clear();
+                                    radius = dist;
                                 }
                                 cov.Add(j);
                             }

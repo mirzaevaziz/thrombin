@@ -1,0 +1,7 @@
+ObjectSet = "ARF4-205_unique.dat"
+               , Objects count = 55 
+               , Features count = 27 
+               , Class value = 0
+               , Class objects = 28
+               , Non Class objects = 27
+               , ClassValues = 1, 2, 0

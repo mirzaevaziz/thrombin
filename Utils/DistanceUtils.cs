@@ -1,12 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using thrombin.Metrics;
 using thrombin.Models;
 
 namespace thrombin.Utils
 {
-    class DistanceUtils
+    public class DistanceUtils
     {
         /// <summary>
         /// Getting all objects' distance by active features
@@ -15,21 +14,21 @@ namespace thrombin.Utils
         /// <param name="distFunc"></param>
         /// <param name="activeFeatures"></param>
         /// <returns></returns>
-        public static decimal[,] FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc, IEnumerable<int> activeFeatures, bool isParallel = true)
+        public static DistanceList FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc, IEnumerable<int> activeFeatures)
         {
-            decimal[,] dist = new decimal[set.Objects.Length, set.Objects.Length];
+            var dist = new DistanceList(set.Objects.Length, set.Objects.Length);
 
-            if (isParallel)
-                Parallel.For(0, set.Objects.Length, i =>
-                {
-                    dist[i, i] = 0M;
-                    for (int j = i + 1; j < set.Objects.Length; j++)
-                    {
-                        dist[i, j] = distFunc(set.Objects[i], set.Objects[j], set.Features, activeFeatures);
-                        dist[j, i] = dist[i, j];
-                    }
-                });
-            else
+            // if (isParallel)
+            //     Parallel.For(0, set.Objects.Length, i =>
+            //     {
+            //         dist[i, i] = 0M;
+            //         for (int j = i + 1; j < set.Objects.Length; j++)
+            //         {
+            //             dist[i, j] = distFunc(set.Objects[i], set.Objects[j], set.Features, activeFeatures);
+            //             dist[j, i] = dist[i, j];
+            //         }
+            //     });
+            // else
             {
                 for (int i = 0; i < set.Objects.Length; i++)
                 {
@@ -46,23 +45,50 @@ namespace thrombin.Utils
         }
 
 
+        public class DistanceList
+        {
+            public List<List<decimal>> Array { get; set; }
+
+            public DistanceList(int rowCount, int colCount)
+            {
+                Array = new List<List<decimal>>();
+                for (int i = 0; i < rowCount; i++)
+                {
+                    var r = Enumerable.Range(0, colCount).Select(s => 0M).ToList();
+                    Array.Add(r);
+                }
+            }
+
+            public decimal this[int i, int j]
+            {
+                get
+                {
+                    return Array[i][j];
+                }
+                set
+                {
+                    Array[i][j] = value;
+                }
+            }
+        }
+
         /// <summary>
         /// Getting all objects' distance by all features
         /// </summary>
         /// <param name="set"></param>
         /// <param name="distFunc"></param>
         /// <returns></returns>
-        public static decimal[,] FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc)
+        public static DistanceList FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc)
         {
             return FindAllDistance(set, distFunc, Enumerable.Range(0, set.Features.Length));
         }
 
-        public static decimal[,] FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc, HashSet<int> excludedObjects)
+        public static DistanceList FindAllDistance(ObjectSet set, MetricCalculateFunctionDelegate distFunc, HashSet<int> excludedObjects)
         {
             if (excludedObjects.Count == 0)
                 return FindAllDistance(set, distFunc);
 
-            decimal[,] dist = new decimal[set.Objects.Length, set.Objects.Length];
+            DistanceList dist = new DistanceList(set.Objects.Length, set.Objects.Length);
 
             for (int i = 0; i < set.Objects.Length; i++)
             {

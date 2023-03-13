@@ -56,7 +56,7 @@ namespace thrombin.Models
             return Objects.Select(s => s.ClassValue.GetValueOrDefault(-1)).Distinct();
         }
 
-        internal static ObjectSet FromFileData(string path)
+        internal static ObjectSet FromFileData(string path, int classValue = 1)
         {
             using (var file = new StreamReader(path))
             {
@@ -81,7 +81,7 @@ namespace thrombin.Models
                     IsContinuous = s == "1",
                     Name = $"Ft {ind++}"
                 }).ToArray();
-                return new ObjectSet(path, objects, features, 1);
+                return new ObjectSet(path, objects, features, classValue);
             }
         }
 
@@ -125,20 +125,30 @@ namespace thrombin.Models
             using (var indexes = new StreamWriter(path + ".indexes"))
             using (var file = new StreamWriter(path))
             {
+                file.WriteLine($"{Objects.Length - deletedObjects?.Count ?? 0}\t{activeFeatures.Count}\t{GetClassValues().Count()}");
+
                 for (int i = 0; i < Objects.Length; i++)
                 {
                     if (deletedObjects.Contains(i)) continue;
 
                     indexes.WriteLine(i);
-                    file.Write(Objects[i].ClassValue);
                     for (int ft = 0; ft < this.Features.Length; ft++)
                     {
                         if (activeFeatures.Contains(ft))
                         {
-                            file.Write($"\t{Objects[i][ft]}");
+                            file.Write($"{Objects[i][ft]}\t");
                         }
                     }
-                    file.WriteLine();
+                    file.WriteLine(Objects[i].ClassValue);
+                }
+
+                for (int i = 0; i < Features.Length; i++)
+                {
+                    if (activeFeatures.Contains(i))
+                    {
+                        var ft = Features[i];
+                        file.Write($"{(ft.IsContinuous ? 1 : 0)}\t");
+                    }
                 }
             }
         }

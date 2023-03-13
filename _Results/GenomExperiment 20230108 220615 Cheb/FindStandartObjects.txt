@@ -1,0 +1,1844 @@
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 52, Radius = 0,9658372311176198389687140039 }
+{ ObjectIndex = 14, Radius = 0,1291803372719024644174142428 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 36, Radius = 0,1184893980754010416485762380 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 49, Radius = 0,2347284272728536573741289159 }
+{ ObjectIndex = 39, Radius = 0,3661725138986663058281878748 }
+{ ObjectIndex = 14, Radius = 0,1008411350127340446005735479 }
+{ ObjectIndex = 45, Radius = 0,3111203427740582930523655886 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 0,8341291662772168353606695866 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 54, Radius = 0,2589843050319013220895151778 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 8, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8341291662772168353606695866 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,6928557786303419634613617394 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 31, Radius = 0,1500309419840566645057430982 }
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 7, Radius = 0,4887724712085518612385707195 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 31, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 50, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 45, Radius = 0,6928557786303419634613617394 }
+{ ObjectIndex = 8, Radius = 0,4887724712085518612385707195 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+{ ObjectIndex = 31, Radius = 0,1338434282977914523558843931 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 31, Radius = 0,1500309419840566645057430982 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 7, Radius = 0,3982443424058210870323321352 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 28, Radius = 0,3982443424058210870323321352 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 28, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,6532255532508121518491405525 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 54, Radius = 0,2589843050319013220895151778 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+{ ObjectIndex = 28, Radius = 0,6017556575941789129676678648 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+{ ObjectIndex = 29, Radius = 0,1338434282977914523558843931 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 29, Radius = 0,1550671174427572297902739656 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 21, Radius = 1 }
+{ ObjectIndex = 45, Radius = 0,9198176808352442064617710833 }
+{ ObjectIndex = 14, Radius = 0,9433215954816631603663186102 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 8, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 45, Radius = 0,8424804604689291157657450623 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+{ ObjectIndex = 24, Radius = 0,0997985645842254451562086986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 54, Radius = 0,2589843050319013220895151778 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 0,9198176808352442064617710833 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 31, Radius = 0,1500309419840566645057430982 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,9198176808352442064617710833 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 31, Radius = 0,1338434282977914523558843931 }
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 31, Radius = 0,1500309419840566645057430982 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 24, Radius = 0,6017556575941789129676678648 }
+{ ObjectIndex = 28, Radius = 0,6017556575941789129676678648 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+{ ObjectIndex = 24, Radius = 0,0997985645842254451562086986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 54, Radius = 0,2589843050319013220895151778 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 28, Radius = 0,6017556575941789129676678648 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 28, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 29, Radius = 0,1338434282977914523558843931 }
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,6888796572259417069476344114 }
+{ ObjectIndex = 30, Radius = 0,1550671174427572297902739656 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 54, Radius = 0,1603418059320237258180193992 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 28, Radius = 0,4050266875596160939935496764 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 47, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 8, Radius = 0,8424804604689291157657450623 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 17, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 17, Radius = 1 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 17, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 47, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 11, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 17, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 24, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 8, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 45, Radius = 0,8424804604689291157657450623 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 35, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 35, Radius = 1 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 35, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 22, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 44, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 35, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:17
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:17
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 52, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 8, Radius = 0,8424804604689291157657450623 }
+{ ObjectIndex = 45, Radius = 0,8424804604689291157657450623 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 30, Radius = 0,5112275287914481387614292805 }
+{ ObjectIndex = 23, Radius = 0,4964727156959117525041731986 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 44, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,5388487152418850424418913132 }
+{ ObjectIndex = 44, Radius = 1 }
+{ ObjectIndex = 50, Radius = 0,1039171875891440922992412122 }
+{ ObjectIndex = 23, Radius = 0,3894289582483078828926589349 }
+{ ObjectIndex = 16, Radius = 0,0631100514199974528807480635 }
+{ ObjectIndex = 36, Radius = 0,1338220276822689484483416367 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 0,8782014294568597441312296544 }
+{ ObjectIndex = 44, Radius = 0,8782014294568597441312296544 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 47, Radius = 1 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+{ ObjectIndex = 23, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,4797272232782294821628518492 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 48, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 15, Radius = 0,843946774668698936737908377 }
+{ ObjectIndex = 49, Radius = 0,1958742536119038692087671143 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 50, Radius = 0,9716607977408315801831593051 }
+{ ObjectIndex = 45, Radius = 1 }
+{ ObjectIndex = 44, Radius = 1 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+{ ObjectIndex = 33, Radius = 0,9950770588022265259296505146 }
+{ ObjectIndex = 39, Radius = 0,9716607977408315801831593051 }
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18
+===== FindStandartObjects Started at 08/01/2023 22:06:18
+===== FindStandartObjects Ended at 08/01/2023 22:06:18

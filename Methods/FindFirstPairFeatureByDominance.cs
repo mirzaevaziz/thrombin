@@ -37,7 +37,7 @@ namespace thrombin.Methods
 
             Parallel.ForEach(activeFeatures.Combinations(2), ft =>
             {
-                decimal[,] dist = Utils.DistanceUtils.FindAllDistance(set, distFunc, ft);
+                var dist = Utils.DistanceUtils.FindAllDistance(set, distFunc, ft);
 
                 var result = new FindFirstPairFeatureResult()
                 {
